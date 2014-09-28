@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */; };
+		114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
 		119025DC19B92DA1009184BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025DB19B92DA1009184BE /* AppDelegate.swift */; };
 		119025DE19B92DA1009184BE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025DD19B92DA1009184BE /* MasterViewController.swift */; };
 		119025E019B92DA1009184BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025DF19B92DA1009184BE /* DetailViewController.swift */; };
 		119025E319B92DA1009184BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119025E119B92DA1009184BE /* Main.storyboard */; };
 		119025E519B92DA1009184BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119025E419B92DA1009184BE /* Images.xcassets */; };
-		119025F119B92DA1009184BE /* SwiftRSS_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025F019B92DA1009184BE /* SwiftRSS_ExampleTests.swift */; };
+		119025FC19B92DDF009184BE /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		119025EB19B92DA1009184BE /* PBXContainerItemProxy */ = {
+		114E26C419BA399B00D292F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 119025CE19B92DA1009184BE /* Project object */;
 			proxyType = 1;
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		114E26BE19BA399B00D292F3 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		114E26C119BA399B00D292F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSParser_Tests.swift; sourceTree = "<group>"; };
 		119025D619B92DA1009184BE /* SwiftRSS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRSS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119025DA19B92DA1009184BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119025DB19B92DA1009184BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,20 +38,18 @@
 		119025DF19B92DA1009184BE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		119025E219B92DA1009184BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		119025E419B92DA1009184BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		119025EA19B92DA1009184BE /* SwiftRSS_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftRSS_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		119025EF19B92DA1009184BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		119025F019B92DA1009184BE /* SwiftRSS_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRSS_ExampleTests.swift; sourceTree = "<group>"; };
+		119025FB19B92DDF009184BE /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		119025D319B92DA1009184BE /* Frameworks */ = {
+		114E26BB19BA399B00D292F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		119025E719B92DA1009184BE /* Frameworks */ = {
+		119025D319B92DA1009184BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,11 +59,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114E26BF19BA399B00D292F3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */,
+				114E26C019BA399B00D292F3 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		114E26C019BA399B00D292F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				114E26C119BA399B00D292F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		119025CD19B92DA1009184BE = {
 			isa = PBXGroup;
 			children = (
+				119025FA19B92DB1009184BE /* SwiftRSS */,
 				119025D819B92DA1009184BE /* SwiftRSS_Example */,
-				119025ED19B92DA1009184BE /* SwiftRSS_ExampleTests */,
+				114E26BF19BA399B00D292F3 /* Tests */,
 				119025D719B92DA1009184BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				119025D619B92DA1009184BE /* SwiftRSS_Example.app */,
-				119025EA19B92DA1009184BE /* SwiftRSS_ExampleTests.xctest */,
+				114E26BE19BA399B00D292F3 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,26 +116,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		119025ED19B92DA1009184BE /* SwiftRSS_ExampleTests */ = {
+		119025FA19B92DB1009184BE /* SwiftRSS */ = {
 			isa = PBXGroup;
 			children = (
-				119025F019B92DA1009184BE /* SwiftRSS_ExampleTests.swift */,
-				119025EE19B92DA1009184BE /* Supporting Files */,
+				119025FB19B92DDF009184BE /* RSSParser.swift */,
 			);
-			path = SwiftRSS_ExampleTests;
-			sourceTree = "<group>";
-		};
-		119025EE19B92DA1009184BE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				119025EF19B92DA1009184BE /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = SwiftRSS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		114E26BD19BA399B00D292F3 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 114E26C619BA399B00D292F3 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				114E26BA19BA399B00D292F3 /* Sources */,
+				114E26BB19BA399B00D292F3 /* Frameworks */,
+				114E26BC19BA399B00D292F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114E26C519BA399B00D292F3 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 114E26BE19BA399B00D292F3 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		119025D519B92DA1009184BE /* SwiftRSS_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 119025F419B92DA1009184BE /* Build configuration list for PBXNativeTarget "SwiftRSS_Example" */;
@@ -132,24 +162,6 @@
 			productReference = 119025D619B92DA1009184BE /* SwiftRSS_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		119025E919B92DA1009184BE /* SwiftRSS_ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 119025F719B92DA1009184BE /* Build configuration list for PBXNativeTarget "SwiftRSS_ExampleTests" */;
-			buildPhases = (
-				119025E619B92DA1009184BE /* Sources */,
-				119025E719B92DA1009184BE /* Frameworks */,
-				119025E819B92DA1009184BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				119025EC19B92DA1009184BE /* PBXTargetDependency */,
-			);
-			name = SwiftRSS_ExampleTests;
-			productName = SwiftRSS_ExampleTests;
-			productReference = 119025EA19B92DA1009184BE /* SwiftRSS_ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,12 +171,12 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Thibaut LE LEVIER";
 				TargetAttributes = {
-					119025D519B92DA1009184BE = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					119025E919B92DA1009184BE = {
+					114E26BD19BA399B00D292F3 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 119025D519B92DA1009184BE;
+					};
+					119025D519B92DA1009184BE = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -182,12 +194,19 @@
 			projectRoot = "";
 			targets = (
 				119025D519B92DA1009184BE /* SwiftRSS_Example */,
-				119025E919B92DA1009184BE /* SwiftRSS_ExampleTests */,
+				114E26BD19BA399B00D292F3 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		114E26BC19BA399B00D292F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		119025D419B92DA1009184BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,16 +216,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		119025E819B92DA1009184BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		114E26BA19BA399B00D292F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */,
+				114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		119025D219B92DA1009184BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,24 +235,17 @@
 				119025E019B92DA1009184BE /* DetailViewController.swift in Sources */,
 				119025DE19B92DA1009184BE /* MasterViewController.swift in Sources */,
 				119025DC19B92DA1009184BE /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		119025E619B92DA1009184BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				119025F119B92DA1009184BE /* SwiftRSS_ExampleTests.swift in Sources */,
+				119025FC19B92DDF009184BE /* RSSParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		119025EC19B92DA1009184BE /* PBXTargetDependency */ = {
+		114E26C519BA399B00D292F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 119025D519B92DA1009184BE /* SwiftRSS_Example */;
-			targetProxy = 119025EB19B92DA1009184BE /* PBXContainerItemProxy */;
+			targetProxy = 114E26C419BA399B00D292F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -247,6 +261,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		114E26C719BA399B00D292F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRSS_Example.app/SwiftRSS_Example";
+			};
+			name = Debug;
+		};
+		114E26C819BA399B00D292F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRSS_Example.app/SwiftRSS_Example";
+			};
+			name = Release;
+		};
 		119025F219B92DA1009184BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -348,43 +394,18 @@
 			};
 			name = Release;
 		};
-		119025F819B92DA1009184BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftRSS_ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRSS_Example.app/SwiftRSS_Example";
-			};
-			name = Debug;
-		};
-		119025F919B92DA1009184BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftRSS_ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRSS_Example.app/SwiftRSS_Example";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		114E26C619BA399B00D292F3 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				114E26C719BA399B00D292F3 /* Debug */,
+				114E26C819BA399B00D292F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		119025D119B92DA1009184BE /* Build configuration list for PBXProject "SwiftRSS_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -401,14 +422,7 @@
 				119025F619B92DA1009184BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		119025F719B92DA1009184BE /* Build configuration list for PBXNativeTarget "SwiftRSS_ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				119025F819B92DA1009184BE /* Debug */,
-				119025F919B92DA1009184BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
