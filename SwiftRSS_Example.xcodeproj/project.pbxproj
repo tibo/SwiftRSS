@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */; };
 		114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
+		117F56AF19D83AF50004DDEA /* SwiftBlog.rss in Resources */ = {isa = PBXBuildFile; fileRef = 117F56AD19D83AF50004DDEA /* SwiftBlog.rss */; };
+		117F56B219D861D10004DDEA /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117F56B119D861D10004DDEA /* RSSItem.swift */; };
+		117F56B319D861F00004DDEA /* RSSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117F56B119D861D10004DDEA /* RSSItem.swift */; };
+		117F56B619D872A70004DDEA /* Invalid.rss in Resources */ = {isa = PBXBuildFile; fileRef = 117F56B419D872A70004DDEA /* Invalid.rss */; };
 		119025DC19B92DA1009184BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025DB19B92DA1009184BE /* AppDelegate.swift */; };
 		119025DE19B92DA1009184BE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025DD19B92DA1009184BE /* MasterViewController.swift */; };
 		119025E019B92DA1009184BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025DF19B92DA1009184BE /* DetailViewController.swift */; };
 		119025E319B92DA1009184BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119025E119B92DA1009184BE /* Main.storyboard */; };
 		119025E519B92DA1009184BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119025E419B92DA1009184BE /* Images.xcassets */; };
 		119025FC19B92DDF009184BE /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
+		11C8C1AE19DC3EB80040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
+		11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */; };
+		11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +38,9 @@
 		114E26BE19BA399B00D292F3 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114E26C119BA399B00D292F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSParser_Tests.swift; sourceTree = "<group>"; };
+		117F56AD19D83AF50004DDEA /* SwiftBlog.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftBlog.rss; sourceTree = "<group>"; };
+		117F56B119D861D10004DDEA /* RSSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem.swift; sourceTree = "<group>"; };
+		117F56B419D872A70004DDEA /* Invalid.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Invalid.rss; sourceTree = "<group>"; };
 		119025D619B92DA1009184BE /* SwiftRSS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRSS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119025DA19B92DA1009184BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119025DB19B92DA1009184BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,8 @@
 		119025E219B92DA1009184BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		119025E419B92DA1009184BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		119025FB19B92DDF009184BE /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
+		11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +74,9 @@
 		114E26BF19BA399B00D292F3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				117F56AC19D83AC80004DDEA /* Mocks */,
 				114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */,
+				11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */,
 				114E26C019BA399B00D292F3 /* Supporting Files */,
 			);
 			path = Tests;
@@ -74,6 +88,15 @@
 				114E26C119BA399B00D292F3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		117F56AC19D83AC80004DDEA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				117F56AD19D83AF50004DDEA /* SwiftBlog.rss */,
+				117F56B419D872A70004DDEA /* Invalid.rss */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		119025CD19B92DA1009184BE = {
@@ -120,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				119025FB19B92DDF009184BE /* RSSParser.swift */,
+				117F56B119D861D10004DDEA /* RSSItem.swift */,
+				11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */,
 			);
 			path = SwiftRSS;
 			sourceTree = "<group>";
@@ -204,6 +229,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117F56B619D872A70004DDEA /* Invalid.rss in Resources */,
+				117F56AF19D83AF50004DDEA /* SwiftBlog.rss in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */,
+				11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */,
+				117F56B219D861D10004DDEA /* RSSItem.swift in Sources */,
 				114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */,
 				114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */,
 			);
@@ -232,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C8C1AE19DC3EB80040D5F4 /* NSDateExtension.swift in Sources */,
 				119025E019B92DA1009184BE /* DetailViewController.swift in Sources */,
+				117F56B319D861F00004DDEA /* RSSItem.swift in Sources */,
 				119025DE19B92DA1009184BE /* MasterViewController.swift in Sources */,
 				119025DC19B92DA1009184BE /* AppDelegate.swift in Sources */,
 				119025FC19B92DDF009184BE /* RSSParser.swift in Sources */,

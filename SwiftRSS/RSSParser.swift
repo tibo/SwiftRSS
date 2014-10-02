@@ -10,55 +10,126 @@ import UIKit
 
 class RSSParser: NSObject, NSXMLParserDelegate {
     
-    class func parseFeedForRequest(request: NSURLRequest, callback: (items: [NSString]?, error: NSError?) -> Void)
+    class func parseFeedForRequest(request: NSURLRequest, callback: (items: [RSSItem]?, error: NSError?) -> Void)
     {
         let rssParser: RSSParser = RSSParser()
         
         rssParser.parseFeedForRequest(request, callback: callback)
     }
     
-    var callbackClosure: ((items: [NSString]?, error: NSError?) -> Void)?
+    var callbackClosure: ((items: [RSSItem]?, error: NSError?) -> Void)?
+    var currentElement: String?
+    var currentItem: RSSItem?
+    var items: NSMutableArray! = NSMutableArray()
     
-    func parseFeedForRequest(request: NSURLRequest, callback: (items: [NSString]?, error: NSError?) -> Void)
+    // node names
+    let node_item: String = "item"
+    
+    let node_title: String = "title"
+    let node_link: String = "link"
+    let node_guid: String = "guid"
+    let node_publicationDate: String = "pubDate"
+    let node_description: String = "description"
+    let node_content: String = "content:encoded"
+    
+    func parseFeedForRequest(request: NSURLRequest, callback: (items: [RSSItem]?, error: NSError?) -> Void)
     {
-        
-        callbackClosure = callback
-        
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
 
-            var parser : NSXMLParser = NSXMLParser(data: data)
-            parser.delegate = self
-            parser.shouldResolveExternalEntities = false
-            parser.parse()
+            if ((error) != nil)
+            {
+                callback(items: nil, error: error)
+            }
+            else
+            {
+                self.callbackClosure = callback
+                
+                var parser : NSXMLParser = NSXMLParser(data: data)
+                parser.delegate = self
+                parser.shouldResolveExternalEntities = false
+                parser.parse()
+            }
         }
     }
     
 // MARK: NSXMLParserDelegate
     func parserDidStartDocument(parser: NSXMLParser)
     {
-        NSLog("start parsing")
     }
     
     func parserDidEndDocument(parser: NSXMLParser)
     {
-        NSLog("end parsing")
-        self.callbackClosure!(items: nil,error: nil)
+        self.callbackClosure!(items: items as AnyObject as? [RSSItem] ,error: nil)
     }
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
-            NSLog(elementName)
+        
+        NSLog(elementName)
+        
+        if elementName == node_item
+        {
+            self.currentItem = RSSItem()
+        }
+        
+        if ((self.currentItem) != nil)
+        {
+            currentElement = ""
+        }
+        
     }
    
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        
         NSLog(elementName)
+        
+        if elementName == node_item
+        {
+            items.addObject(self.currentItem!)
+        }
+        
+        if ((self.currentItem) != nil)
+        {
+            if elementName == node_title
+            {
+                self.currentItem!.title = currentElement
+            }
+            
+            if elementName == node_link
+            {
+                self.currentItem!.setLink(currentElement!)
+            }
+            
+            if elementName == node_guid
+            {
+                self.currentItem!.guid = currentElement
+            }
+            
+            if elementName == node_publicationDate
+            {
+                self.currentItem!.setPubDate(currentElement!)
+            }
+            
+            if elementName == node_description
+            {
+                self.currentItem!.itemDescription = currentElement
+            }
+            
+            if elementName == node_content
+            {
+                self.currentItem!.content = currentElement
+            }
+        }
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
-        NSLog(string)
+        if ((self.currentElement) != nil)
+        {
+            self.currentElement! += string
+        }
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
-        NSLog("Error")
+            self.callbackClosure!(items: nil ,error: parseError)
     }
 
 }
