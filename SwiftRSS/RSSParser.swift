@@ -64,7 +64,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
         
-        NSLog(elementName)
+        NSLog("begin \(elementName)")
         
         if elementName == node_item
         {
@@ -80,11 +80,12 @@ class RSSParser: NSObject, NSXMLParserDelegate {
    
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
-        NSLog(elementName)
+        NSLog("end \(elementName)")
         
         if elementName == node_item
         {
             items.addObject(self.currentItem!)
+            self.currentItem = nil
         }
         
         if ((self.currentItem) != nil)
@@ -129,7 +130,10 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
-            self.callbackClosure!(items: nil ,error: parseError)
+        
+        NSLog("parsing error: \(parseError)")
+        
+        self.callbackClosure!(items: nil ,error: parseError)
     }
 
 }

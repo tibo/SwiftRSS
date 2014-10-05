@@ -13,14 +13,17 @@ class RSSParser_Tests: XCTestCase {
     
     let mockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("SwiftBlog", ofType: "rss")
     let invalidMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Invalid", ofType: "rss")
+    let wordpressMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Wordpress", ofType: "rss")
+    let tumblrMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Tumblr", ofType: "rss")
     
     let PDT_timeZone = NSTimeZone(name: "PST")
+    let GMT_timeZone = NSTimeZone(name: "GMT")
+    let DST_timeZone = NSTimeZone(forSecondsFromGMT: 60 * 60 * -4)
     let calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
     let calendar_flags = NSCalendarUnit(UInt.max)
     
     override func setUp() {
         super.setUp()
-        self.calendar.timeZone = PDT_timeZone
     }
     
     override func tearDown() {
@@ -55,6 +58,8 @@ class RSSParser_Tests: XCTestCase {
         RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
             
             expectation.fulfill()
+            
+            self.calendar.timeZone = self.PDT_timeZone
             
             var myItem: RSSItem = items![0]
             
@@ -371,6 +376,192 @@ class RSSParser_Tests: XCTestCase {
             
             XCTAssert(myItem.itemDescription == " This new blog will bring you a behind-the-scenes look into the design of the Swift language by the engineers who created it, in addition to the latest news and hints to turn you into a productive Swift programmer.  Get started with Swift by downloading  Xcode 6 beta , now available to all Registered Apple Developers for free. The Swift Resources tab has a ton of great links to videos, documentation, books, and sample code to help you become one of the world’s first Swift experts. There’s never been a better time to get coding!  - The Swift Team  ", "")
             XCTAssert(myItem.content == "<p>This new blog will bring you a behind-the-scenes look into the design of the Swift language by the engineers who created it, in addition to the latest news and hints to turn you into a productive Swift programmer.</p><p>Get started with Swift by downloading <a href=\"http://developer.apple.com/devcenter/download.action?path=/Developer_Tools/xcode_6_beta_3_lpw27r/xcode_6_beta_3.dmg\" alt=\"\">Xcode 6 beta</a>, now available to all Registered Apple Developers for free. The Swift Resources tab has a ton of great links to videos, documentation, books, and sample code to help you become one of the world’s first Swift experts. There’s never been a better time to get coding!</p><p>- The Swift Team </p>", "")
+            
+        })
+        
+        waitForExpectationsWithTimeout(100, handler: { error in
+            
+        })
+        
+        XCTAssert(true, "Pass")
+    }
+    
+    func test_parser_withWordpressMock_shouldReturnTheRightValues() {
+        
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: wordpressMockFileURL!))
+        let expectation = self.expectationWithDescription("GET \(request.URL)")
+        
+        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+            
+            expectation.fulfill()
+            
+            XCTAssertTrue(items!.count == 10, "should have 10 items")
+            
+            self.calendar.timeZone = self.GMT_timeZone
+            
+            var myItem = items![1]
+            
+            XCTAssert(myItem.title == "Engaged, Inspired, and Ready to Build a Better Web", "")
+            
+            if let link = myItem.link?
+            {
+                XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/", "")
+            }
+            else
+            {
+                XCTFail("link shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.guid == "http://en.blog.wordpress.com/?p=28737", "")
+            
+            if let date = myItem.pubDate?
+            {
+                var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                
+                XCTAssert(dateComponent.weekday == 3, "")
+                XCTAssert(dateComponent.day == 30, "")
+                XCTAssert(dateComponent.month == 9, "")
+                XCTAssert(dateComponent.year == 2014, "")
+                XCTAssert(dateComponent.hour == 15, "")
+                XCTAssert(dateComponent.minute == 0, "")
+                XCTAssert(dateComponent.second == 0, "")
+                XCTAssert(dateComponent.timeZone!.isEqualToTimeZone(self.GMT_timeZone), "")
+            }
+            else
+            {
+                XCTFail("pubDate shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.itemDescription == "One week every year, the entire <a href=\"http://automattic.com\">Automattic</a> staff gets together to connect, work, and laugh. And then, of course, we blog about it! Could you be blogging about your experience with us in 2015?<img alt=\"\" border=\"0\" src=\"http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28737&#038;subd=en.blog&#038;ref=&#038;feed=1\" width=\"1\" height=\"1\" />", "")
+//            XCTAssert(myItem.content == "", "")
+            
+             myItem = items![6]
+            
+            XCTAssert(myItem.title == "Gmail Password Leak Update", "")
+            
+            if let link = myItem.link?
+            {
+                XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/", "")
+            }
+            else
+            {
+                XCTFail("link shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.guid == "http://en.blog.wordpress.com/?p=28615", "")
+            
+            if let date = myItem.pubDate?
+            {
+                var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                
+                XCTAssert(dateComponent.weekday == 6, "")
+                XCTAssert(dateComponent.day == 12, "")
+                XCTAssert(dateComponent.month == 9, "")
+                XCTAssert(dateComponent.year == 2014, "")
+                XCTAssert(dateComponent.hour == 23, "")
+                XCTAssert(dateComponent.minute == 53, "")
+                XCTAssert(dateComponent.second == 37, "")
+                XCTAssert(dateComponent.timeZone!.isEqualToTimeZone(self.GMT_timeZone), "")
+            }
+            else
+            {
+                XCTFail("pubDate shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.itemDescription == "We've taken extra steps to protect WordPress.com members.<img alt=\"\" border=\"0\" src=\"http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28615&#038;subd=en.blog&#038;ref=&#038;feed=1\" width=\"1\" height=\"1\" />", "")
+            XCTAssert(myItem.content == "<p>This week, a group of hackers <a title=\"Russian Hackers Released Gmail Password List\" href=\"http://time.com/3318853/google-user-logins-bitcoin/\">released a list</a> of about 5 million Gmail addresses and passwords. This list was not generated as a result of an exploit of WordPress.com, but since a number of emails on the list matched email addresses associated with WordPress.com accounts, we took steps to protect our users.</p>", "")
+          
+        })
+        
+        waitForExpectationsWithTimeout(100, handler: { error in
+            
+        })
+        
+        XCTAssert(true, "Pass")
+    }
+    
+    func test_parser_withTumblrMock_shouldReturnTheRightValues() {
+        
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: tumblrMockFileURL!))
+        let expectation = self.expectationWithDescription("GET \(request.URL)")
+        
+        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+            
+            expectation.fulfill()
+            
+            XCTAssertTrue(items!.count == 20, "should have 20 items")
+            
+            self.calendar.timeZone = self.DST_timeZone
+            
+            var myItem = items![0]
+            
+            XCTAssert(myItem.title == "Sam Giddins: My Summer at TumblrThis summer, I had the immense...", "")
+            
+            if let link = myItem.link?
+            {
+                XCTAssert(link.absoluteString == "http://engineering.tumblr.com/post/98331642904", "")
+            }
+            else
+            {
+                XCTFail("link shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.guid == "http://engineering.tumblr.com/post/98331642904", "")
+            
+            if let date = myItem.pubDate?
+            {
+                var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                
+                XCTAssert(dateComponent.weekday == 4, "")
+                XCTAssert(dateComponent.day == 24, "")
+                XCTAssert(dateComponent.month == 9, "")
+                XCTAssert(dateComponent.year == 2014, "")
+                XCTAssert(dateComponent.hour == 16, "")
+                XCTAssert(dateComponent.minute == 43, "")
+                XCTAssert(dateComponent.second == 45, "")
+                XCTAssert(dateComponent.timeZone!.isEqualToTimeZone(self.DST_timeZone), "")
+            }
+            else
+            {
+                XCTFail("pubDate shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.itemDescription == "<img src=\"http://33.media.tumblr.com/fc576f290358def5f021b7a99032aa0c/tumblr_nc05ipn7h61qjk2rvo1_500.jpg\"/><br/><br/><h2><a href=\"http://blog.segiddins.me/\">Sam Giddins: My Summer at Tumblr</a></h2><div><p>This summer, I had the immense pleasure of working on the Tumblr iOS app. From day one, I got to work with an incredible team on an incredible app writing production code. Over the course of nearly 100 pull requests, I managed to get my hands on almost every piece of the app, from design changes to code refactors to some sweet new features.<br/><br/>The best part about the summer was working alongside multiple teams at Tumblr (iOS, Creative, API) making real, significant changes to one of the most polished apps on the App Store. When the summer started, I’d never written a custom animation, but after a few weeks I was helping to debug some of the fun things we do with CoreAnimation. Monday of my second week I found a bug in the API and got to spend a day looking through PHP code to help track that down. One Friday, I started work on some new things that will come out soon—at 5 pm, on a whim. By Monday, I was demoing the changes to Peter Vidani. That sort of rapid feedback is incredible, and really made my experience at Tumblr a joy—I got to make a real difference on the app.<br/><br/>In addition to the code I wrote (which was a lot!), I got to work with the team on all of the other facets of the app development lifecycle, from the existential frustration of dealing with translations to setting up a CI build server. I review several hundred pull requests, and spent hours discussing code with brilliant collegues who were never hesitant to debate the intricacies of what we were working on.<br/><br/>Throughout the summer, I was constantly in awe of the amazing work done at Tumblr every day. I’m proud to say that I got to contribute to the next few updates, and will forever cherish the experiences I had during my time at Tumblr HQ.<br/><br/></p></div>", "")
+            
+            myItem = items![1]
+            
+            XCTAssert(myItem.title == "Megan Belzner: My Summer at TumblrThis summer I got the amazing...", "")
+            
+            if let link = myItem.link?
+            {
+                XCTAssert(link.absoluteString == "http://engineering.tumblr.com/post/98050002584", "")
+            }
+            else
+            {
+                XCTFail("link shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.guid == "http://engineering.tumblr.com/post/98050002584", "")
+            
+            if let date = myItem.pubDate?
+            {
+                var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                
+                XCTAssert(dateComponent.weekday == 1, "")
+                XCTAssert(dateComponent.day == 21, "")
+                XCTAssert(dateComponent.month == 9, "")
+                XCTAssert(dateComponent.year == 2014, "")
+                XCTAssert(dateComponent.hour == 8, "")
+                XCTAssert(dateComponent.minute == 42, "")
+                XCTAssert(dateComponent.second == 50, "")
+                XCTAssert(dateComponent.timeZone!.isEqualToTimeZone(self.DST_timeZone), "")
+            }
+            else
+            {
+                XCTFail("pubDate shouldn't be nil")
+            }
+            
+            XCTAssert(myItem.itemDescription == "<img src=\"http://33.media.tumblr.com/09552c5d09b7221d2409c3b42d046208/tumblr_nc05chwHhp1qjk2rvo1_500.jpg\"/><br/><br/><h2><a href=\"http://ivynewton.tumblr.com/\">Megan Belzner: My Summer at Tumblr</a></h2><p>This summer I got the amazing opportunity to intern as a product engineer on the Creation team. I didn’t really know what to expect when I first stepped in to the office, but whatever hopes and expectations I could have had, the summer far surpassed them.<br/><br/>The Creation team is in charge of one of the most important parts of the Tumblr site - posting tools - and most of my summer was spent working with the others on the team to overhaul the code underlying that part of the site. Coming in at the beginning of the summer, I could count the number of times I had worked in an existing codebase on one hand - namely: once, maybe twice. But with the help of the incredible Creation team, I dove right in and started contributing bug fixes, updates, and even entire features. Starting in the very first week I was already writing and deploying code, fixing a bug with note counts and updating Tumblr’s user engagement emails. By the end of the summer, I found myself getting ownership of pretty significant parts of the project. Even better, I had learned how to easily track down the source of a bug, figure out what this or that bit of code actually did, and navigate the figurative jungle of javascript.<br/><br/>It was incredibly exciting and rewarding to work on such a central part of the Tumblr site, knowing that people are going to be using some of the code I wrote to make millions of posts a day. I learned a tremendous amount about front-end web development, going from knowing a pretty minimal amount of javascript to knowing all sorts of intricacies about browser implementations and fluently speaking backbone.js and underscore.js.<br/><br/>Working at Tumblr really was a dream come true, and though I’m excited to get back to my friends at MIT, I’ve realized that this is absolutely something I could do for the rest of my life (or the foreseeable future, at least). Spending the day bringing ideas to life for Tumblr’s millions of users, surrounded by the most creative, smart, and friendly people I’ve ever met - It almost feels like cheating that I got to call that “work”.<br/><br/></p>", "")
             
         })
         

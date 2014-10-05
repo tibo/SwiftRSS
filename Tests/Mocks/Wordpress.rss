@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+    >
+    
+    <channel>
+        <title>WordPress.com News</title>
+        <atom:link href="http://en.blog.wordpress.com/feed/" rel="self" type="application/rss+xml" />
+        <link>http://en.blog.wordpress.com</link>
+        <description>The latest news on WordPress.com and the WordPress community.</description>
+        <lastBuildDate>Fri, 03 Oct 2014 13:49:47 +0000</lastBuildDate>
+        <language>en</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>http://wordpress.com/</generator>
+        <cloud domain='en.blog.wordpress.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+        <image>
+            <url>http://s2.wp.com/i/buttonw-com.png</url>
+            <title>WordPress.com News</title>
+            <link>http://en.blog.wordpress.com</link>
+        </image>
+        <atom:link rel="search" type="application/opensearchdescription+xml" href="http://en.blog.wordpress.com/osd.xml" title="WordPress.com News" />
+        <atom:link rel='hub' href='http://en.blog.wordpress.com/?pushpress=hub'/>
+            <item>
+            <title>New Theme: Intergalactic</title>
+            <link>http://en.blog.wordpress.com/2014/10/02/intergalactic/</link>
+            <comments>http://en.blog.wordpress.com/2014/10/02/intergalactic/#comments</comments>
+            <pubDate>Thu, 02 Oct 2014 17:00:24 +0000</pubDate>
+            <dc:creator><![CDATA[Caroline Moore]]></dc:creator>
+            <category><![CDATA[Themes]]></category>
+            
+            <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28699</guid>
+            <description><![CDATA[Designed by Automattic's very own <a href="http://choycedesign.com/">Mel Choyce</a>, <em>Intergalactic</em> is a stunning specimen for your personal blog.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28699&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+				<content:encoded><![CDATA[<p>We have a brand new free theme for your blogging pleasure today!</p>
+                    <h3><a href="http://wordpress.com/themes/intergalactic">Intergalactic</a></h3>
+                    <p><a href="http://wordpress.com/themes/intergalactic"><img src="https://en-blog.files.wordpress.com/2014/09/intergalacticlg.jpg?w=635&#038;h=892" alt="Intergalactic Theme" width="635" height="892" class="aligncenter size-full wp-image-28711" /></a></p>
+                    <p>Designed by Automattic&#8217;s very own <a href="https://profiles.wordpress.org/melchoyce">Mel Choyce</a>, <a href="http://intergalacticdemo.wordpress.com/"><em>Intergalactic</em></a> is a stunning specimen for your personal blog. Bold featured images act as the backdrop to your text, giving you a high-contrast, readable theme that&#8217;s perfect for making your content pop. The one-column layout provides a distraction-free environment for reading, while the slide-out menu keeps your navigation and secondary content readily accessible.</p>
+                    <p>In Mel&#8217;s own words&#8230;</p>
+                    <blockquote><p><em>Intergalactic</em> was inspired by long-form storytelling sites like Exposure and Medium. I wanted to design a theme that focused heavily on showcasing your stories, images, and videos, and could flex its content to many different use-cases. I also wanted everything to be <strong>big</strong> &#8212; as big as the Beastie Boys (<a href="https://href.li/?https://www.youtube.com/watch?v=qORYO0atB6g">who inspired the name</a>). It was great working with Caroline to bring <em>Intergalactic</em> to life.</p></blockquote>
+                    <hr />
+                    <p>Learn more about the free <em>Intergalactic</em> theme <a href="http://wordpress.com/themes/intergalactic/">at the Theme Showcase</a>, or preview it by going to <em>Appearance → Themes</em>.</p><br />Filed under: <a href='http://en.blog.wordpress.com/category/themes/'>Themes</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28699/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28699/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28699&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/10/02/intergalactic/feed/</wfw:commentRss>
+                <slash:comments>33</slash:comments>
+                
+                <media:content url="http://2.gravatar.com/avatar/57509a6de7585125357530e2f3c3af1b?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">sixhours</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/intergalacticlg.jpg" medium="image">
+                    <media:title type="html">Intergalactic Theme</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Engaged, Inspired, and Ready to Build a Better Web</title>
+    <link>http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/#comments</comments>
+    <pubDate>Tue, 30 Sep 2014 15:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[Michelle W.]]></dc:creator>
+				<category><![CDATA[Automattic]]></category>
+                <category><![CDATA[Hiring]]></category>
+                <category><![CDATA[distributed work]]></category>
+                <category><![CDATA[future of work]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28737</guid>
+                <description><![CDATA[One week every year, the entire <a href="http://automattic.com">Automattic</a> staff gets together to connect, work, and laugh. And then, of course, we blog about it! Could you be blogging about your experience with us in 2015?<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28737&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>Automattic is a distributed company &#8212; we all work from wherever we are. Right now, &#8220;where we are&#8221; is 197 cities around the world: New Orleans, USA. Montevideo, Uruguay. Tokyo, Japan. Vilnius, Lithuania.</p>
+                    <p>Once a year, we get together somewhere in the world to meet, work alongside, learn from, and laugh with one another in an exhilarating, exhausting week called the Grand Meetup. This year, 277 Automatticians descended on Park City, Utah, for seven days in mid-September.</p>
+                    <div class="embed-twitter">
+                    <blockquote class="twitter-tweet" width="550">
+                    <p>I flew across the country to spend time in a mountain lodge with a bunch of strangers I met on the Internet. And they are wonderful. <a href="https://twitter.com/hashtag/a8cGM?src=hash">#a8cGM</a></p>
+                    <p>&mdash; Chris Hardie (@ChrisHardie) <a href="https://twitter.com/ChrisHardie/status/511911213819641857">September 16, 2014</a></p></blockquote>
+                    <p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    <p>We introduced ourselves to new colleagues, reconnected with coworkers we haven&#8217;t seen since last year, and worked on ways to make WordPress.com even better. And of course, lots of us blogged about the experience, in words and images.</p>
+                    <p>We were blown away by the brilliance and generosity of our colleagues&#8230;</p>
+                    <blockquote><p>I&#8217;m grateful to have met so many Automatticians from around the world who brought such kindness, curiosity, patience, fierce intelligence, creativity and humor to the time we had together. I&#8217;m grateful to have learned about their hobbies, families, personal journeys, quirks, pet peeves, amazing skills, unmitigated geekiness, and brilliant senses of humor.</p>
+                    <p>- VIP Wrangler <a href="http://www.chrishardie.com/2014/09/automattic-grand-meetup-gratitude/" target="_blank">Chris Hardie</a></p></blockquote>
+                    <p>We marveled at the range of conversations we had, from the sublime to the absurd&#8230;</p>
+                    <blockquote><p>Here are some of the things I talked about this week:</p>
+                    <ul>
+                    <li>Scottish independence</li>
+                    <li>Taylor Swift</li>
+                    <li>Goats</li>
+                    <li>Sexism</li>
+                    <li>My children</li>
+                    <li>Other people’s children</li>
+                    <li>Infertility</li>
+                    <li>Tattoos</li>
+                    <li>Swing dancing</li>
+                    <li>Whiskey</li>
+                    <li>Javascript</li>
+                    <li>Waffles (lack thereof)</li>
+                    <li>VideoPress</li>
+                    <li>Houston</li>
+                    <li>Leadership</li>
+                    <li>Fake morning talkshows</li>
+                    <li>Mario Kart</li>
+                    </ul>
+                    <p><a href="http://zandyring.com/2014/09/24/last-week/" target="_blank">Happiness Engineer Zandy Ring</a></p></blockquote>
+                    <p>We soaked in the natural beauty of Utah&#8230;</p>
+                    <div id="attachment_28744" style="width: 645px" class="wp-caption aligncenter"><a href="https://en-blog.files.wordpress.com/2014/09/liftoff.jpg"><img class="size-large wp-image-28744" src="https://en-blog.files.wordpress.com/2014/09/liftoff.jpg?w=635&#038;h=422" alt="Early morning takeoff, by yours truly."   /></a><p class="wp-caption-text">Early morning takeoff, by <a href="http://picturesofthin.gs/2014/09/24/utah/">yours truly</a>.</p></div>
+                    <p>And some of us got up close and personal with the wide Utah sky&#8230;</p>
+                    <div id="attachment_28746" style="width: 645px" class="wp-caption aligncenter"><a href="https://en-blog.files.wordpress.com/2014/09/jeremey-skydive.jpg"><img class="size-large wp-image-28746" src="https://en-blog.files.wordpress.com/2014/09/jeremey-skydive.jpg?w=635&#038;h=635" alt="Happiness Engineer Jeremey DuVall realizes he's just jumped out of an airplane." width="635" height="635" /></a><p class="wp-caption-text">Happiness Engineer <a href="http://jeremeyduvall.wordpress.com/2014/09/20/just-jump/">Jeremey DuVall</a> realizes he&#8217;s just jumped out of an airplane.</p></div>
+                    <p>We learned from one another, and had fun doing it&#8230;</p>
+                    <blockquote><p>I learned how to analyze data in Python with <a href="http://twitter.com/stambeezi">Carly</a>, and went skydiving with <a href="http://twitter.com/nprasath002">Prasath</a>. After discussing common security vulnerabilities with <a href="http://annezazu.com/">Anne</a>, <a href="http://camikaos.com/">Cami</a> and I plotted a podcast about absolutely nothing, and recorded part of our first episode&#8230;</p>
+                    <p>If you asked me four years ago if I thought it were possible to enjoy working, I’d be dubious. If you asked me whether one could ever genuinely love and respect all their coworkers, I’d hesitate.</p>
+                    <p>Over the past four years, the people of Automattic have demonstrated to me that it’s possible to do work you love with people you love. It’s not common — not yet — but it’s possible.</p>
+                    <p>- VaultPress Eclectic Happiffier <a href="http://plainly.org/2014/09/working-with-people-you-love/" target="_blank">Chris Rudzki</a></p></blockquote>
+                    <p>We burned the midnight oil&#8230;</p>
+                    <blockquote><p>We worked, we played, we ate, we drank, we slept very little. We tried to make the world a better place, and if you think that’s me being dramatic you don’t know the people I have the honor of working with.</p>
+                    <p>- Dot Organizer <a href="http://camikaos.com/2014/09/23/it-was-a-grand-meetup/" target="_blank">Cami Kaos</a></p></blockquote>
+                    <p>We took a <em>lot</em> of photos&#8230;</p>
+                    
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-4/'><img width="150" height="112" src="http://en-blog.files.wordpress.com/2014/09/gallery-4.jpg?w=150&#038;h=112" class="attachment-thumbnail" alt="We had a week of perfect weather for a perfect meetup." data-attachment-id="28759" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-4.jpg" data-orig-size="1280,960" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 5s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1410958723&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.12&quot;,&quot;iso&quot;:&quot;40&quot;,&quot;shutter_speed&quot;:&quot;0.00021901007446343&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="gallery 4" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-4.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-4.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/img_3202/'><img width="150" height="112" src="http://en-blog.files.wordpress.com/2014/09/img_3202.jpg?w=150&#038;h=112" class="attachment-thumbnail" alt="There are a lot of tabletop games at Automattic meetups." data-attachment-id="28747" data-orig-file="http://en-blog.files.wordpress.com/2014/09/img_3202.jpg" data-orig-size="4000,3000" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon PowerShot S120&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411343910&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;5.2&quot;,&quot;iso&quot;:&quot;800&quot;,&quot;shutter_speed&quot;:&quot;0.05&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="img_3202" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/img_3202.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/img_3202.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/park-city-utah/'><img width="150" height="100" src="http://en-blog.files.wordpress.com/2014/09/galllery-8.jpg?w=150&#038;h=100" class="attachment-thumbnail" alt="(Seriously, a lot of games.)" data-attachment-id="28776" data-orig-file="http://en-blog.files.wordpress.com/2014/09/galllery-8.jpg" data-orig-size="1600,1067" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.2&quot;,&quot;credit&quot;:&quot;Luca Sartoni&quot;,&quot;camera&quot;:&quot;X-T1&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411399406&quot;,&quot;copyright&quot;:&quot;CC-BY 3.0&quot;,&quot;focal_length&quot;:&quot;56&quot;,&quot;iso&quot;:&quot;1600&quot;,&quot;shutter_speed&quot;:&quot;0.01&quot;,&quot;title&quot;:&quot;Park City Utah&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Park City Utah" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/galllery-8.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/galllery-8.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-3/'><img width="150" height="112" src="http://en-blog.files.wordpress.com/2014/09/gallery-3.jpg?w=150&#038;h=112" class="attachment-thumbnail" alt="We take ping-pong very, very seriously, too." data-attachment-id="28758" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-3.jpg" data-orig-size="3264,2448" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 5s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411247484&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.12&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.033333333333333&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="gallery 3" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-3.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-3.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-1/'><img width="150" height="101" src="http://en-blog.files.wordpress.com/2014/09/gallery-1.jpg?w=150&#038;h=101" class="attachment-thumbnail" alt="Meetup friendships make our online communication that much richer." data-attachment-id="28756" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-1.jpg" data-orig-size="1300,877" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;M8 Digital Camera&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1410759719&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;640&quot;,&quot;shutter_speed&quot;:&quot;0.033333333333333&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="gallery 1" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-1.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-1.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-2-2/'><img width="99" height="150" src="http://en-blog.files.wordpress.com/2014/09/gallery-2.jpg?w=99&#038;h=150" class="attachment-thumbnail" alt="Mountain hikes are a great way to bond with colleagues." data-attachment-id="28757" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-2.jpg" data-orig-size="960,1444" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;5.6&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;NIKON D50&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411179785&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;40&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.0025&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gallery 2" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-2.jpg?w=199" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-2.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-5/'><img width="150" height="112" src="http://en-blog.files.wordpress.com/2014/09/gallery-5.jpg?w=150&#038;h=112" class="attachment-thumbnail" alt="Yes, we even get tattoos together." data-attachment-id="28760" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-5.jpg" data-orig-size="2000,1500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 5s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411329731&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.12&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.04&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gallery 5" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-5.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-5.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-6/'><img width="150" height="102" src="http://en-blog.files.wordpress.com/2014/09/gallery-6.jpg?w=150&#038;h=102" class="attachment-thumbnail" alt="Some of us managed to get up with the sun (or maybe we just hadn&#039;t made it to bed yet)." data-attachment-id="28761" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-6.jpg" data-orig-size="4468,3040" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;16&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;X100S&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1410843570&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;23&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;0.016666666666667&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="gallery 6" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-6.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-6.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-7/'><img width="112" height="150" src="http://en-blog.files.wordpress.com/2014/09/gallery-7.jpg?w=112&#038;h=150" class="attachment-thumbnail" alt="We sounded mighty yawps across the web (and the Wasatch Mountains)." data-attachment-id="28762" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-7.jpg" data-orig-size="480,640" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.4&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone 5s&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411064720&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;2.15&quot;,&quot;iso&quot;:&quot;64&quot;,&quot;shutter_speed&quot;:&quot;0.0083333333333333&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="gallery 7" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-7.jpg?w=225" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-7.jpg?w=480" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-10/'><img width="150" height="61" src="http://en-blog.files.wordpress.com/2014/09/gallery-10.jpg?w=150&#038;h=61" class="attachment-thumbnail" alt="We took to the water." data-attachment-id="28774" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-10.jpg" data-orig-size="2560,1048" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;5.6&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon PowerShot G10&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411143549&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;30.5&quot;,&quot;iso&quot;:&quot;80&quot;,&quot;shutter_speed&quot;:&quot;0.003125&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gallery 10" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-10.jpg?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-10.jpg?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/gallery-11/'><img width="150" height="150" src="http://en-blog.files.wordpress.com/2014/09/gallery-11.png?w=150&#038;h=150" class="attachment-thumbnail" alt="We did... whatever is happening here." data-attachment-id="28775" data-orig-file="http://en-blog.files.wordpress.com/2014/09/gallery-11.png" data-orig-size="800,800" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="gallery 11" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/gallery-11.png?w=300" data-large-file="http://en-blog.files.wordpress.com/2014/09/gallery-11.png?w=635" /></a>
+                    <a href='http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/misty-mountain-hop/'><img width="110" height="150" src="http://en-blog.files.wordpress.com/2014/09/misty-mountain-hop.jpg?w=110&#038;h=150" class="attachment-thumbnail" alt="The backdrop wasn&#039;t too shabby, either." data-attachment-id="28763" data-orig-file="http://en-blog.files.wordpress.com/2014/09/misty-mountain-hop.jpg" data-orig-size="1475,2000" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;22&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS 7D&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1411337615&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;50&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.04&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="misty mountain hop" data-image-description="" data-medium-file="http://en-blog.files.wordpress.com/2014/09/misty-mountain-hop.jpg?w=221" data-large-file="http://en-blog.files.wordpress.com/2014/09/misty-mountain-hop.jpg?w=635" /></a>
+                    
+                    <p>(Images above from Happiness Engineers <a href="http://allmyfriendsarejpegs.com/automattic-grand-meetup-2014-park-city-utah/" target="_blank">Stephen McLeod</a>, <a href="http://pyjammy.com/park-city-trip-wrap/" target="_blank">Pam Kocke</a>, <a href="http://andreabadgley.com/2014/09/21/saturday-hike-in-park-city-utah/" target="_blank">Andrea Badgley</a>, <a href="http://dennishhong.com/2014/09/23/the-party-suite-was-my-home-for-seven-nights/" target="_blank">Dennis Hong</a>, and <a href="http://andrewspittle.com/2014/09/22/short-park-city-hike/" target="_blank">Andrew Spittle</a>; Creative Director <a href="http://davemart.in/2014/09/24/automattic-2014-grand-meetup/" target="_blank">Dave Martin</a>; Code Wrangler <a href="http://allendav.com/2014/09/27/grand-meetup-photo-gallery/" target="_blank">Allen Snook</a>; Designamagician <a href="http://blog.danhauk.com/2014/09/23/park-city-utah/" target="_blank">Dan Hauk</a>, Mobile Maker <a href="http://astralbodi.es/2014/09/25/2014-automattic-grand-meetup/" target="_blank">Aaron Douglas</a>; Growth Explorer <a href="http://lucasartoni.com/" target="_blank">Luca Sartoni</a>; Spline Reticulator <a href="http://dennisandmandi.com/" target="_blank">Dennis Snell;</a> and Chief Semicolon Advocate <a href="http://picturesofthin.gs/2014/09/24/utah/" target="_blank">Michelle Weber</a>, AKA me.)</p>
+                    <p>On the final day, Automattic founder Matt Mullenweg led us in a toast that summed up the reason we&#8217;re all here&#8230;</p>
+                    <blockquote><p>I’m really grateful that I get to work with the people I do, and on the problems that we work on together. It’s far from easy, in fact each year brings new challenges and I make mistakes as often as not, but it is worthwhile and incredibly fulfilling. A few hours ago I gave a closing toast and teared up looking around the room. So many folks that give their passion and dedicate themselves to jobs both large and small, visible and unseen, to help make the web a better place.</p>
+                    <p>- WordPress co-founder and Automattic CEO <a href="http://ma.tt/2014/09/automattic-grand-meetup-2014/" target="_blank">Matt Mullenweg</a></p></blockquote>
+                    <p>And when the week was over, heading home was bittersweet&#8230;</p>
+                    <blockquote><p>This morning was filled with so many hugs (and maybe a tear or two). I told myself that I was looking forward to returning home. To my own bed (although the sleep I got in the silence of the Park City night was the best I may have ever experienced). To regular exercise and home cooking. To the routine of my everyday life. And I was looking forward to that. And even though I knew I would miss my colleagues (it’s happened every time I return from a trip), the weight of the fog of sadness still surprises me when it descends.</p>
+                    <p>I read their blogs. I like their Facebook posts. I retweet their Tweets. And I miss them.</p>
+                    <p>- Happiness (w)Rangler <a href="http://loriloo.com/2014/09/22/the-fog-of-sadness/" target="_blank">Lori McLeese</a></p></blockquote>
+                    <p>If you think you might want to work with this motley crew and join us in 2015&#8217;s mayhem&#8230;</p>
+                    <p><a href="https://en-blog.files.wordpress.com/2014/09/2014-company-animated.gif"><img class="aligncenter size-large wp-image-28742" src="http://en-blog.files.wordpress.com/2014/09/2014-company-animated.gif?w=635&#038;h=357" alt="2014-company-animated"   /></a></p>
+                    <p>&#8230; <a href="http://automattic.com/work-with-us/" target="_blank">we&#8217;re hiring</a>. (And yes, you&#8217;ll get to make up your own job title, too.)</p><br />Filed under: <a href='http://en.blog.wordpress.com/category/automattic/'>Automattic</a>, <a href='http://en.blog.wordpress.com/category/hiring/'>Hiring</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28737/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28737/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28737&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/feed/</wfw:commentRss>
+                <slash:comments>41</slash:comments>
+                
+                <media:thumbnail url="http://en-blog.files.wordpress.com/2014/09/fullsizerender-2-1.jpg?w=150" />
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/fullsizerender-2-1.jpg?w=150" medium="image">
+                    <media:title type="html">FullSizeRender-2 (1)</media:title>
+                </media:content>
+                
+                <media:content url="http://2.gravatar.com/avatar/2367004060918e221dcb9799584e9279?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">Michelle, Communications</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/liftoff.jpg?w=635" medium="image">
+                    <media:title type="html">Early morning takeoff, by yours truly.</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/jeremey-skydive.jpg?w=635" medium="image">
+                    <media:title type="html">Happiness Engineer Jeremey DuVall realizes he&#039;s just jumped out of an airplane.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-4.jpg?w=150" medium="image">
+                    <media:title type="html">We had a week of perfect weather for a perfect meetup.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/img_3202.jpg?w=150" medium="image">
+                    <media:title type="html">There are a lot of tabletop games at Automattic meetups.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/galllery-8.jpg?w=150" medium="image">
+                    <media:title type="html">(Seriously, a lot of games.)</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-3.jpg?w=150" medium="image">
+                    <media:title type="html">We take ping-pong very, very seriously, too.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-1.jpg?w=150" medium="image">
+                    <media:title type="html">Meetup friendships make our online communication that much richer.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-2.jpg?w=99" medium="image">
+                    <media:title type="html">Mountain hikes are a great way to bond with colleagues.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-5.jpg?w=150" medium="image">
+                    <media:title type="html">Yes, we even get tattoos together.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-6.jpg?w=150" medium="image">
+                    <media:title type="html">Some of us managed to get up with the sun (or maybe we just hadn&#039;t made it to bed yet).</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-7.jpg?w=112" medium="image">
+                    <media:title type="html">We sounded mighty yawps across the web (and the Wasatch Mountains).</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-10.jpg?w=150" medium="image">
+                    <media:title type="html">We took to the water.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/gallery-11.png?w=150" medium="image">
+                    <media:title type="html">We did... whatever is happening here.</media:title>
+                </media:content>
+                
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/misty-mountain-hop.jpg?w=110" medium="image">
+                    <media:title type="html">The backdrop wasn&#039;t too shabby, either.</media:title>
+                </media:content>
+                
+                <media:content url="http://en.blog.files.wordpress.com/2014/09/2014-company-animated.gif?w=660" medium="image">
+                    <media:title type="html">2014-company-animated</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Early Theme Adopters: Eighties</title>
+    <link>http://en.blog.wordpress.com/2014/09/26/early-theme-adopters-eighties/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/26/early-theme-adopters-eighties/#comments</comments>
+    <pubDate>Fri, 26 Sep 2014 15:00:00 +0000</pubDate>
+    <dc:creator><![CDATA[Ben Huberman]]></dc:creator>
+				<category><![CDATA[Customization]]></category>
+                <category><![CDATA[Themes]]></category>
+                <category><![CDATA[custom header]]></category>
+                <category><![CDATA[custom menu]]></category>
+                <category><![CDATA[Customizing]]></category>
+                <category><![CDATA[Early Theme Adopters]]></category>
+                <category><![CDATA[Eighties]]></category>
+                <category><![CDATA[Featured Image]]></category>
+                <category><![CDATA[featured images]]></category>
+                <category><![CDATA[theme]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28709</guid>
+                <description><![CDATA[In our <a href="http://en.blog.wordpress.com/tag/early-theme-adopters/">Early Theme Adopters</a> series, we focus on bloggers creating great sites with recent additions to the <a href="http://theme.wordpress.com/themes/">Theme Showcase</a>. Today, let’s visit a few sites using <a href="http://theme.wordpress.com/themes/eighties/"><em>Eighties</em></a>, our newest free theme.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28709&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>A theme named after the decade that gave us daring teen comedies and cutting-edge synth pop was bound to be a crowd-pleaser. And indeed, in the few weeks since <a href="http://en.blog.wordpress.com/2014/09/04/new-theme-eighties/"><em>Eighties</em> was released</a>, it&#8217;s garnered tens of thousands of fans who are using it on their sites.</p>
+                    <p><a href="http://theme.wordpress.com/themes/eighties/"><em>Eighties</em></a> may have been created with personal bloggers in mind, but its balance of striking visuals and flexible design makes it a good choice for anyone looking for a memorable, easy-to-customize website. Here are some of the theme&#8217;s most noteworthy features, already expertly used by our favorite <em>Eighties</em> early adopters.</p>
+                    <h3>A bold header area</h3>
+                    <p><a href="http://paperchambers.com/"><img class="aligncenter wp-image-28716 size-large" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-07-46-pm.png?w=635&#038;h=386" alt="Screen shot 2014-09-25 at 12.07.46 PM"   /></a></p>
+                    <p><em>Big</em> and <em>Splash</em> were both huge box-office hits in the 80s. Both can also describe the theme&#8217;s header area, a full-width visual statement that draws visitors in immediately. Case in point? <a href="http://paperchambers.com/"><em>paper chambers</em></a>, a crisply designed site by <a href="http://paperchambers.com/about/">TC Shillingford</a>, a Philadelphia-based blogger who writes on popular culture, sports, and more. TC&#8217;s gorgeous <a href="http://en.support.wordpress.com/themes/custom-header-image/">custom header images</a>, along with a slender, modernist <a href="http://en.support.wordpress.com/custom-design/custom-fonts/">custom font</a>, immediately make the site stand out.</p>
+                    <p><a href="http://biblioklept.org/"><img class="aligncenter wp-image-28723 size-large" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-11-17-31-pm.png?w=635&#038;h=385" alt=""   /></a></p>
+                    <p><em><a href="http://biblioklept.org/">Bilbiolkept</a></em>, a literary blog by <a href="http://en.blog.wordpress.com/2013/10/18/edwin-turner-biblioklept/">Edwin Turner</a>, also recently made the switch to <em>Eighties</em>. The theme complements the site&#8217;s thought-provoking content, featuring an ever-changing roster of header images that welcome visitors with fresh visuals every time they stop by.</p>
+                    <h3>Tailor-made post formats</h3>
+                    <p><em>Eighties</em> offers several unique stylings for different types of content, including the video, quote, and status <a href="http://en.support.wordpress.com/posts/post-formats/">post formats</a>. Still on <a href="http://biblioklept.org/"><em>Biblioklept</em></a>, here&#8217;s a great use of the image post format, which gives extra oomph to pictures and photos:</p>
+                    <p><a href="http://biblioklept.org/"><img class="aligncenter size-large wp-image-28719" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-05-00-pm.png?w=635&#038;h=344" alt="Screen shot 2014-09-25 at 12.05.00 PM"   /></a></p>
+                    <h3>Featured images you can&#8217;t miss</h3>
+                    <p>With <em>Eighties</em>, you can create a powerful visual effect when you use the <a href="http://en.support.wordpress.com/featured-images/">featured images</a> option. <em><a href="http://sleepycoffeeandfables.com/">Sleepy Coffee and Fables</a></em>, a photo-heavy blog by <a href="http://sleepycoffeeandfables.com/abouts/">a writer passionate about travel and snail mail</a>, displays a well-chosen photo to set a distinct mood on each post.</p>
+                    <p>Here, for example, is the featured image from a post on <a href="http://sleepycoffeeandfables.com/2014/09/23/90s-memories-night-photography-practice/">night photography</a>:</p>
+                    <p><a href="http://sleepycoffeeandfables.com/2014/09/23/90s-memories-night-photography-practice/"><img class="aligncenter size-large wp-image-28725" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-11-43-22-pm.png?w=635&#038;h=385" alt="Screen shot 2014-09-25 at 11.43.22 PM"   /></a></p>
+                    <p>And another one, this time from a <a href="http://sleepycoffeeandfables.com/2014/09/15/art-journal-make-art-stay-humble/">post about journaling</a>:</p>
+                    <p><a href="http://sleepycoffeeandfables.com/2014/09/15/art-journal-make-art-stay-humble/"><img class="aligncenter size-large wp-image-28720" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-18-29-pm.png?w=635&#038;h=383" alt="Screen shot 2014-09-25 at 12.18.29 PM" width="635" height="383" /></a></p>
+                    <p>Note that the theme has the option to display full-width featured images, too.</p>
+                    <h3>A clean slate</h3>
+                    <p>With its ample, bright white space, and endless possibilities to create bespoke designs, <em>Eighties</em> can be turned upside-down: from a recognizably brash theme to one that recedes into the background. A great example of the latter is the professional site of <a href="http://madeleinehawks.me/">Madeleine Hawks</a>, a doula practicing in Austin, Texas.</p>
+                    <p>From her <a href="http://madeleinehawks.me/about/">About page</a> to the <a href="http://madeleinehawks.me/resources/">Resources page</a>, Madeleine&#8217;s site is an exercise in minimalism &#8212; but one softened and made welcoming by handmade drawings and a cheerful color palette:</p>
+                    <p><a href="http://madeleinehawks.me/"><img class="aligncenter wp-image-28717 size-large" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-06-38-pm.png?w=635&#038;h=388" alt="Screen shot 2014-09-25 at 12.06.38 PM"   /></a></p>
+                    <p>Madeleine has created a website with a <a href="http://en.support.wordpress.com/pages/front-page/">static front page</a>, so all of her content &#8212; including her contact information &#8212; is easy to find for the first-time visitor.</p>
+                    <h3>Even more ways to customize</h3>
+                    <p><em>Eighties</em> also lets you tuck away your main navigation with a pop-up <a href="http://en.support.wordpress.com/menus/">custom menu</a> in the header area, and includes a sleek (optional) <a href="http://en.support.wordpress.com/menus/#managing-your-menus">social links menu</a>. For the designers, illustrators, and other visual artists among you, the theme also supports our <a href="http://en.support.wordpress.com/portfolios/">Portfolio feature</a>.</p>
+                    <p><em>Are you using </em>Eighties <em>already? Tell us what it was that made it the right fit for you.</em></p><br />Filed under: <a href='http://en.blog.wordpress.com/category/customization/'>Customization</a>, <a href='http://en.blog.wordpress.com/category/themes/'>Themes</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28709/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28709/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28709&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/26/early-theme-adopters-eighties/feed/</wfw:commentRss>
+                <slash:comments>16</slash:comments>
+                
+                <media:content url="http://0.gravatar.com/avatar/663dcd498e8c5f255bfb230a7ba07678?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">benhuberman</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-07-46-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen shot 2014-09-25 at 12.07.46 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-11-17-31-pm.png?w=635" medium="image" />
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-05-00-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen shot 2014-09-25 at 12.05.00 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-11-43-22-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen shot 2014-09-25 at 11.43.22 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-18-29-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen shot 2014-09-25 at 12.18.29 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-06-38-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen shot 2014-09-25 at 12.06.38 PM</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Longreads&#8217; Best of WordPress, Vol. 5</title>
+    <link>http://en.blog.wordpress.com/2014/09/24/longreads-best-of-wordpress-vol-5/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/24/longreads-best-of-wordpress-vol-5/#comments</comments>
+    <pubDate>Wed, 24 Sep 2014 17:53:39 +0000</pubDate>
+    <dc:creator><![CDATA[Mark Armstrong]]></dc:creator>
+				<category><![CDATA[Community]]></category>
+                <category><![CDATA[Reading]]></category>
+                <category><![CDATA[best of wordpress]]></category>
+                <category><![CDATA[beyondthenewyorker]]></category>
+                <category><![CDATA[brain child]]></category>
+                <category><![CDATA[collections]]></category>
+                <category><![CDATA[fivethirtyeight]]></category>
+                <category><![CDATA[fortune]]></category>
+                <category><![CDATA[longreads]]></category>
+                <category><![CDATA[pennsylvania gazette]]></category>
+                <category><![CDATA[TED]]></category>
+                <category><![CDATA[the new yorker]]></category>
+                <category><![CDATA[the walrus]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28689</guid>
+                <description><![CDATA[10 of our favorite stories from across all of WordPress.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28689&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>We’re back with another collection of our favorite stories from across all of WordPress! You can find <a href="http://en.blog.wordpress.com/tag/best-of-wordpress/">our past collections here</a> &#8212; and you can follow <a href="http://blog.longreads.com/">Longreads on WordPress.com</a> for more daily reading recommendations.</p>
+                    <p>Publishers, writers, keep those stories coming: share links to essays and interviews (over 1,500 words) on Twitter (<a href="https://twitter.com/search?q=%23longreads&amp;src=typd"><span class="externalcitation">#longreads</span></a>) and WordPress.com by <a href="https://wordpress.com/tag/longreads/">tagging your posts longreads</a>.</p>
+                    <p style="text-align:center;">* * *</p>
+                    <h3><a href="http://quietbabylon.com/2014/what-we-talk-about-when-we-talk-about-what-we-talk-about-when-we-talk-about-making/?src=longreads">1. What We Talk About When We Talk About What We Talk About When We Talk About Making (Tim Maly, Quiet Babylon)</a></h3>
+                    <p>After a successful “creators’ conference” in Portland, Maly asks some tough questions about whether the creators are taking into account the factories and anonymous services that help them succeed in the first place.</p>
+                    <h3><a href="http://thewalrus.ca/the-secret-life-of-max-stern/?Src=longreads">2. The Secret Life of Max Stern (Sara Angel, The Walrus)</a></h3>
+                    <p>The Nazis stole his family’s paintings. He emigrated to Canada and became one of the country’s foremost gallery owners. And now, twenty years after his death, he is changing the rules of restitution.</p>
+                    <h3><a href="http://beyondthenewyorker.wordpress.com/2014/09/02/a-qa-with-vanessa-grigoriadis-on-writing-fast-putting-stories-away-and-documentary-style-writing/">3. Interview: Vanessa Grigoriadis on Writing Fast, Putting Stories Away, and Documentary-Style Writing (Meagan Flynn, Beyond the New Yorker)</a></h3>
+                    <p>Journalist Meagan Flynn chats with New York Magazine and Rolling Stone writer Vanessa Grigoriadis:</p>
+                    <blockquote><p>I just really try to write fast. And I think it’s so much better for my writing. When I used to agonize over every sentence and every section, the stories were so much worse. My problem is, if the content is not interesting to me, I don’t want to go back and revise it.</p></blockquote>
+                    <h3><a href="http://jennydiski.wordpress.com/2014/09/16/wasting-our-time/">4. Wasting Our Time (Jenny Diski)</a></h3>
+                    <p>The <a href="http://www.lrb.co.uk/">London Review of Books</a> writer reflects on childhood diversion:</p>
+                    <blockquote><p>In spite of The Poet and me being pretty old, we’re still young enough to remember from our childhood being told off for watching too much television and not, like the parents, making our own entertainment.</p></blockquote>
+                    <h3><a href="http://fivethirtyeight.com/features/christian-rudder-dataclysm-okcupid/?src=longreads">5. Matchmaker, Matchmaker, Make Me a Spreadsheet (Chadwick Matlin, FiveThirtyEight)</a></h3>
+                    <p>How Christian Rudder, the 39-year-old president and co-founder of the online dating site OKCupid, found himself at the intersection of dating and Big Data.</p>
+                    <h3><a href="http://www.newyorker.com/magazine/2014/09/22/last-amazon?src=longreads">6. The Last Amazon (Jill Lepore, The New Yorker)</a></h3>
+                    <p>The little-known story behind Wonder Woman’s origins:</p>
+                    <blockquote><p>Wonder Woman’s debt is to feminism. She’s the missing link in a chain of events that begins with the woman-suffrage campaigns of the nineteen-tens and ends with the troubled place of feminism a century later. Wonder Woman is so hard to put on film because the fight for women’s rights has gone so badly.</p></blockquote>
+                    <h3><a href="http://www.brainchildmag.com/2014/08/blind-curve/?Src=longreads">7. Blind Curve (Debbie Hagan, Brain, Child)</a></h3>
+                    <p>A mother visits her young son in a psychiatric ward:</p>
+                    <blockquote><p>Kids with mental illness stand out profoundly, and, thus, become bullying targets. That’s why Connor is a victim no matter where he goes—even here.</p></blockquote>
+                    <h3><a href="http://thepenngazette.com/the-lightning-rod/?Src=longreads">8. The Lightning Rod (Molly Petrilla, The Pennsylvania Gazette)</a></h3>
+                    <p>Dr. Robert Lanza has racked up a slew of scientific accolades—and generated an equal amount of controversy—for his pioneering work on cloning and stem cells. He also lives alone on his own island, collects dinosaur bones, and is often the subject of <em>Good Will Hunting</em> comparisons.</p>
+                    <h3><a href="http://ideas.ted.com/2014/09/02/how-to-teach-a-young-introvert/">9. How to Teach a Young Introvert (Kate Torgovnick May, TED)</a></h3>
+                    <p>A conversation with Susan Cain, who speaks out about what we need to do to make classrooms more accommodating for introverted students.</p>
+                    <h3><a href="http://fortune.com/2014/09/18/walter-isaacson-the-women-of-eniac/">10. The Women of ENIAC (Walter Isaacson, Fortune)</a></h3>
+                    <p>A look back at the pioneering group of women who worked on one of the earliest computers:</p>
+                    <blockquote><p>Shortly before she died in 2011, Jean Jennings Bartik reflected proudly on the fact that all the programmers who created the first general-purpose computer were women: “Despite our coming of age in an era when women’s career opportunities were generally quite confined, we helped initiate the era of the computer.”</p></blockquote>
+                    <p style="text-align:center;">* * *</p>
+                    <p><a href="https://www.flickr.com/photos/dennissylvesterhurd/6931939010/in/photolist-CTv6C-4m5XrN-hHBV9e-a4NTH4-9kgBe-dpnCYc-b895Zi-4VZ35V-4W4inN-4VZ3CD-4W4axW-4VYWbg-5qxtb-759HMd-4p3g4-4W4cy3-4VZ2vZ-3wBUt-bvKE2K-byxZXQ-4Wx1UC-386Ezk-3C3tZ-4WwVZy-bdjm8-9uxZx1-fzgw2Z-phDiCB-4uZntM-4v4res-4uZnPg-8Vmxh-4cWwNq-4uZnon-3a4ZMv-44zDJy-3wM6sa-CpEug-5w2MEX-2Zedhv-4WsHPR-bRPGMz-6Baxwu-4W4aQs-5w7wkJ-2LkT6X-7LsoN-8QLKXf-4v4ryU-3xrG1">Photo: dennissylvesterhurd, Flickr</a></p><br />Filed under: <a href='http://en.blog.wordpress.com/category/community/'>Community</a>, <a href='http://en.blog.wordpress.com/category/reading/'>Reading</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28689/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28689/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28689&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/24/longreads-best-of-wordpress-vol-5/feed/</wfw:commentRss>
+                <slash:comments>10</slash:comments>
+                
+                <media:thumbnail url="http://en-blog.files.wordpress.com/2014/09/6931939010_ca03d1676d_o.jpg?w=150" />
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/6931939010_ca03d1676d_o.jpg?w=150" medium="image">
+                    <media:title type="html">6931939010_ca03d1676d_o</media:title>
+                </media:content>
+                
+                <media:content url="http://1.gravatar.com/avatar/19f62880113934b262c0bbb597644adb?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">heymarkarms</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Around the World in Eight Photos</title>
+    <link>http://en.blog.wordpress.com/2014/09/23/world-in-photos/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/23/world-in-photos/#comments</comments>
+    <pubDate>Tue, 23 Sep 2014 15:00:04 +0000</pubDate>
+    <dc:creator><![CDATA[Krista]]></dc:creator>
+				<category><![CDATA[Community]]></category>
+                <category><![CDATA[International]]></category>
+                <category><![CDATA[street photography]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28627</guid>
+                <description><![CDATA[Tour the world in eight photos, courtesy of the photographers of WordPress.com. <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28627&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>Join us as we explore the world through the <a href="https://wordpress.com/tag/street-photography/">street photography</a> tag on WordPress.com. Here you&#8217;ll find no airport lineups, no grumpy customs agents, and you never get the middle seat.</p>
+                    <p>On <cite><a href="http://belgianstreets.wordpress.com/2014/09/19/faces-at-stripfeest/">belgianstreets</a></cite>, photographer <a href="http://belgianstreets.wordpress.com/about/">Andy Townend</a> recently shot &#8220;stripfeest,&#8221; an annual comics festival held in Brussels, Belgium. We loved how Andy <a href="http://belgianstreets.wordpress.com/2014/09/19/faces-at-stripfeest/">captures this young reader</a> fully ensconced in his comic book. An avid photographer, Andy is also a <a href="http://belgianstreets.wordpress.com/category/weekly-photo-challenges/">regular contributor</a> to <cite><a href="http://dailypost.wordpress.com">The Daily Post</a></cite>&#8216;s <a href="http://dailypost.wordpress.com/dp_photo_challenge/">Weekly Photo Challenge</a>.</p>
+                    <div id="attachment_28628" style="width: 645px" class="wp-caption alignnone"><a href="http://belgianstreets.wordpress.com/2014/09/19/faces-at-stripfeest/"><img src="https://en-blog.files.wordpress.com/2014/09/atownend_20140906_000013.jpg?w=635&#038;h=422" alt="Photo by Andy Towned"   class="size-large wp-image-28628" /></a><p class="wp-caption-text">Photo by Andy Townend</p></div>
+                    <p>We were intrigued by the untold stories in Michael Wilson&#8217;s photo, &#8220;<a href="http://brooklynbystander.com/2014/09/20/flower-seller/">the flower seller</a>,&#8221; on  his site, <cite><a href="http://brooklynbystander.com">BrooklynBystander</a></cite>. Taken in Adelaide, South Australia, the photo below documents a brief moment of commerce. We look at it and wonder: who is it that these gentlemen bought flowers for &#8212; perhaps a friend, a relative, a lover, or maybe themselves?</p>
+                    <div id="attachment_28633" style="width: 645px" class="wp-caption alignnone"><a href="http://brooklynbystander.com/2014/09/20/flower-seller/"><img src="https://en-blog.files.wordpress.com/2014/09/flowers.jpg?w=635&#038;h=437" alt="Photo by Michael Wilson"   class="size-large wp-image-28633" /></a><p class="wp-caption-text">Photo by Michael Wilson</p></div>
+                    <p>Speaking of untold stories, the following moment of domesticity in the middle distance at <cite><a href="http://plebsphoto.com/2014/09/19/copenhagen-indian-summer/">Plebs Street Photography</a></cite> caught our eye. A woman, and a man working on a laptop, are both enjoying a bit of stolen warmth during <a href="http://plebsphoto.com/2014/09/19/copenhagen-indian-summer/">Copenhagen Indian Summer</a>. What is she doing? What is he working on? We love the way this photo allows us to imagine their story.</p>
+                    <div id="attachment_28641" style="width: 645px" class="wp-caption alignnone"><a href="https://en-blog.files.wordpress.com/2014/09/cphindiansummerplebs.jpg"><img src="https://en-blog.files.wordpress.com/2014/09/cphindiansummerplebs.jpg?w=635&#038;h=422" alt="Photo by Plebs Street Photography"   class="size-large wp-image-28641" /></a><p class="wp-caption-text">Photo by Plebs Street Photography</p></div>
+                    <p><a href="http://weber-street-photography.com/about/">Matt Weber</a>, a photographer who has documented New York City&#8217;s fleeting moments for the last 25 years, <a href="http://weber-street-photography.com/2014/09/20/artists-or-assholes/">captured this subway performer&#8217;s serious glare</a> and the polarizing effect this &#8220;subterranean gymnast&#8221; had on the passengers around him. If you were on this train car, would you be appreciative or apathetic?</p>
+                    <div id="attachment_28645" style="width: 645px" class="wp-caption alignnone"><a href="https://en-blog.files.wordpress.com/2014/09/sub-dancer-stare-2014-copy.jpg"><img src="https://en-blog.files.wordpress.com/2014/09/sub-dancer-stare-2014-copy.jpg?w=635&#038;h=476" alt="Photo by Matt Weber" width="635" height="476" class="size-large wp-image-28645" /></a><p class="wp-caption-text">Photo by Matt Weber</p></div>
+                    <p>Another quick spin through the <a href="https://wordpress.com/">WordPress.com Reader</a> takes us from New York City&#8217;s subway to the following quiet moment in Venice, Italy, courtesy of <a href="http://kyrabetteridgephotography.wordpress.com/">photographer Kyra Betteridge</a>. Kyra captured <a href="http://kyrabetteridgephotography.wordpress.com/2014/09/20/venice-italy/dsc_0952/">these gondola drivers in repose</a>, as they waited for their next customers. We love how the light in this photograph draws your eye directly to the drivers, in their bright, striped shirts. Check out more of Kyra&#8217;s work on her site, <cite><a href="http://kyrabetteridgephotography.wordpress.com/">Kyra Betteridge Photography</a></cite>.</p>
+                    <div id="attachment_28647" style="width: 645px" class="wp-caption alignnone"><a href="http://kyrabetteridgephotography.wordpress.com/2014/09/20/venice-italy/dsc_0952/"><img src="https://en-blog.files.wordpress.com/2014/09/gondola.jpg?w=635&#038;h=434" alt="Photo by  Kyra Betteridge "   class="size-large wp-image-28647" /></a><p class="wp-caption-text">Photo by  Kyra Betteridge<br /></p></div>
+                    <p>At <cite><a href="http://lifeisavacation.wordpress.com/">Life is a Vacation</a></cite>, Sangeeta wrestles with her emotions over the following photograph she took in Mandu, India, post-monsoon. The <a href="http://lifeisavacation.wordpress.com/2014/09/19/photography-insensitivity/">elderly woman struggling up the muddy, slippery incline</a> reminded Sangeeta of her own nonagenarian grandmother.</p>
+                    <div id="attachment_28652" style="width: 645px" class="wp-caption alignnone"><a href="http://lifeisavacation.wordpress.com/2014/09/19/photography-insensitivity/"><img src="https://en-blog.files.wordpress.com/2014/09/mandu-monsoon-old-person.jpg?w=635&#038;h=478" alt="Photo by Sangeeta"   class="size-large wp-image-28652" /></a><p class="wp-caption-text">Photo by Sangeeta</p></div>
+                    <p><a href="http://jessicaheckingernowakphotography.com/about/">Jessica Heckinger Nowak</a> captures a different sort of solitude <a href="http://jessicaheckingernowakphotography.com/2014/09/19/paris-street-scenes/">in this image of an accordion player</a> in the streets of Paris, France. We love how if you focus your gaze on the player, the graffiti scribbled across the low wall resembles the flurry of musical notes we imagine emanating from his accordion. Interested in seeing more? Check out Jessica&#8217;s work at <cite><a href="http://yourshot.nationalgeographic.com/profile/401353/">National Geographic</a></cite>.</p>
+                    <div id="attachment_28656" style="width: 645px" class="wp-caption alignnone"><a href="http://jessicaheckingernowakphotography.com/2014/09/19/paris-street-scenes/"><img src="https://en-blog.files.wordpress.com/2014/09/accordion.jpg?w=635&#038;h=422" alt="Photo by Jessica Heckinger Nowak"   class="size-large wp-image-28656" /></a><p class="wp-caption-text">Photo by Jessica Heckinger Nowak</p></div>
+                    <p>Finally, we couldn&#8217;t resist these <a href="http://evinaseyes.wordpress.com/2014/09/19/take-us-for-a-ride/">two cats in full relaxation mode</a> in Athens, Greece, courtesy of the the blogger behind <cite><a href="http://evinaseyes.wordpress.com">evinaseyes</a></cite>.</p>
+                    <div id="attachment_28659" style="width: 645px" class="wp-caption alignnone"><a href="http://evinaseyes.wordpress.com/2014/09/19/take-us-for-a-ride/"><img src="https://en-blog.files.wordpress.com/2014/09/athens.jpg?w=635&#038;h=476" alt="Photo by evinaseyes" width="635" height="476" class="size-large wp-image-28659" /></a><p class="wp-caption-text">Photo by evinaseyes</p></div>
+                    <p><em>Tour the world from the comfort of your favorite comfy chair, courtesy of the photographers who share their work on WordPress.com. For more, take a spin through the <a href="https://wordpress.com/tag/street-photography/">street photography tag</a> in your Reader.</em></p><br />Filed under: <a href='http://en.blog.wordpress.com/category/community/'>Community</a>, <a href='http://en.blog.wordpress.com/category/international/'>International</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28627/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28627/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28627&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/23/world-in-photos/feed/</wfw:commentRss>
+                <slash:comments>47</slash:comments>
+                
+                <media:thumbnail url="http://en-blog.files.wordpress.com/2014/09/nightsong-2.jpg?w=150" />
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/nightsong-2.jpg?w=150" medium="image">
+                    <media:title type="html">nightsong 2</media:title>
+                </media:content>
+                
+                <media:content url="http://1.gravatar.com/avatar/4f39e362b21c41df5cea83b50e4172fb?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">kristastevens</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/atownend_20140906_000013.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by Andy Towned</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/flowers.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by Michael Wilson</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/cphindiansummerplebs.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by Plebs Street Photography</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/sub-dancer-stare-2014-copy.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by Matt Weber</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/gondola.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by  Kyra Betteridge </media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/mandu-monsoon-old-person.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by Sangeeta</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/accordion.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by Jessica Heckinger Nowak</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/athens.jpg?w=635" medium="image">
+                    <media:title type="html">Photo by evinaseyes</media:title>
+                </media:content>
+</item>
+<item>
+    <title>WordPressers Making a Splash</title>
+    <link>http://en.blog.wordpress.com/2014/09/16/wordpressers-making-splash-2/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/16/wordpressers-making-splash-2/#comments</comments>
+    <pubDate>Tue, 16 Sep 2014 15:00:12 +0000</pubDate>
+    <dc:creator><![CDATA[Ben Huberman]]></dc:creator>
+				<category><![CDATA[Community]]></category>
+                <category><![CDATA[Press]]></category>
+                <category><![CDATA[Writing]]></category>
+                <category><![CDATA[blogging]]></category>
+                <category><![CDATA[books]]></category>
+                <category><![CDATA[media]]></category>
+                <category><![CDATA[New York Times]]></category>
+                <category><![CDATA[The Guardian]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28582</guid>
+                <description><![CDATA[From new books to appearances in major media outlets, five WordPress.com writers have been busy these past few months.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28582&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>We might think of the end of summer as a slow news season. Not so for the authors and bloggers we feature today, who&#8217;ve been hard at work on some exciting projects recently.</p>
+                    <h3><a href="http://rebeccahains.com/">Rebecca Hains</a></h3>
+                    <p><a href="http://rebeccahains.com/"><img class="alignleft wp-image-28585" src="https://en-blog.files.wordpress.com/2014/09/princess-problem.jpg?w=140&#038;h=211" alt="princess problem" width="140" height="211" /></a>Writer, professor, and media scholar <a href="http://rebeccahains.com/about/">Rebecca Hains</a> often shares <a href="http://rebeccahains.com/2014/07/16/girls-strength-and-the-beauty-ideal-a-beach-conversation/">thoughtful posts</a> on her blog, especially on topics revolving around gender and discrimination. Earlier this month, she <a href="http://rebeccahains.com/2014/08/27/announcing-my-new-book-the-princess-problem/">celebrated the release</a> of <em><a href="http://www.sourcebooks.com/store/princess-problem.html">The Princess Problem: Guiding Our Girls through the Princess-Obsessed Years</a> </em>(Sourcebooks), her most recent book. A critique of popular culture and the messages it sends to young girls, the book has already earned rave reviews, including from Brenda Chapman, writer and director of Disney&#8217;s <em>Brave.</em></p>
+                    <h3><a href="http://brokenlightcollective.wordpress.com/">Broken Light: A Photography Collective</a></h3>
+                    <p><a href="http://brokenlightcollective.wordpress.com/"><img class="alignright size-full wp-image-28583" src="https://en-blog.files.wordpress.com/2014/09/broken-light.jpg?w=635" alt="broken light"   /></a></p>
+                    <p>Danielle Hark founded <em>Broken Light Collective</em>, a community for photographers coping with mental health issues, more than two years ago. We&#8217;ve been following that project for a while (and <a href="http://en.blog.wordpress.com/2014/01/17/mental-health-roundup/">mentioned it</a> in a mental health-focused roundup earlier this year), so it was nice to see Danielle, and <em>Broken Light Collective</em> as a whole, receive the attention they deserve <a href="http://well.blogs.nytimes.com/2014/07/24/photography-as-a-balm-for-mental-illness/?_php=true&amp;_type=blogs&amp;_php=true&amp;_type=blogs&amp;_php=true&amp;_type=blogs&amp;ref=health&amp;_r=2">in a <em>New York Times</em> profile</a>. It was published to coincide with the <em>Collective</em>&#8216;s first group gallery show, which closed in New York in August.</p>
+                    <h3><a href="http://hungrysofia.com/">Hungry Sofia</a></h3>
+                    <p><a href="http://hungrysofia.com/"><img class="alignleft size-medium wp-image-28584" src="https://en-blog.files.wordpress.com/2014/09/cuban-table.jpg?w=240&#038;h=300" alt="cuban table" width="240" height="300" /></a></p>
+                    <p><a href="http://hungrysofia.com/about/">Ana Sofía Peláez</a>&#8216;s site has showcased the colorful, mouthwatering delights of Caribbean cuisine for more than five years, mixing in <a href="http://hungrysofia.com/2014/08/14/dulce-de-grosellas/">great storytelling</a> with beautiful food photography. Next month,  Ana Sofía will see her book, <em><a href="http://us.macmillan.com/thecubantable/AnaPelaez">The Cuban Table: A Celebration of Food, Flavors, and History</a></em> (St. Martin&#8217;s Press), hit bookstores (and kitchens) everywhere. A labor of love on which she collaborated with photographer Ellen Silverman, the book chronicles Cuban food cultures from Havana to Miami to New York.</p>
+                    <h3><a href="http://notchesblog.com/">Notches</a></h3>
+                    <p>Anyone interested in engaging, wide-ranging discussions on the history of sexuality will enjoy <a href="http://notchesblog.com/"><em>Notches</em></a>, a blog that has tackled topics like <a href="http://notchesblog.com/2014/08/12/the-bishops-new-stockings-or-the-dangers-of-love-magic">Medieval love magic</a> and the origins of <a href="http://notchesblog.com/2014/07/15/born-this-way-sexual-science-and-the-invention-of-a-political-strategy/">&#8220;Born This Way&#8221; politics</a>.</p>
+                    <p><a href="http://notchesblog.com/"><img class="alignright size-medium wp-image-28586" src="https://en-blog.files.wordpress.com/2014/09/jack-the-ripper-011.jpg?w=300&#038;h=180" alt="Jack the Ripper" width="300" height="180" /></a></p>
+                    <p>Earlier this week, <em>Notches</em> editor <a href="http://www.bbk.ac.uk/history/our-staff/full-time-academic-staff/dr-julia-laite">Julia Laite</a>, a lecturer at the University of London, wrote a thought-provoking <a href="http://www.theguardian.com/commentisfree/2014/sep/09/solving-jack-the-ripper-case-dna">article in <em>The Guardian</em></a> on another fascinating topic: our decades-long obsession with Jack the Ripper.</p>
+                    <h3><a href="http://everupward.org/">Ever Upward</a></h3>
+                    <p><a href="http://everupward.org/"><img class="alignleft size-medium wp-image-28587" src="https://en-blog.files.wordpress.com/2014/09/ever-upward.jpg?w=193&#038;h=300" alt="ever upward"   /></a></p>
+                    <p><a href="http://everupward.org/about/">Justine Brooks Froelker</a>, the blogger behind <a href="http://everupward.org/"><em>Ever Upward</em></a>, has been chronicling her journey through infertility, loss, and acceptance in posts that are at once unflinching and moving. Now, Justine is preparing for the <a href="http://everupward.org/book/">release of her book</a>, also named <em>Ever Upward</em>, in early October (it&#8217;ll also be available on Amazon starting February). You can get a taste of Justine&#8217;s writing in <a href="http://www.babyhopeful.com/ever-upward-justine-brooks-froelker/">this excerpt</a> from the book&#8217;s opening chapter.</p>
+                    <p><em>Are you publishing a book soon? Has your blog made the news? Leave us a comment &#8212; we&#8217;d love to know.</em></p><br />Filed under: <a href='http://en.blog.wordpress.com/category/community/'>Community</a>, <a href='http://en.blog.wordpress.com/category/press/'>Press</a>, <a href='http://en.blog.wordpress.com/category/writing-2/'>Writing</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28582/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28582/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28582&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/16/wordpressers-making-splash-2/feed/</wfw:commentRss>
+                <slash:comments>33</slash:comments>
+                
+                <media:thumbnail url="http://en-blog.files.wordpress.com/2014/01/feature-23050.jpg?w=150" />
+                <media:content url="http://en-blog.files.wordpress.com/2014/01/feature-23050.jpg?w=150" medium="image">
+                    <media:title type="html">making a splash</media:title>
+                </media:content>
+                
+                <media:content url="http://0.gravatar.com/avatar/663dcd498e8c5f255bfb230a7ba07678?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">benhuberman</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/princess-problem.jpg?w=198" medium="image">
+                    <media:title type="html">princess problem</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/broken-light.jpg" medium="image">
+                    <media:title type="html">broken light</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/cuban-table.jpg?w=240" medium="image">
+                    <media:title type="html">cuban table</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/jack-the-ripper-011.jpg?w=300" medium="image">
+                    <media:title type="html">Jack the Ripper</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/ever-upward.jpg?w=194" medium="image">
+                    <media:title type="html">ever upward</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Gmail Password Leak Update</title>
+    <link>http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/#comments</comments>
+    <pubDate>Fri, 12 Sep 2014 23:53:37 +0000</pubDate>
+    <dc:creator><![CDATA[Daryl L. L. Houston]]></dc:creator>
+				<category><![CDATA[Notifications]]></category>
+                <category><![CDATA[Security]]></category>
+                <category><![CDATA[security]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28615</guid>
+                <description><![CDATA[We've taken extra steps to protect WordPress.com members.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28615&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>This week, a group of hackers <a title="Russian Hackers Released Gmail Password List" href="http://time.com/3318853/google-user-logins-bitcoin/">released a list</a> of about 5 million Gmail addresses and passwords. This list was not generated as a result of an exploit of WordPress.com, but since a number of emails on the list matched email addresses associated with WordPress.com accounts, we took steps to protect our users.</p>]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/feed/</wfw:commentRss>
+                <slash:comments>147</slash:comments>
+                
+                <media:content url="http://0.gravatar.com/avatar/6ea52ba884713c11a9f814dde6867c97?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">dllh</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Basis, Edin, and Forefront: A Look at Business Themes</title>
+    <link>http://en.blog.wordpress.com/2014/09/12/professional-sites/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/12/professional-sites/#comments</comments>
+    <pubDate>Fri, 12 Sep 2014 15:00:48 +0000</pubDate>
+    <dc:creator><![CDATA[Cheri Lucas Rowlands]]></dc:creator>
+				<category><![CDATA[Community]]></category>
+                <category><![CDATA[Themes]]></category>
+                <category><![CDATA[WordPress.com]]></category>
+                <category><![CDATA[Basis]]></category>
+                <category><![CDATA[business]]></category>
+                <category><![CDATA[Edin]]></category>
+                <category><![CDATA[Forefront]]></category>
+                <category><![CDATA[professional]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28481</guid>
+                <description><![CDATA[Get inspired by these customizations of three professional themes.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28481&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>We add new themes to the <a href="http://theme.wordpress.com/" target="_blank">Theme Showcase</a> each week, including <a href="http://theme.wordpress.com/themes/search/business/" target="_blank">free and premium themes for businesses, organizations, and your professional projects</a>. Here&#8217;s a trio of business themes transformed by three very different types of users: a professional travel and food writer, a Buddhist podcast host, and a fly fishing outfitter in Australia.</p>
+                    <h3><a href="http://roamandhome.com/" target="_blank">roam &amp; home</a></h3>
+                    <p><a href="http://roamandhome.com/"><img class="aligncenter size-large wp-image-28505" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-29-23-pm.png?w=635&#038;h=308" alt="Screen Shot 2014-09-04 at 3.29.23 PM"   /></a></p>
+                    <p>Chicago-based travel and food curator <a href="http://iamvalentine.com/about/" target="_blank">Karen Valentine</a>, the founder of <a href="http://roamandhome.com/" target="_blank"><em>roam &amp; home</em></a>, presents a beautifully designed site with <em><a href="https://wordpress.com/themes/basis/" target="_blank">Basis</a></em>, a premium theme. Wide featured images add splashes of color to the homepage, while the <em>Brandon Grotesque</em> heading font &#8212; available to <a href="http://en.support.wordpress.com/custom-design/" target="_blank">Custom Design upgrade</a> users &#8212; adds a touch of style to each content block.</p>
+                    <p><img class="aligncenter size-large wp-image-28504" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-26-38-pm.png?w=635&#038;h=308" alt="Screen Shot 2014-09-04 at 3.26.38 PM"   /></p>
+                    <p>As you scroll down the home page, travel quotes inspire you to dream up your next big trip &#8212; a subtle but elegant touch:</p>
+                    <p><a href="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-38-22-pm.png"><img class="aligncenter wp-image-28506 size-large" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-38-22-pm.png?w=635&#038;h=68" alt="Screen Shot 2014-09-04 at 3.38.22 PM"   /></a></p>
+                    <p>Karen&#8217;s portal for wanderlust includes <a href="http://roamandhome.com/travel-itineraries/" target="_blank">travel itineraries</a> and <a href="http://roamandhome.com/travel-guides/" target="_blank">guides</a> (<a href="http://roamandhome.com/travel-itineraries/jamaica-winter-getaway/" target="_blank">Jamaica</a> in the winter, anyone?), and a <a href="http://roamandhome.com/travel-journal/" target="_blank">journal</a> for blog updates and photography from her adventures.</p>
+                    <p><a href="http://roamandhome.com/travel-itineraries/"><img class="aligncenter size-large wp-image-28486" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-11-55-33-am.png?w=635&#038;h=336" alt="Screen Shot 2014-09-04 at 11.55.33 AM" width="635" height="336" /></a></p>
+                    <p>These sections are accessible at the top right in a simple <a href="http://dailypost.wordpress.com/2014/04/24/whats-on-your-menu/" target="_blank">Custom Menu</a>:</p>
+                    <p><img class="aligncenter size-large wp-image-28507" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-40-20-pm.png?w=635&#038;h=52" alt="Screen Shot 2014-09-04 at 3.40.20 PM" width="635" height="52" /></p>
+                    <p>With <em>Basis</em>, you can build a site using a drag-and-drop page builder interface &#8212; create a section, add content, and then move it around &#8212; which makes creating a landing page or microsite easier. (Preview this drag-and-drop interface in the video at the top of the <a href="https://wordpress.com/themes/basis/" target="_blank"><em>Basis</em></a> page.)</p>
+                    <blockquote><p><strong>Tip</strong>: While not activated on Karen&#8217;s site, you can also make a full-width slideshow with <em>Basis</em>, creating an eye-catching homepage for your personal or business brand, professional projects, or company&#8217;s products and services.</p></blockquote>
+                    <p><em>Visit the </em><a href="https://wordpress.com/themes/basis/" target="_blank">Basis</a><em> theme page for details. </em></p>
+                    <h3><a href="http://dannyfisher.org/" target="_blank">Off the Cushion with Danny Fisher</a></h3>
+                    <p><a href="http://dannyfisher.org/"><img class="aligncenter size-large wp-image-28491" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-12-42-01-pm.png?w=635&#038;h=321" alt="Screen Shot 2014-09-04 at 12.42.01 PM" width="635" height="321" /></a></p>
+                    <p>Launched at the end of July, the free <em><a href="https://wordpress.com/themes/edin/" target="_blank">Edin</a></em> theme is packed with features for a business or professional site, and podcast host <a href="http://dannyfisher.org/about/" target="_blank">Danny Fisher</a> shows it off nicely. With four custom page templates, <em>Edin</em> allows you to promote your company or work in different ways. At <em>Off the Cushion</em>, Danny uses the Front Page Template, using a big featured image and bold white text to introduce his independent podcast on Buddhism news and ideas.</p>
+                    <p>You also can&#8217;t miss his <a href="http://en.support.wordpress.com/menus/" target="_blank">Custom Menu</a> to other parts of his site, as well as exterior websites, under the header.</p>
+                    <p><img class="aligncenter size-large wp-image-28493" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-1-43-30-pm.png?w=635&#038;h=32" alt="Screen Shot 2014-09-04 at 1.43.30 PM" width="635" height="32" /></p>
+                    <p>In the footer, Danny activates the three widget areas for an About blurb (using a <a href="http://en.support.wordpress.com/widgets/text-widget/" target="_blank">Text Widget</a>), a stream of <a href="http://en.support.wordpress.com/widgets/recent-posts-widget/" target="_blank">recent posts</a>, and an <a href="http://en.support.wordpress.com/widgets/image-widget/" target="_blank">Image Widget</a> displaying his podcast&#8217;s T-shirt.</p>
+                    <blockquote><p><strong>Tip:</strong> To unify the site and promote his web presence, Danny displays social media icons, from Twitter to Instagram to LinkedIn, at the top <em>and</em> bottom of his site. Think of other ways to make your site visually cohesive; uploading a <a href="http://en.support.wordpress.com/site-logo/" target="_blank">Site Logo</a> (available on <a href="http://theme.wordpress.com/themes/features/site-logo/" target="_blank">a growing list of themes</a>) that matches <a href="http://dailypost.wordpress.com/2013/03/20/widgets-201/#custom" target="_blank">a custom Image Widget</a> in your sidebar is another option.</p></blockquote>
+                    <p><em>You can do much more with this free theme &#8212; visit the </em><a href="https://wordpress.com/themes/edin/" target="_blank">Edin</a><em> page for details.<br />
+                    </em></p>
+                    <h3><a href="http://highfly.com.au/" target="_blank">High Country Outfitters</a></h3>
+                    <p><a href="http://highfly.com.au/"><img class="aligncenter size-large wp-image-28495" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-1-48-25-pm.png?w=635&#038;h=316" alt="Screen Shot 2014-09-04 at 1.48.25 PM"   /></a></p>
+                    <p><a href="http://highfly.com.au" target="_blank">High Country Outfitters</a> stocks a range of clothing and gear for fly fishing, snow sports, and other outdoor activities in the Snowy Mountains of Australia.</p>
+                    <p>Using the custom page templates and other features of the premium theme <a href="http://theme.wordpress.com/themes/forefront/" target="_blank"><em>Forefront</em></a>, the outfitter promotes its <a href="http://highfly.com.au/shop/" target="_blank">shop</a>, <a href="http://highfly.com.au/page-3/" target="_blank">fly fishing trips</a>, <a href="http://highfly.com.au/blog/" target="_blank">product news</a>, and <a href="http://highfly.com.au/category/fishing-reports/" target="_blank">local fishing reports</a>. Bold call-to-action buttons (&#8220;Visit Shop,&#8221; &#8220;Guiding &amp; Tuition&#8221;) lead visitors to more information.</p>
+                    <p><img class="aligncenter size-large wp-image-28496" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-2-21-40-pm.png?w=635&#038;h=310" alt="Screen Shot 2014-09-04 at 2.21.40 PM" width="635" height="310" /></p>
+                    <p>With <em>Forefront</em>, you can also display customer testimonials (not shown on the High Country Outfitters site).</p>
+                    <blockquote><p><strong>Tip:</strong> Use a grid-style layout to visually organize a navigation page to other pages and links on your site. Check out the <a href="http://highfly.com.au/shop/" target="_blank">outfitters&#8217; online shop</a> (below), which uses a Grid Page Template.</p></blockquote>
+                    <p><a href="http://highfly.com.au/shop/"><img class="aligncenter size-large wp-image-28498" src="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-2-29-56-pm.png?w=635&#038;h=313" alt="Screen Shot 2014-09-04 at 2.29.56 PM" width="635" height="313" /></a></p>
+                    <p><em>To see if this premium theme is right for you, visit the </em><a href="http://theme.wordpress.com/themes/forefront/" target="_blank">Forefront</a><em> page for more.</em></p>
+                    <p>We have a growing number of <a href="http://theme.wordpress.com/themes/subjects/professional/" target="_blank">professional</a> and <a href="http://theme.wordpress.com/themes/subjects/business/" target="_blank">business</a> themes &#8212; free and premium &#8212; for work projects, organizations, and small businesses. From simple, elegant landing pages to multi-page websites, you can create the perfect space for you and your brand.</p><br />Filed under: <a href='http://en.blog.wordpress.com/category/community/'>Community</a>, <a href='http://en.blog.wordpress.com/category/themes/'>Themes</a>, <a href='http://en.blog.wordpress.com/category/wordpresscom/'>WordPress.com</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28481/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28481/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28481&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/12/professional-sites/feed/</wfw:commentRss>
+                <slash:comments>11</slash:comments>
+                
+                <media:thumbnail url="http://en-blog.files.wordpress.com/2014/09/top_view.jpg?w=150" />
+                <media:content url="http://en-blog.files.wordpress.com/2014/09/top_view.jpg?w=150" medium="image">
+                    <media:title type="html">Top_view</media:title>
+                </media:content>
+                
+                <media:content url="http://0.gravatar.com/avatar/36207d4c7c014b0999b995ca3971d383?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">CL</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-29-23-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 3.29.23 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-26-38-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 3.26.38 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-38-22-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 3.38.22 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-11-55-33-am.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 11.55.33 AM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-3-40-20-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 3.40.20 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-12-42-01-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 12.42.01 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-1-43-30-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 1.43.30 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-1-48-25-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 1.48.25 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-2-21-40-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 2.21.40 PM</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-04-at-2-29-56-pm.png?w=635" medium="image">
+                    <media:title type="html">Screen Shot 2014-09-04 at 2.29.56 PM</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Blogging 101 and Writing 101 Are Back!</title>
+    <link>http://en.blog.wordpress.com/2014/09/10/blogging-writing-101-redux/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/10/blogging-writing-101-redux/#comments</comments>
+    <pubDate>Wed, 10 Sep 2014 21:00:49 +0000</pubDate>
+    <dc:creator><![CDATA[Krista]]></dc:creator>
+				<category><![CDATA[Better Blogging]]></category>
+                <category><![CDATA[blogging]]></category>
+                <category><![CDATA[Blogging 101]]></category>
+                <category><![CDATA[blogging u.]]></category>
+                <category><![CDATA[Writing 101]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28515</guid>
+                <description><![CDATA[Just started blogging, but not sure how to take your site to the next level or solidify that writing habit? Our free Blogging U. courses, Blogging 101 and Writing 101, start on September 15th. Get registered!<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28515&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>You&#8217;ve just started your shiny new blog and you&#8217;d like some help as you get up to speed on WordPress.com. Or, maybe you&#8217;d like some inspiration to write every day. On September 15th, we kick off two free Blogging U. courses: Blogging 101 and Writing 101. They might be just what you need to whip your blog into shape and/or establish your writing habit.</p>
+                    <h3>Blogging 101</h3>
+                    <p>Each day for 30 days, Blogging 101 offers a bite-sized blogging &#8220;assignment*,&#8221; geared to helping you customize the look of your blog, start a blogging habit, and find some new blogging friends. Here’s how it works:</p>
+                    <ul>
+                    <li>Assignments fall into three broad categories — publishing posts, customizing your blog, and engaging with the community. Assignments are designed to build on one another.</li>
+                    <li>We’ll post a new assignment at <cite><a href="http://dailypost.wordpress.com/">The Daily Post</a></cite> each weekday at 12AM GMT (8PM EDT). (<a href="http://www.worldtimebuddy.com/gmt-to-est-converter">Time zone math</a>: 12AM GMT, Monday September 15th = 8PM EDT, Sunday, September 14th.) Each assignment contains all the inspiration and instructions you need to complete it. Weekends are free time you can use to catch up on assignments, if you like.</li>
+                    <li>Participants get access to a private community site, the Commons, where they can chat, connect, and seek feedback and support. <cite>Daily Post</cite> staff and Happiness Engineers will be on hand to answer your questions and offer guidance and resources.</li>
+                    <li>Cost? Free!</li>
+                    </ul>
+                    <h3>Writing 101</h3>
+                    <p>Each day for 30 days, we&#8217;ll post an &#8220;assignment*&#8221; geared to helping you create a writing habit, inspire you to try new forms, get some feedback from fellow participants, and make some writing friends online.</p>
+                    <p>Here&#8217;s how it works:</p>
+                    <ul>
+                    <li>Each assignment has two parts: a prompt and a twist. Prompts are the topic for the day; twists are exercises that stretch your writing chops. Use them however you’d like: respond to the prompt, and ignore the twist. Try the twist, but write on your own topic. Use both.</li>
+                    <li>We’ll post a new writing assignment at the <cite><a href="http://dailypost.wordpress.com/">The Daily Post</a></cite> each weekday at 12AM GMT (8PM EDT). (<a href="http://www.worldtimebuddy.com/gmt-to-est-converter">Time zone math</a>: 12AM GMT, Monday September 15th = 8PM EDT, Sunday, September 14th.). There are no weekend assignments — you’re free to expand on a weekday post, write something unrelated, or (gasp!) spend some time away from your blog.</li>
+                    <li>Participants get access to a private community site, the Commons, where they can chat, connect, and seek feedback and support. <cite>Daily Post</cite> staff and Happiness Engineers will be on hand in the comments to answer questions and offer guidance and resources.</li>
+                    <li>Cost? Zilch, zero, nada.</li>
+                    </ul>
+                    <p><em>*All assignments are optional. Blogging 101 and Writing 101 are designed to inspire and educate you to start and maintain a blogging habit. While we encourage you to be active in the Commons and participate in discussions with fellow participants, you never have to show your work if you&#8217;d prefer not to.</em></p>
+                    <p>Intrigued? Register for Blogging 101, Writing 101 or both by filling out this form:</p>
+                    <p><em>Thanks for your interest! Registration is now closed, but both challenges will be back again later this fall.</em></p><br />Filed under: <a href='http://en.blog.wordpress.com/category/better-blogging/'>Better Blogging</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28515/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28515/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28515&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/10/blogging-writing-101-redux/feed/</wfw:commentRss>
+                <slash:comments>71</slash:comments>
+                
+                <media:thumbnail url="http://en-blog.files.wordpress.com/2014/05/bu-featured-alt3.png?w=150" />
+                <media:content url="http://en-blog.files.wordpress.com/2014/05/bu-featured-alt3.png?w=150" medium="image">
+                    <media:title type="html">blogging U</media:title>
+                </media:content>
+                
+                <media:content url="http://1.gravatar.com/avatar/4f39e362b21c41df5cea83b50e4172fb?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">kristastevens</media:title>
+                </media:content>
+</item>
+<item>
+    <title>Join Us in the Fight For Net Neutrality</title>
+    <link>http://en.blog.wordpress.com/2014/09/09/fight-for-net-neutrality/</link>
+    <comments>http://en.blog.wordpress.com/2014/09/09/fight-for-net-neutrality/#comments</comments>
+    <pubDate>Tue, 09 Sep 2014 20:37:34 +0000</pubDate>
+    <dc:creator><![CDATA[Paul Sieminski]]></dc:creator>
+				<category><![CDATA[Community]]></category>
+                <category><![CDATA[WordPress.com]]></category>
+                <category><![CDATA[Net Neutrality]]></category>
+                
+                <guid isPermaLink="false">http://en.blog.wordpress.com/?p=28538</guid>
+                <description><![CDATA[The internet we know and love is under attack. Support the free and open internet by enabling our “Fight for Net Neutrality” plugin on your WordPress.com blog.<img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28538&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></description>
+                <content:encoded><![CDATA[<p>“Net Neutrality” is the simple but powerful principle that cable and broadband providers must treat all internet traffic equally. Whether you’re loading a blog post on WordPress.com, streaming House of Cards on Netflix, or browsing handcrafted tea cozies on Etsy, your internet provider can’t degrade your connection speed, block sites, or charge a toll based on the content that you’re viewing.</p>
+                    <p>Net neutrality has defined the internet since its inception, and it’s hard to argue with the results: the internet is the most powerful engine of economic growth and free expression in history. Most importantly, the open internet is characterized by companies, products, and ideas that survive or fail depending on their own merit &#8212; not on whether they have preferred deals in place with a broadband service provider. Unfortunately, the principle of net neutrality, and the open internet that we know and love, is under attack.</p>
+                    <h3>Net Neutrality under attack</h3>
+                    <p>The Federal Communications Commission has <a href="https://www.fcc.gov/document/protecting-and-promoting-open-internet-nprm">proposed rules</a> that would, for the first time, expressly allow internet providers &#8212; like Comcast, Verizon and AT&amp;T &#8212; to charge internet companies like Automattic, Netflix or Etsy for access to their subscribers. This means there could be “fast lanes” for companies who are able to pay providers for preferred internet access, while everyone else gets stuck in the “slow lane&#8221;&#8230;which means applications won&#8217;t perform as quickly, webpages will load slowly, and of course, buffering. A slow “still loading” spinner will be an unfortunate, but common sight on the new, closed internet that the big providers want.</p>
+                    <p>Unsurprisingly, the large telecom companies who stand to benefit from the FCC’s proposed rules fully support their passage. They have nearly unlimited funds and hundreds of lobbyists in Washington to promote these harmful new rules.</p>
+                    <p>But what they don’t have is you.</p>
+                    <h3>What can we do to fight back?</h3>
+                    <p>Automattic strongly supports a free and open internet. After all, WordPress.com, and the WordPress open source project are living examples of what is possible on an unthrottled internet, open for creation, collaboration, and expression. Over the last few months, we’ve joined 150 major tech companies in sending <a href="//automattlock.files.wordpress.com/2014/05/company-sign-on-letter.pdf">a letter to Washington</a> in support of net neutrality, and <a href="//apps.fcc.gov/ecfs/document/view?id=7521356420">met with FCC Chairman Tom Wheeler</a> to urge him to preserve the internet we’ve always known.</p>
+                    <p><strong>Now it’s your turn.</strong></p>
+                    <p>Automattic, along with many other companies and digital rights organizations, is proud to participate in the Internet Slowdown on September 10. For this day of action, we’ve built a “Fight for Net Neutrality” plugin that you can enable now on your WordPress.com blog to show support for this important cause.</p>
+                    <p>You can turn the plugin on by going to your Dashboard, <strong>Settings → Fight for Net Neutrality</strong>.</p>
+                    <p><a href="https://en-blog.files.wordpress.com/2014/09/settingsmenu.jpg"><img class="aligncenter size-medium wp-image-28545" src="https://en-blog.files.wordpress.com/2014/09/settingsmenu.jpg?w=300&#038;h=178" alt="settingsmenu" width="300" height="178" /></a></p>
+                    <p>When you enable the plugin, we’ll replace a few of the posts on your site with a “Still Loading” spinner&#8230;to show what life will be like on an internet that features dreaded slow lanes.</p>
+                    <p><a href="https://en-blog.files.wordpress.com/2014/09/ffnn-2.jpg"><img class="aligncenter size-medium wp-image-28546" src="https://en-blog.files.wordpress.com/2014/09/ffnn-2.jpg?w=300&#038;h=236" alt="ffnn 2" width="300" height="236" /></a></p>
+                    <p>The plugin will also display a banner that shows your support for Net Neutrality, and links to <a href="http://battleforthenet.com">battleforthenet.com</a>, where visitors to your site can sign a letter to the FCC about this important issue.</p>
+                    <p>Please take a few minutes to enable the Fight for Net Neutrality on your site today, and visit <a href="https://www.battleforthenet.com/#home">battleforthenet.com</a> to send a message to Washington that net neutrality must be preserved. Together we can make a difference, and we hope you’ll join us in this important battle for the open internet!</p><br />Filed under: <a href='http://en.blog.wordpress.com/category/community/'>Community</a>, <a href='http://en.blog.wordpress.com/category/wordpresscom/'>WordPress.com</a>  <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/en.blog.wordpress.com/28538/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/en.blog.wordpress.com/28538/" /></a> <img alt="" border="0" src="http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28538&#038;subd=en.blog&#038;ref=&#038;feed=1" width="1" height="1" />]]></content:encoded>
+                <wfw:commentRss>http://en.blog.wordpress.com/2014/09/09/fight-for-net-neutrality/feed/</wfw:commentRss>
+                <slash:comments>66</slash:comments>
+                
+                <media:content url="http://1.gravatar.com/avatar/75ca404bce9c8adfdbf493c62cecb398?s=96&#38;d=retro" medium="image">
+                    <media:title type="html">pesieminski</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/settingsmenu.jpg?w=300" medium="image">
+                    <media:title type="html">settingsmenu</media:title>
+                </media:content>
+                
+                <media:content url="https://en-blog.files.wordpress.com/2014/09/ffnn-2.jpg?w=300" medium="image">
+                    <media:title type="html">ffnn 2</media:title>
+                </media:content>
+</item>
+</channel>
+</rss>

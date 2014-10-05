@@ -60,21 +60,31 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "119025E919B92DA1009184BE"
-               BuildableName = "SwiftRSS_ExampleTests.xctest"
-               BlueprintName = "SwiftRSS_ExampleTests"
-               ReferencedContainer = "container:SwiftRSS_Example.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "114E26BD19BA399B00D292F3"
                BuildableName = "Tests.xctest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:SwiftRSS_Example.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "NSDateExtension_Tests">
+               </Test>
+               <Test
+                  Identifier = "RSSParser_Tests/test_parser_withInvalidMock_shouldReturnParsingError()">
+               </Test>
+               <Test
+                  Identifier = "RSSParser_Tests/test_parser_withInvalidURL_shouldReturnNetworkError()">
+               </Test>
+               <Test
+                  Identifier = "RSSParser_Tests/test_parser_withValidMock_shouldReturnTheRightNumberOfItems()">
+               </Test>
+               <Test
+                  Identifier = "RSSParser_Tests/test_parser_withValidMock_shouldReturnTheRightValues()">
+               </Test>
+               <Test
+                  Identifier = "RSSParser_Tests/test_parser_withWordpressMock_shouldReturnTheRightValues()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

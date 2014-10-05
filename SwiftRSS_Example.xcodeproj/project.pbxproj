@@ -19,6 +19,8 @@
 		119025E319B92DA1009184BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119025E119B92DA1009184BE /* Main.storyboard */; };
 		119025E519B92DA1009184BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119025E419B92DA1009184BE /* Images.xcassets */; };
 		119025FC19B92DDF009184BE /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
+		119B5BCB19DEE6C10076A205 /* Wordpress.rss in Resources */ = {isa = PBXBuildFile; fileRef = 119B5BC919DEE6C10076A205 /* Wordpress.rss */; };
+		119B5BCF19DEE7320076A205 /* Tumblr.rss in Resources */ = {isa = PBXBuildFile; fileRef = 119B5BCD19DEE7320076A205 /* Tumblr.rss */; };
 		11C8C1AE19DC3EB80040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
 		11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */; };
 		11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
@@ -49,6 +51,8 @@
 		119025E219B92DA1009184BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		119025E419B92DA1009184BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		119025FB19B92DDF009184BE /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
+		119B5BC919DEE6C10076A205 /* Wordpress.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wordpress.rss; sourceTree = "<group>"; };
+		119B5BCD19DEE7320076A205 /* Tumblr.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tumblr.rss; sourceTree = "<group>"; };
 		11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +99,8 @@
 			children = (
 				117F56AD19D83AF50004DDEA /* SwiftBlog.rss */,
 				117F56B419D872A70004DDEA /* Invalid.rss */,
+				119B5BC919DEE6C10076A205 /* Wordpress.rss */,
+				119B5BCD19DEE7320076A205 /* Tumblr.rss */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -229,7 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119B5BCB19DEE6C10076A205 /* Wordpress.rss in Resources */,
 				117F56B619D872A70004DDEA /* Invalid.rss in Resources */,
+				119B5BCF19DEE7320076A205 /* Tumblr.rss in Resources */,
 				117F56AF19D83AF50004DDEA /* SwiftBlog.rss in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
