@@ -65,26 +65,6 @@
                BlueprintName = "Tests"
                ReferencedContainer = "container:SwiftRSS_Example.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "NSDateExtension_Tests">
-               </Test>
-               <Test
-                  Identifier = "RSSParser_Tests/test_parser_withInvalidMock_shouldReturnParsingError()">
-               </Test>
-               <Test
-                  Identifier = "RSSParser_Tests/test_parser_withInvalidURL_shouldReturnNetworkError()">
-               </Test>
-               <Test
-                  Identifier = "RSSParser_Tests/test_parser_withValidMock_shouldReturnTheRightNumberOfItems()">
-               </Test>
-               <Test
-                  Identifier = "RSSParser_Tests/test_parser_withValidMock_shouldReturnTheRightValues()">
-               </Test>
-               <Test
-                  Identifier = "RSSParser_Tests/test_parser_withWordpressMock_shouldReturnTheRightValues()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
