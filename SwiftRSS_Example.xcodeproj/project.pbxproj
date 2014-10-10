@@ -26,6 +26,7 @@
 		11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */; };
 		11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
 		11F4B4C619E8756F0020EB6B /* RSSFeedMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5BD119E1EB290076A205 /* RSSFeedMeta.swift */; };
+		11F4B4C919E890030020EB6B /* Empty.rss in Resources */ = {isa = PBXBuildFile; fileRef = 11F4B4C719E890030020EB6B /* Empty.rss */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		119B5BD119E1EB290076A205 /* RSSFeedMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFeedMeta.swift; sourceTree = "<group>"; };
 		11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension_Tests.swift; sourceTree = "<group>"; };
+		11F4B4C719E890030020EB6B /* Empty.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Empty.rss; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				117F56B419D872A70004DDEA /* Invalid.rss */,
 				119B5BC919DEE6C10076A205 /* Wordpress.rss */,
 				119B5BCD19DEE7320076A205 /* Tumblr.rss */,
+				11F4B4C719E890030020EB6B /* Empty.rss */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				117F56B619D872A70004DDEA /* Invalid.rss in Resources */,
 				119B5BCF19DEE7320076A205 /* Tumblr.rss in Resources */,
 				117F56AF19D83AF50004DDEA /* SwiftBlog.rss in Resources */,
+				11F4B4C919E890030020EB6B /* Empty.rss in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

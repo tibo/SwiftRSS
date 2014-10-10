@@ -15,6 +15,7 @@ class RSSParser_Tests: XCTestCase {
     let invalidMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Invalid", ofType: "rss")
     let wordpressMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Wordpress", ofType: "rss")
     let tumblrMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Tumblr", ofType: "rss")
+    let emptyMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Empty", ofType: "rss")
     
     let PDT_timeZone = NSTimeZone(name: "PST")
     let GMT_timeZone = NSTimeZone(name: "GMT")
@@ -678,6 +679,24 @@ class RSSParser_Tests: XCTestCase {
             
         })
         
+    }
+    
+    func test_parser_withEmptyMock_shouldBehaveProperly() {
+        
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: emptyMockFileURL!))
+        let expectation = self.expectationWithDescription("GET \(request.URL)")
+        
+        RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
+            
+            expectation.fulfill()
+            
+            XCTAssert((items!.count == 1), "number of items should be equal to 1")
+            XCTAssertNil(error, "error should be nil")
+        })
+        
+        waitForExpectationsWithTimeout(100, handler: { error in
+            
+        })
     }
     
 }
