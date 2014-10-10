@@ -35,14 +35,51 @@ class RSSParser_Tests: XCTestCase {
         let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
-        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+        RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
             
             expectation.fulfill()
+            
+            self.calendar.timeZone = self.PDT_timeZone
             
             XCTAssert((items!.count == 15), "number of items should be equal to 16")
             XCTAssertNil(error, "error should be nil")
             
-            self.calendar.timeZone = self.PDT_timeZone
+            if let meta = feedMeta?
+            {
+                XCTAssert(meta.title == "Swift Blog - Apple Developer", "")
+                if let link = meta.link?
+                {
+                    XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/", "")
+                }
+                XCTAssert(meta.feedDescription == "Get the latest news and helpful tips on the Swift programming language from the engineers who created it.", "")
+                
+                XCTAssert(meta.language == "en-US", "")
+                
+                if let date = meta.lastBuildDate?
+                {
+                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    
+                    XCTAssert(dateComponent.weekday == 5, "")
+                    XCTAssert(dateComponent.day == 25, "")
+                    XCTAssert(dateComponent.month == 9, "")
+                    XCTAssert(dateComponent.year == 2014, "")
+                    XCTAssert(dateComponent.hour == 10, "")
+                    XCTAssert(dateComponent.minute == 0, "")
+                    XCTAssert(dateComponent.second == 0, "")
+                    XCTAssert(dateComponent.timeZone!.isEqualToTimeZone(self.PDT_timeZone), "")
+                }
+                else
+                {
+                    XCTFail("lastBuildDate shouldn't be nil")
+                }
+                
+                XCTAssert(meta.generator == "Custom", "")
+                XCTAssert(meta.copyright == "Copyright 2014, Apple Inc.", "")
+            }
+            else
+            {
+                XCTFail("feed meta shouldn't be nil")
+            }
             
             var myItem: RSSItem = items![0]
             
@@ -372,14 +409,50 @@ class RSSParser_Tests: XCTestCase {
         let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: wordpressMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
-        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+        RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
             
             expectation.fulfill()
+            
+            self.calendar.timeZone = self.GMT_timeZone
             
             XCTAssertTrue(items!.count == 10, "should have 10 items")
             XCTAssertNil(error, "error should be nil")
             
-            self.calendar.timeZone = self.GMT_timeZone
+            if let meta = feedMeta?
+            {
+                XCTAssert(meta.title == "WordPress.com News", "")
+                if let link = meta.link?
+                {
+                    XCTAssert(link.absoluteString == "http://en.blog.wordpress.com", "")
+                }
+                XCTAssert(meta.feedDescription == "The latest news on WordPress.com and the WordPress community.", "")
+                
+                XCTAssert(meta.language == "en", "")
+                
+                if let date = meta.lastBuildDate?
+                {
+                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    
+                    XCTAssert(dateComponent.weekday == 6, "")
+                    XCTAssert(dateComponent.day == 3, "")
+                    XCTAssert(dateComponent.month == 10, "")
+                    XCTAssert(dateComponent.year == 2014, "")
+                    XCTAssert(dateComponent.hour == 13, "")
+                    XCTAssert(dateComponent.minute == 49, "")
+                    XCTAssert(dateComponent.second == 47, "")
+                    XCTAssert(dateComponent.timeZone!.isEqualToTimeZone(self.GMT_timeZone), "")
+                }
+                else
+                {
+                    XCTFail("lastBuildDate shouldn't be nil")
+                }
+                
+                XCTAssert(meta.generator == "http://wordpress.com/", "")
+            }
+            else
+            {
+                XCTFail("feed meta shouldn't be nil")
+            }
             
             var myItem = items![1]
             
@@ -466,14 +539,30 @@ class RSSParser_Tests: XCTestCase {
         let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: tumblrMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
-        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+        RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
             
             expectation.fulfill()
+            
+            self.calendar.timeZone = self.DST_timeZone
             
             XCTAssertTrue(items!.count == 20, "should have 20 items")
             XCTAssertNil(error, "error should be nil")
             
-            self.calendar.timeZone = self.DST_timeZone
+            if let meta = feedMeta?
+            {
+                XCTAssert(meta.title == "Tumblr Engineering", "")
+                if let link = meta.link?
+                {
+                    XCTAssert(link.absoluteString == "http://engineering.tumblr.com/", "")
+                }
+                XCTAssert(meta.feedDescription == "Dispatches from the intrepid tinkerers behind technology at Tumblr.", "")
+                
+                XCTAssert(meta.generator == "Tumblr (3.0; @engineering)", "")
+            }
+            else
+            {
+                XCTFail("feed meta shouldn't be nil")
+            }
             
             var myItem = items![0]
             
@@ -558,7 +647,7 @@ class RSSParser_Tests: XCTestCase {
         let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: invalidMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
-        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+        RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
             
             expectation.fulfill()
             
@@ -577,7 +666,7 @@ class RSSParser_Tests: XCTestCase {
         let request: NSURLRequest = NSURLRequest(URL: NSURL(string: "file://no/no/no/nothing.rss"))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
-        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+        RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
             
             expectation.fulfill()
             

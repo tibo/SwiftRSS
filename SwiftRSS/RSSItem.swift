@@ -18,7 +18,7 @@ class RSSItem: NSObject {
     
     func setLink(let linkString: String)
     {
-        self.link = NSURL(string: linkString)
+        link = NSURL(string: linkString)
     }
     
     func setPubDate(let dateString: String)

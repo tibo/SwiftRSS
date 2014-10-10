@@ -21,9 +21,11 @@
 		119025FC19B92DDF009184BE /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
 		119B5BCB19DEE6C10076A205 /* Wordpress.rss in Resources */ = {isa = PBXBuildFile; fileRef = 119B5BC919DEE6C10076A205 /* Wordpress.rss */; };
 		119B5BCF19DEE7320076A205 /* Tumblr.rss in Resources */ = {isa = PBXBuildFile; fileRef = 119B5BCD19DEE7320076A205 /* Tumblr.rss */; };
+		119B5BD219E1EB290076A205 /* RSSFeedMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5BD119E1EB290076A205 /* RSSFeedMeta.swift */; };
 		11C8C1AE19DC3EB80040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
 		11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */; };
 		11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */; };
+		11F4B4C619E8756F0020EB6B /* RSSFeedMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119B5BD119E1EB290076A205 /* RSSFeedMeta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		119025FB19B92DDF009184BE /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
 		119B5BC919DEE6C10076A205 /* Wordpress.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wordpress.rss; sourceTree = "<group>"; };
 		119B5BCD19DEE7320076A205 /* Tumblr.rss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tumblr.rss; sourceTree = "<group>"; };
+		119B5BD119E1EB290076A205 /* RSSFeedMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSFeedMeta.swift; sourceTree = "<group>"; };
 		11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				119025FB19B92DDF009184BE /* RSSParser.swift */,
+				119B5BD119E1EB290076A205 /* RSSFeedMeta.swift */,
 				117F56B119D861D10004DDEA /* RSSItem.swift */,
 				11C8C1AD19DC3EB80040D5F4 /* NSDateExtension.swift */,
 			);
@@ -259,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */,
+				11F4B4C619E8756F0020EB6B /* RSSFeedMeta.swift in Sources */,
 				11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */,
 				117F56B219D861D10004DDEA /* RSSItem.swift in Sources */,
 				114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */,
@@ -273,6 +278,7 @@
 				11C8C1AE19DC3EB80040D5F4 /* NSDateExtension.swift in Sources */,
 				119025E019B92DA1009184BE /* DetailViewController.swift in Sources */,
 				117F56B319D861F00004DDEA /* RSSItem.swift in Sources */,
+				119B5BD219E1EB290076A205 /* RSSFeedMeta.swift in Sources */,
 				119025DE19B92DA1009184BE /* MasterViewController.swift in Sources */,
 				119025DC19B92DA1009184BE /* AppDelegate.swift in Sources */,
 				119025FC19B92DDF009184BE /* RSSParser.swift in Sources */,

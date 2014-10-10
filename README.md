@@ -10,10 +10,10 @@ It came with the same philosophy as [my](http://github.com/tibo) previous librar
 - [x] Basic RSS Support
 - [x] Handle internet dates (RFC822 & RFC3339)
 - [x] Tests with several RSS feeds (Swift official blog, Wordpress, Tumblr)
+- [x] Handle Feed headers
 - [ ] Handle Comment link, feed and count (specific to Wordpress)
-- [ ] Handle Feed headers
 - [ ] NSCoder compatibility
-- [ ] Add images help (an array of images URL like for BlockRSSParser)
+- [ ] Add images helper (an array of images URL like for BlockRSSParser)
 - [ ] Continuous integration (waiting for Travis-CI Swift support)
 - [ ] Cocoapods spec (waiting for Cocoapods Swift support)
 
