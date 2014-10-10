@@ -30,7 +30,7 @@ class RSSParser_Tests: XCTestCase {
         super.tearDown()
     }
     
-    func test_parser_withValidMock_shouldReturnTheRightNumberOfItems() {
+    func test_parser_withValidMock_shouldReturnTheRightValues() {
         
         let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
@@ -41,23 +41,6 @@ class RSSParser_Tests: XCTestCase {
             
             XCTAssert((items!.count == 15), "number of items should be equal to 16")
             XCTAssertNil(error, "error should be nil")
-        })
-        
-        waitForExpectationsWithTimeout(100, handler: { error in
-            
-        })
-        
-        XCTAssert(true, "Pass")
-    }
-    
-    func test_parser_withValidMock_shouldReturnTheRightValues() {
-        
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!))
-        let expectation = self.expectationWithDescription("GET \(request.URL)")
-        
-        RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
-            
-            expectation.fulfill()
             
             self.calendar.timeZone = self.PDT_timeZone
             
@@ -382,8 +365,6 @@ class RSSParser_Tests: XCTestCase {
         waitForExpectationsWithTimeout(100, handler: { error in
             
         })
-        
-        XCTAssert(true, "Pass")
     }
     
     func test_parser_withWordpressMock_shouldReturnTheRightValues() {
@@ -396,6 +377,7 @@ class RSSParser_Tests: XCTestCase {
             expectation.fulfill()
             
             XCTAssertTrue(items!.count == 10, "should have 10 items")
+            XCTAssertNil(error, "error should be nil")
             
             self.calendar.timeZone = self.GMT_timeZone
             
@@ -477,7 +459,6 @@ class RSSParser_Tests: XCTestCase {
             
         })
         
-        XCTAssert(true, "Pass")
     }
     
     func test_parser_withTumblrMock_shouldReturnTheRightValues() {
@@ -490,6 +471,7 @@ class RSSParser_Tests: XCTestCase {
             expectation.fulfill()
             
             XCTAssertTrue(items!.count == 20, "should have 20 items")
+            XCTAssertNil(error, "error should be nil")
             
             self.calendar.timeZone = self.DST_timeZone
             
@@ -569,7 +551,6 @@ class RSSParser_Tests: XCTestCase {
             
         })
         
-        XCTAssert(true, "Pass")
     }
     
     func test_parser_withInvalidMock_shouldReturnParsingError() {
@@ -589,7 +570,6 @@ class RSSParser_Tests: XCTestCase {
             
         })
         
-        XCTAssert(true, "Pass")
     }
     
     func test_parser_withInvalidURL_shouldReturnNetworkError() {
@@ -609,7 +589,6 @@ class RSSParser_Tests: XCTestCase {
             
         })
         
-        XCTAssert(true, "Pass")
     }
     
 }
