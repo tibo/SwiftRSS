@@ -33,7 +33,7 @@ All you need to do is to create a simple `NSURLRequest` with the URL of your fee
 ```swift
 let request: NSURLRequest = NSURLRequest(URL: NSURL(string: http://developer.apple.com/swift/blog/news.rss))
 
-RSSParser.parseFeedForRequest(request, callback: { (items, error) -> Void in
+RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
   // use your news items here
 })
 ```
