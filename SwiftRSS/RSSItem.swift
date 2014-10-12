@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RSSItem: NSObject {
+class RSSItem: NSObject, NSCoding {
     var title: String?
     var link: NSURL?
     var guid: String?
@@ -24,5 +24,29 @@ class RSSItem: NSObject {
     func setPubDate(let dateString: String)
     {
         pubDate = NSDate.dateFromInternetDateTimeString(dateString)
+    }
+    
+    // MARK: NSCoding
+    required init(coder aDecoder: NSCoder)
+    {
+        super.init()
+        
+        title = aDecoder.decodeObjectForKey("title") as? String
+        link = aDecoder.decodeObjectForKey("link") as? NSURL
+        guid = aDecoder.decodeObjectForKey("guid") as? String
+        pubDate = aDecoder.decodeObjectForKey("pubDate") as? NSDate
+        itemDescription = aDecoder.decodeObjectForKey("description") as? NSString
+        content = aDecoder.decodeObjectForKey("content") as? NSString
+        
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder)
+    {
+        aCoder.encodeObject(self.title!, forKey: "title")
+        aCoder.encodeObject(self.link!, forKey: "link")
+        aCoder.encodeObject(self.guid!, forKey: "guid")
+        aCoder.encodeObject(self.pubDate!, forKey: "pubDate")
+        aCoder.encodeObject(self.itemDescription!, forKey: "description")
+        aCoder.encodeObject(self.content!, forKey: "content")
     }
 }
