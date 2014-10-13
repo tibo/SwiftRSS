@@ -26,6 +26,11 @@ class RSSItem: NSObject, NSCoding {
         pubDate = NSDate.dateFromInternetDateTimeString(dateString)
     }
     
+    override init()
+    {
+        super.init()
+    }
+    
     // MARK: NSCoding
     required init(coder aDecoder: NSCoder)
     {
