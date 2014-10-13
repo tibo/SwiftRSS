@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1106995219EC5AAD0041A595 /* RSSItem_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106995119EC5AAD0041A595 /* RSSItem_Tests.swift */; };
 		114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */; };
 		114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
 		117F56AF19D83AF50004DDEA /* SwiftBlog.rss in Resources */ = {isa = PBXBuildFile; fileRef = 117F56AD19D83AF50004DDEA /* SwiftBlog.rss */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1106995119EC5AAD0041A595 /* RSSItem_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem_Tests.swift; sourceTree = "<group>"; };
 		114E26BE19BA399B00D292F3 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114E26C119BA399B00D292F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSParser_Tests.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				117F56AC19D83AC80004DDEA /* Mocks */,
 				114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */,
 				11C8C1AF19DC7A1E0040D5F4 /* NSDateExtension_Tests.swift */,
+				1106995119EC5AAD0041A595 /* RSSItem_Tests.swift */,
 				114E26C019BA399B00D292F3 /* Supporting Files */,
 			);
 			path = Tests;
@@ -269,6 +272,7 @@
 				11C8C1B019DC7A1E0040D5F4 /* NSDateExtension_Tests.swift in Sources */,
 				11F4B4C619E8756F0020EB6B /* RSSFeedMeta.swift in Sources */,
 				11C8C1B119DC7AF40040D5F4 /* NSDateExtension.swift in Sources */,
+				1106995219EC5AAD0041A595 /* RSSItem_Tests.swift in Sources */,
 				117F56B219D861D10004DDEA /* RSSItem.swift in Sources */,
 				114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */,
 				114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */,
