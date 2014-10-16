@@ -8,7 +8,10 @@
 
 import UIKit
 
-class RSSFeedMeta: NSObject {
+class RSSFeed: NSObject {
+    
+    var items: [RSSItem]! = [RSSItem]()
+    
     var title: String?
     var link: NSURL?
     var feedDescription: String?
@@ -26,4 +29,5 @@ class RSSFeedMeta: NSObject {
     {
         lastBuildDate = NSDate.dateFromInternetDateTimeString(dateString)
     }
+    
 }

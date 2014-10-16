@@ -11,8 +11,8 @@ It came with the same philosophy as [my](http://github.com/tibo) previous librar
 - [x] Handle internet dates (RFC822 & RFC3339)
 - [x] Tests with several RSS feeds (Swift official blog, Wordpress, Tumblr)
 - [x] Handle Feed headers
+- [/] NSCoder compatibility
 - [ ] Handle Comment link, feed and count (specific to Wordpress)
-- [ ] NSCoder compatibility
 - [ ] Add images helper (an array of images URL like for BlockRSSParser)
 - [ ] Continuous integration (waiting for Travis-CI Swift support)
 - [ ] Cocoapods spec (waiting for Cocoapods Swift support)
@@ -33,12 +33,13 @@ All you need to do is to create a simple `NSURLRequest` with the URL of your fee
 ```swift
 let request: NSURLRequest = NSURLRequest(URL: NSURL(string: http://developer.apple.com/swift/blog/news.rss))
 
-RSSParser.parseFeedForRequest(request, callback: { (feedMeta, items, error) -> Void in
-  // use your news items here
+RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
+  NSLog("Feed for \(feed.title)")
+  NSLog("contain \(feed.items)")
 })
 ```
 
-As results you get an Array of [RSSItem](https://github.com/tibo/SwiftRSS/blob/master/SwiftRSS/RSSItem.swift) or, if something wrong happen the `NSError` which will give you the error from the network call or the parsing process.
+As results you get a [RSSFeed](https://github.com/tibo/SwiftRSS/blob/master/SwiftRSS/RSSFeed.swift) object which contain a array of [RSSItem](https://github.com/tibo/SwiftRSS/blob/master/SwiftRSS/RSSItem.swift)s or, if something wrong happen the `NSError` which will give you the error from the network call or the parsing process.
 
 ## How to contribute
 

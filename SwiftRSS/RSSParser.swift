@@ -10,18 +10,17 @@ import UIKit
 
 class RSSParser: NSObject, NSXMLParserDelegate {
     
-    class func parseFeedForRequest(request: NSURLRequest, callback: (feedMeta: RSSFeedMeta?, items: [RSSItem]?, error: NSError?) -> Void)
+    class func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
         let rssParser: RSSParser = RSSParser()
         
         rssParser.parseFeedForRequest(request, callback: callback)
     }
     
-    var callbackClosure: ((feedMeta: RSSFeedMeta?, items: [RSSItem]?, error: NSError?) -> Void)?
+    var callbackClosure: ((feed: RSSFeed?, error: NSError?) -> Void)?
     var currentElement: String = ""
     var currentItem: RSSItem?
-    var items: NSMutableArray! = NSMutableArray()
-    var feedMeta: RSSFeedMeta = RSSFeedMeta()
+    var feed: RSSFeed = RSSFeed()
     
     // node names
     let node_item: String = "item"
@@ -37,13 +36,13 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     let node_generator = "generator"
     let node_copyright = "copyright"
     
-    func parseFeedForRequest(request: NSURLRequest, callback: (feedMeta: RSSFeedMeta?, items: [RSSItem]?, error: NSError?) -> Void)
+    func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
 
             if ((error) != nil)
             {
-                callback(feedMeta: nil, items: nil, error: error)
+                callback(feed: nil, error: error)
             }
             else
             {
@@ -64,12 +63,13 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     
     func parserDidEndDocument(parser: NSXMLParser)
     {
-        self.callbackClosure!(feedMeta: feedMeta, items: items as AnyObject as? [RSSItem] ,error: nil)
+        if let closure = self.callbackClosure?
+        {
+            closure(feed: feed, error: nil)
+        }
     }
     
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
-        
-        NSLog("begin \(elementName)")
         
         if elementName == node_item
         {
@@ -82,16 +82,16 @@ class RSSParser: NSObject, NSXMLParserDelegate {
    
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
-        NSLog("end \(elementName)")
-        
         if elementName == node_item
         {
-            items.addObject(self.currentItem!)
+            if let item = self.currentItem?
+            {
+                self.feed.items.append(item)
+            }
+            
             self.currentItem = nil
             return
         }
-        
-        NSLog("end element \(elementName) = \(currentElement)")
         
         if let item = currentItem?
         {
@@ -129,37 +129,37 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         {
             if elementName == node_title
             {
-                feedMeta.title = currentElement
+                feed.title = currentElement
             }
             
             if elementName == node_link
             {
-                feedMeta.setLink(currentElement)
+                feed.setLink(currentElement)
             }
             
             if elementName == node_description
             {
-                feedMeta.feedDescription = currentElement
+                feed.feedDescription = currentElement
             }
             
             if elementName == node_language
             {
-                feedMeta.language = currentElement
+                feed.language = currentElement
             }
             
             if elementName == node_lastBuildDate
             {
-                feedMeta.setlastBuildDate(currentElement)
+                feed.setlastBuildDate(currentElement)
             }
             
             if elementName == node_generator
             {
-                feedMeta.generator = currentElement
+                feed.generator = currentElement
             }
             
             if elementName == node_copyright
             {
-                feedMeta.copyright = currentElement
+                feed.copyright = currentElement
             }
         }
     }
@@ -170,9 +170,10 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
         
-        NSLog("parsing error: \(parseError)")
-        
-        self.callbackClosure!(feedMeta: nil, items: nil ,error: parseError)
+        if let closure = self.callbackClosure?
+        {
+            closure(feed: nil, error: parseError)
+        }
     }
 
 }
