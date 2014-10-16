@@ -14,7 +14,7 @@ It came with the same philosophy as [my](http://github.com/tibo) previous librar
 - [x] NSCoder compatibility
 - [ ] Handle Comment link, feed and count (specific to Wordpress)
 - [ ] Add images helper (an array of images URL like for BlockRSSParser)
-- [ ] Continuous integration (waiting for Travis-CI Swift support)
+- [x] Continuous integration
 - [ ] Cocoapods spec (waiting for Cocoapods Swift support)
 
 ## Installation
