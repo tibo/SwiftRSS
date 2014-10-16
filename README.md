@@ -11,7 +11,7 @@ It came with the same philosophy as [my](http://github.com/tibo) previous librar
 - [x] Handle internet dates (RFC822 & RFC3339)
 - [x] Tests with several RSS feeds (Swift official blog, Wordpress, Tumblr)
 - [x] Handle Feed headers
-- [/] NSCoder compatibility
+- [x] NSCoder compatibility
 - [ ] Handle Comment link, feed and count (specific to Wordpress)
 - [ ] Add images helper (an array of images URL like for BlockRSSParser)
 - [ ] Continuous integration (waiting for Travis-CI Swift support)
