@@ -47,11 +47,34 @@ class RSSItem: NSObject, NSCoding {
     
     func encodeWithCoder(aCoder: NSCoder)
     {
-        aCoder.encodeObject(self.title!, forKey: "title")
-        aCoder.encodeObject(self.link!, forKey: "link")
-        aCoder.encodeObject(self.guid!, forKey: "guid")
-        aCoder.encodeObject(self.pubDate!, forKey: "pubDate")
-        aCoder.encodeObject(self.itemDescription!, forKey: "description")
-        aCoder.encodeObject(self.content!, forKey: "content")
+        if let title = self.title?
+        {
+            aCoder.encodeObject(title, forKey: "title")
+        }
+        
+        if let link = self.link?
+        {
+            aCoder.encodeObject(link, forKey: "link")
+        }
+        
+        if let guid = self.guid?
+        {
+            aCoder.encodeObject(guid, forKey: "guid")
+        }
+        
+        if let pubDate = self.pubDate?
+        {
+            aCoder.encodeObject(self.pubDate!, forKey: "pubDate")
+        }
+        
+        if let itemDescription = self.itemDescription?
+        {
+            aCoder.encodeObject(self.itemDescription!, forKey: "description")
+        }
+        
+        if let content = self.content?
+        {
+            aCoder.encodeObject(self.content!, forKey: "content")
+        }
     }
 }
