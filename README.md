@@ -1,5 +1,4 @@
-SwiftRSS
-========
+# SwiftRSS [![Build Status](https://magnum.travis-ci.com/tibo/SwiftRSS.svg?token=8d8waQ1m42MSyS9GKns1)](https://magnum.travis-ci.com/tibo/SwiftRSS)
 
 SwiftRSS is a simple RSS parser written in Swift.
 
