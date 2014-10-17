@@ -1,3 +1,6 @@
 language: objective-c
 
-script: xcodebuild -sdk iphonesimulator -scheme SwiftRSS_Example clean test
+install:
+  - gem install --no-ri --no-rdoc xcpretty
+
+script: xcodebuild -sdk iphonesimulator -scheme SwiftRSS_Example clean test | xcpretty -c
