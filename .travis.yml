@@ -1,5 +1,3 @@
 language: objective-c
-before_install:
-    - brew update
-    - brew install xctool
-script: xctool -sdk iphonesimulator -scheme SwiftRSS_Example test
+xcode_project: SwiftRSS_Example.xcodeproj
+xcode_scheme: SwiftRSS_Example
