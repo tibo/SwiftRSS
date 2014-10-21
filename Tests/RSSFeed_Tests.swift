@@ -57,6 +57,11 @@ class RSSFeed_Tests: XCTestCase {
         item.pubDate = NSDate()
         item.itemDescription = "Big Description"
         item.content = "Here is the content"
+        item.setCommentsLink("http://www.test.com")
+        item.setCommentRSSLink("http://www.whatever.com/")
+        item.commentsCount = 666
+        item.author = "John Doe"
+        item.categories = ["One","Two","Tree"]
         
         feed.items.append(item)
         
@@ -68,6 +73,11 @@ class RSSFeed_Tests: XCTestCase {
         item2.pubDate = NSDate()
         item2.itemDescription = "Big Description Again"
         item2.content = "Here is the content for the second item"
+        item2.setCommentsLink("http://www.testing.com")
+        item2.setCommentRSSLink("http://www.whateveragain.com/")
+        item2.commentsCount = 42
+        item2.author = "Jane Doe"
+        item2.categories = ["Four","Five","Six"]
         
         feed.items.append(item2)
         
@@ -94,6 +104,13 @@ class RSSFeed_Tests: XCTestCase {
         XCTAssert(item.pubDate == itemcopy.pubDate, "")
         XCTAssert(item.itemDescription == itemcopy.itemDescription, "")
         XCTAssert(item.content == itemcopy.content, "")
+        XCTAssert(item.commentsLink!.absoluteString == itemcopy.commentsLink!.absoluteString, "")
+        XCTAssert(item.commentRSSLink!.absoluteString == itemcopy.commentRSSLink!.absoluteString, "")
+        XCTAssert(item.commentsCount == itemcopy.commentsCount, "")
+        XCTAssert(item.author == itemcopy.author, "")
+        XCTAssert(item.categories[0] == itemcopy.categories[0], "")
+        XCTAssert(item.categories[1] == itemcopy.categories[1], "")
+        XCTAssert(item.categories[2] == itemcopy.categories[2], "")
         
         var item2copy = feed2.items[1]
         
@@ -103,5 +120,12 @@ class RSSFeed_Tests: XCTestCase {
         XCTAssert(item2.pubDate == item2copy.pubDate, "")
         XCTAssert(item2.itemDescription == item2copy.itemDescription, "")
         XCTAssert(item2.content == item2copy.content, "")
+        XCTAssert(item2.commentsLink!.absoluteString == item2copy.commentsLink!.absoluteString, "")
+        XCTAssert(item2.commentRSSLink!.absoluteString == item2copy.commentRSSLink!.absoluteString, "")
+        XCTAssert(item2.commentsCount == item2copy.commentsCount, "")
+        XCTAssert(item2.author == item2copy.author, "")
+        XCTAssert(item2.categories[0] == item2copy.categories[0], "")
+        XCTAssert(item2.categories[1] == item2copy.categories[1], "")
+        XCTAssert(item2.categories[2] == item2copy.categories[2], "")
     }
 }

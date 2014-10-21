@@ -11,7 +11,7 @@ It came with the same philosophy as [my](http://github.com/tibo) previous librar
 - [x] Tests with several RSS feeds (Swift official blog, Wordpress, Tumblr)
 - [x] Handle Feed headers
 - [x] NSCoder compatibility
-- [ ] Handle Comment link, feed and count (specific to Wordpress)
+- [x] Handle Comment link, feed and count (specific to Wordpress)
 - [ ] Add images helper (an array of images URL like for BlockRSSParser)
 - [x] Continuous integration
 - [ ] Cocoapods spec (waiting for Cocoapods Swift support)

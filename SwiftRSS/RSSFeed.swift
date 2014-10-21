@@ -14,21 +14,24 @@ class RSSFeed: NSObject, NSCoding {
     
     var title: String?
     var link: NSURL?
-    var feedDescription: String?
-    var language: String?
-    var lastBuildDate: NSDate?
-    var generator: String?
-    var copyright: String?
     
-    func setLink(let linkString: String)
+    func setLink(let linkString: String!)
     {
         link = NSURL(string: linkString)
     }
     
-    func setlastBuildDate(let dateString: String)
+    var feedDescription: String?
+    var language: String?
+    var lastBuildDate: NSDate?
+    
+    func setlastBuildDate(let dateString: String!)
     {
         lastBuildDate = NSDate.dateFromInternetDateTimeString(dateString)
     }
+    
+    var generator: String?
+    var copyright: String?
+    
     
     override init()
     {

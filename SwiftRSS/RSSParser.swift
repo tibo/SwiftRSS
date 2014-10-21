@@ -35,6 +35,12 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     let node_lastBuildDate = "lastBuildDate"
     let node_generator = "generator"
     let node_copyright = "copyright"
+    // wordpress specifics
+    let node_commentsLink = "comments"
+    let node_commentsCount = "slash:comments"
+    let node_commentRSSLink = "wfw:commentRss"
+    let node_author = "dc:creator"
+    let node_category = "category"
     
     func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
@@ -124,6 +130,32 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             {
                 item.content = currentElement
             }
+            
+            if elementName == node_commentsLink
+            {
+                item.setCommentsLink(currentElement)
+            }
+            
+            if elementName == node_commentsCount
+            {
+                item.commentsCount = currentElement.toInt()
+            }
+            
+            if elementName == node_commentRSSLink
+            {
+                item.setCommentRSSLink(currentElement)
+            }
+            
+            if elementName == node_author
+            {
+                item.author = currentElement
+            }
+            
+            if elementName == node_category
+            {
+                item.categories.append(currentElement)
+            }
+            
         }
         else
         {

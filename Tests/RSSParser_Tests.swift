@@ -483,9 +483,36 @@ class RSSParser_Tests: XCTestCase {
                 }
                 
                 XCTAssert(myItem.itemDescription == "One week every year, the entire <a href=\"http://automattic.com\">Automattic</a> staff gets together to connect, work, and laugh. And then, of course, we blog about it! Could you be blogging about your experience with us in 2015?<img alt=\"\" border=\"0\" src=\"http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28737&#038;subd=en.blog&#038;ref=&#038;feed=1\" width=\"1\" height=\"1\" />", "")
-    //            XCTAssert(myItem.content == "", "")
+                XCTAssert(myItem.content == "<p>Automattic is a distributed company &#8212; we all work from wherever we are. Right now, &#8220;where we are&#8221; is 197 cities around the world: New Orleans, USA. Montevideo, Uruguay. Tokyo, Japan. Vilnius, Lithuania.</p>", "")
                 
-                 myItem = testFeed.items[6]
+                if let link = myItem.commentsLink?
+                {
+                    XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/#comments", "")
+                }
+                else
+                {
+                    XCTFail("link shouldn't be nil")
+                }
+                
+                if let link = myItem.commentRSSLink?
+                {
+                    XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/feed/", "")
+                }
+                else
+                {
+                    XCTFail("link shouldn't be nil")
+                }
+                
+                XCTAssert(myItem.commentsCount == 41, "")
+                
+                XCTAssert(myItem.author == "Michelle W.", "")
+                
+                XCTAssert(contains(myItem.categories, "Automattic"),"")
+                XCTAssert(contains(myItem.categories, "Hiring"),"")
+                XCTAssert(contains(myItem.categories, "distributed work"),"")
+                XCTAssert(contains(myItem.categories, "future of work"),"")
+                
+                myItem = testFeed.items[6]
                 
                 XCTAssert(myItem.title == "Gmail Password Leak Update", "")
                 
@@ -520,6 +547,32 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.itemDescription == "We've taken extra steps to protect WordPress.com members.<img alt=\"\" border=\"0\" src=\"http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28615&#038;subd=en.blog&#038;ref=&#038;feed=1\" width=\"1\" height=\"1\" />", "")
                 XCTAssert(myItem.content == "<p>This week, a group of hackers <a title=\"Russian Hackers Released Gmail Password List\" href=\"http://time.com/3318853/google-user-logins-bitcoin/\">released a list</a> of about 5 million Gmail addresses and passwords. This list was not generated as a result of an exploit of WordPress.com, but since a number of emails on the list matched email addresses associated with WordPress.com accounts, we took steps to protect our users.</p>", "")
+                
+                if let link = myItem.commentsLink?
+                {
+                    XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/#comments", "")
+                }
+                else
+                {
+                    XCTFail("link shouldn't be nil")
+                }
+                
+                if let link = myItem.commentRSSLink?
+                {
+                    XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/feed/", "")
+                }
+                else
+                {
+                    XCTFail("link shouldn't be nil")
+                }
+                
+                XCTAssert(myItem.commentsCount == 147, "")
+                
+                XCTAssert(myItem.author == "Daryl L. L. Houston", "")
+                
+                XCTAssert(contains(myItem.categories, "Notifications"),"")
+                XCTAssert(contains(myItem.categories, "Security"),"")
+                XCTAssert(contains(myItem.categories, "security"),"")
             }
           
         })

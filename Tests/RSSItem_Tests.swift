@@ -47,6 +47,11 @@ class RSSItem_Tests: XCTestCase {
         item.pubDate = NSDate()
         item.itemDescription = "Big Description"
         item.content = "Here is the content"
+        item.setCommentsLink("http://www.test.com")
+        item.setCommentRSSLink("http://www.whatever.com/")
+        item.commentsCount = 666
+        item.author = "John Doe"
+        item.categories = ["One","Two","Tree"]
         
         let archive = documentsPath.stringByAppendingString("test.archive")
         
@@ -60,6 +65,13 @@ class RSSItem_Tests: XCTestCase {
         XCTAssert(item.pubDate == item2.pubDate, "")
         XCTAssert(item.itemDescription == item2.itemDescription, "")
         XCTAssert(item.content == item2.content, "")
+        XCTAssert(item.commentsLink!.absoluteString == item2.commentsLink!.absoluteString, "")
+        XCTAssert(item.commentRSSLink!.absoluteString == item2.commentRSSLink!.absoluteString, "")
+        XCTAssert(item.commentsCount == item2.commentsCount, "")
+        XCTAssert(item.author == item2.author, "")
+        XCTAssert(item.categories[0] == item2.categories[0], "")
+        XCTAssert(item.categories[1] == item2.categories[1], "")
+        XCTAssert(item.categories[2] == item2.categories[2], "")
     }
 
 }
