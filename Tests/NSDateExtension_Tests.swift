@@ -11,8 +11,8 @@ import XCTest
 
 class NSDateExtension_Tests: XCTestCase {
     
-    let GMT_timeZone = NSTimeZone(forSecondsFromGMT: 0)
-    let calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+    let GMT_timeZone: NSTimeZone! = NSTimeZone(forSecondsFromGMT: 0)
+    let calendar: NSCalendar! = NSCalendar(calendarIdentifier: NSGregorianCalendar)
     let calendar_flags = NSCalendarUnit(UInt.max)
 
     override func setUp() {

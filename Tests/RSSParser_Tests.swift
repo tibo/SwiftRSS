@@ -11,16 +11,16 @@ import XCTest
 
 class RSSParser_Tests: XCTestCase {
     
-    let mockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("SwiftBlog", ofType: "rss")
-    let invalidMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Invalid", ofType: "rss")
-    let wordpressMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Wordpress", ofType: "rss")
-    let tumblrMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Tumblr", ofType: "rss")
-    let emptyMockFileURL = NSBundle(forClass: RSSParser_Tests.classForKeyedArchiver()).pathForResource("Empty", ofType: "rss")
+    let mockFileURL = NSBundle(forClass: RSSParser_Tests.self).pathForResource("SwiftBlog", ofType: "rss")
+    let invalidMockFileURL = NSBundle(forClass: RSSParser_Tests.self).pathForResource("Invalid", ofType: "rss")
+    let wordpressMockFileURL = NSBundle(forClass: RSSParser_Tests.self).pathForResource("Wordpress", ofType: "rss")
+    let tumblrMockFileURL = NSBundle(forClass: RSSParser_Tests.self).pathForResource("Tumblr", ofType: "rss")
+    let emptyMockFileURL = NSBundle(forClass: RSSParser_Tests.self).pathForResource("Empty", ofType: "rss")
     
-    let PDT_timeZone = NSTimeZone(name: "PST")
-    let GMT_timeZone = NSTimeZone(name: "GMT")
-    let DST_timeZone = NSTimeZone(forSecondsFromGMT: 60 * 60 * -4)
-    let calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+    let PDT_timeZone: NSTimeZone! = NSTimeZone(name: "PST")
+    let GMT_timeZone: NSTimeZone! = NSTimeZone(name: "GMT")
+    let DST_timeZone: NSTimeZone! = NSTimeZone(forSecondsFromGMT: 60 * 60 * -4)
+    let calendar: NSCalendar! = NSCalendar(calendarIdentifier: NSGregorianCalendar)
     let calendar_flags = NSCalendarUnit(UInt.max)
     
     override func setUp() {
@@ -33,7 +33,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withValidMock_shouldReturnTheRightValues() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!))
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!)!)
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -403,7 +403,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withWordpressMock_shouldReturnTheRightValues() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: wordpressMockFileURL!))
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: wordpressMockFileURL!)!)
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -585,7 +585,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withTumblrMock_shouldReturnTheRightValues() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: tumblrMockFileURL!))
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: tumblrMockFileURL!)!)
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -690,7 +690,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withInvalidMock_shouldReturnParsingError() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: invalidMockFileURL!))
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: invalidMockFileURL!)!)
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -709,7 +709,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withInvalidURL_shouldReturnNetworkError() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(string: "file://no/no/no/nothing.rss"))
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(string: "file://no/no/no/nothing.rss")!)
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -728,7 +728,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withEmptyMock_shouldBehaveProperly() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: emptyMockFileURL!))
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: emptyMockFileURL!)!)
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
