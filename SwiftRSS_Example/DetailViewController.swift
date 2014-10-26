@@ -10,28 +10,69 @@ import UIKit
 
 class DetailViewController: UIViewController {
                             
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var itemWebView: UIWebView!
 
 
-    var detailItem: AnyObject? {
+    var detailItem: RSSItem? {
         didSet {
-            // Update the view.
             self.configureView()
         }
     }
 
     func configureView() {
-        // Update the user interface for the detail item.
-        if let detail: AnyObject = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
+        
+        if let item: RSSItem = self.detailItem
+        {
+            if let webView = self.itemWebView
+            {
+                
+                if let templateURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("template", ofType: "html")!)?
+                {
+                    if var template = NSString(contentsOfURL: templateURL, encoding: NSUTF8StringEncoding, error: nil)?
+                    {
+                        if let title = item.title?
+                        {
+                            template = template.stringByReplacingOccurrencesOfString("###TITLE###", withString: title)
+                        }
+                        
+                        if let content = item.content?
+                        {
+                            template = template.stringByReplacingOccurrencesOfString("###CONTENT###", withString: content)
+                        }
+                        else if let description = item.itemDescription?
+                        {
+                            template = template.stringByReplacingOccurrencesOfString("###CONTENT###", withString: description)
+                        }
+                        
+                        if let date = item.pubDate?
+                        {
+                            var formatter = NSDateFormatter()
+                            formatter.dateFormat = "MMM dd, yyyy"
+                            
+                            template = template.stringByReplacingOccurrencesOfString("###DATE###", withString: formatter.stringFromDate(date))
+                        }
+                        
+                        webView.loadHTMLString(template, baseURL: nil)
+                    }
+                    
+                }
+                else
+                {
+                    if let content = item.content?
+                    {
+                        webView.loadHTMLString(content, baseURL: nil)
+                    }
+                    else if let description = item.itemDescription?
+                    {
+                        webView.loadHTMLString(description, baseURL: nil)
+                    }
+                }
             }
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
     }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1106995219EC5AAD0041A595 /* RSSItem_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106995119EC5AAD0041A595 /* RSSItem_Tests.swift */; };
+		111EFED219FD70D400300EC4 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 111EFED119FD70D400300EC4 /* template.html */; };
 		114E26C319BA399B00D292F3 /* RSSParser_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */; };
 		114E26C919BA3A7300D292F3 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119025FB19B92DDF009184BE /* RSSParser.swift */; };
 		114F733C19F809200048E7B0 /* String+imageLinksFromHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114F733B19F809200048E7B0 /* String+imageLinksFromHTML.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		1106995119EC5AAD0041A595 /* RSSItem_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSItem_Tests.swift; sourceTree = "<group>"; };
+		111EFED119FD70D400300EC4 /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		114E26BE19BA399B00D292F3 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114E26C119BA399B00D292F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		114E26C219BA399B00D292F3 /* RSSParser_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSParser_Tests.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				119025E119B92DA1009184BE /* Main.storyboard */,
 				119025E419B92DA1009184BE /* Images.xcassets */,
 				119025D919B92DA1009184BE /* Supporting Files */,
+				111EFED119FD70D400300EC4 /* template.html */,
 			);
 			path = SwiftRSS_Example;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119025E319B92DA1009184BE /* Main.storyboard in Resources */,
+				111EFED219FD70D400300EC4 /* template.html in Resources */,
 				119025E519B92DA1009184BE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
