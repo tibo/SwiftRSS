@@ -49,6 +49,23 @@ class RSSItem: NSObject, NSCoding {
     
     var categories: [String]! = [String]()
     
+    var imagesFromItemDescription: [NSURL]! {
+        if let itemDescription = self.itemDescription?
+        {
+            return itemDescription.imageLinksFromHTMLString
+        }
+        
+        return [NSURL]()
+    }
+    
+    var imagesFromContent: [NSURL]! {
+        if let content = self.content?
+        {
+            return content.imageLinksFromHTMLString
+        }
+        
+        return [NSURL]()
+    }
     
     override init()
     {

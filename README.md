@@ -12,7 +12,7 @@ It came with the same philosophy as [my](http://github.com/tibo) previous librar
 - [x] Handle Feed headers
 - [x] NSCoder compatibility
 - [x] Handle Comment link, feed and count (specific to Wordpress)
-- [ ] Add images helper (an array of images URL like for BlockRSSParser)
+- [x] Add images helper (an array of images URL like for BlockRSSParser)
 - [x] Continuous integration
 - [ ] Cocoapods spec (waiting for Cocoapods Swift support)
 

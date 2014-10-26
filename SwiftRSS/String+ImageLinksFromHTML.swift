@@ -13,11 +13,13 @@ extension String {
     {
         var matches = [NSURL]()
         
-        var error: NSError
+        var error: NSError?
         
-        if let regex = NSRegularExpression(pattern:"(https?)\\S*(png|jpg|jpeg|gif)", options:.CaseInsensitive, error:nil)
+        var full_range: NSRange = NSMakeRange(0, countElements(self))
+        
+        if let regex = NSRegularExpression(pattern:"(https?)\\S*(png|jpg|jpeg|gif)", options:.CaseInsensitive, error:&error)
         {
-            regex.enumerateMatchesInString(self, options: NSMatchingOptions(0), range: NSRange(location: 0, length: self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))) {
+            regex.enumerateMatchesInString(self, options: NSMatchingOptions(0), range: full_range) {
                 (result : NSTextCheckingResult!, _, _) in
                 
                 // didn't find a way to bridge an NSRange to Range<String.Index>

@@ -485,6 +485,9 @@ class RSSParser_Tests: XCTestCase {
                 XCTAssert(myItem.itemDescription == "One week every year, the entire <a href=\"http://automattic.com\">Automattic</a> staff gets together to connect, work, and laugh. And then, of course, we blog about it! Could you be blogging about your experience with us in 2015?<img alt=\"\" border=\"0\" src=\"http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28737&#038;subd=en.blog&#038;ref=&#038;feed=1\" width=\"1\" height=\"1\" />", "")
                 XCTAssert(myItem.content == "<p>Automattic is a distributed company &#8212; we all work from wherever we are. Right now, &#8220;where we are&#8221; is 197 cities around the world: New Orleans, USA. Montevideo, Uruguay. Tokyo, Japan. Vilnius, Lithuania.</p>", "")
                 
+                XCTAssert(myItem.imagesFromItemDescription.count == 1, "")
+                XCTAssert(myItem.imagesFromItemDescription[0].absoluteString == "http://pixel.wp.com/b.gif", "")
+                
                 if let link = myItem.commentsLink?
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/#comments", "")
@@ -548,6 +551,9 @@ class RSSParser_Tests: XCTestCase {
                 XCTAssert(myItem.itemDescription == "We've taken extra steps to protect WordPress.com members.<img alt=\"\" border=\"0\" src=\"http://pixel.wp.com/b.gif?host=en.blog.wordpress.com&#038;blog=3584907&#038;post=28615&#038;subd=en.blog&#038;ref=&#038;feed=1\" width=\"1\" height=\"1\" />", "")
                 XCTAssert(myItem.content == "<p>This week, a group of hackers <a title=\"Russian Hackers Released Gmail Password List\" href=\"http://time.com/3318853/google-user-logins-bitcoin/\">released a list</a> of about 5 million Gmail addresses and passwords. This list was not generated as a result of an exploit of WordPress.com, but since a number of emails on the list matched email addresses associated with WordPress.com accounts, we took steps to protect our users.</p>", "")
                 
+                XCTAssert(myItem.imagesFromItemDescription.count == 1, "")
+                XCTAssert(myItem.imagesFromItemDescription[0].absoluteString == "http://pixel.wp.com/b.gif", "")
+                
                 if let link = myItem.commentsLink?
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/#comments", "")
@@ -573,6 +579,19 @@ class RSSParser_Tests: XCTestCase {
                 XCTAssert(contains(myItem.categories, "Notifications"),"")
                 XCTAssert(contains(myItem.categories, "Security"),"")
                 XCTAssert(contains(myItem.categories, "security"),"")
+                
+                myItem = testFeed.items[2]
+                
+                XCTAssert(myItem.title == "Early Theme Adopters: Eighties", "")
+                
+                XCTAssert(myItem.imagesFromContent.count == 7, "")
+                XCTAssert(myItem.imagesFromContent[0].absoluteString == "https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-07-46-pm.png", "")
+                XCTAssert(myItem.imagesFromContent[1].absoluteString == "https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-11-17-31-pm.png", "")
+                XCTAssert(myItem.imagesFromContent[2].absoluteString == "https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-05-00-pm.png", "")
+                XCTAssert(myItem.imagesFromContent[3].absoluteString == "https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-11-43-22-pm.png", "")
+                XCTAssert(myItem.imagesFromContent[4].absoluteString == "https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-18-29-pm.png", "")
+                XCTAssert(myItem.imagesFromContent[5].absoluteString == "https://en-blog.files.wordpress.com/2014/09/screen-shot-2014-09-25-at-12-06-38-pm.png", "")
+                XCTAssert(myItem.imagesFromContent[6].absoluteString == "http://pixel.wp.com/b.gif", "")
             }
           
         })
@@ -644,6 +663,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.itemDescription == "<img src=\"http://33.media.tumblr.com/fc576f290358def5f021b7a99032aa0c/tumblr_nc05ipn7h61qjk2rvo1_500.jpg\"/><br/><br/><h2><a href=\"http://blog.segiddins.me/\">Sam Giddins: My Summer at Tumblr</a></h2><div><p>This summer, I had the immense pleasure of working on the Tumblr iOS app. From day one, I got to work with an incredible team on an incredible app writing production code. Over the course of nearly 100 pull requests, I managed to get my hands on almost every piece of the app, from design changes to code refactors to some sweet new features.<br/><br/>The best part about the summer was working alongside multiple teams at Tumblr (iOS, Creative, API) making real, significant changes to one of the most polished apps on the App Store. When the summer started, I’d never written a custom animation, but after a few weeks I was helping to debug some of the fun things we do with CoreAnimation. Monday of my second week I found a bug in the API and got to spend a day looking through PHP code to help track that down. One Friday, I started work on some new things that will come out soon—at 5 pm, on a whim. By Monday, I was demoing the changes to Peter Vidani. That sort of rapid feedback is incredible, and really made my experience at Tumblr a joy—I got to make a real difference on the app.<br/><br/>In addition to the code I wrote (which was a lot!), I got to work with the team on all of the other facets of the app development lifecycle, from the existential frustration of dealing with translations to setting up a CI build server. I review several hundred pull requests, and spent hours discussing code with brilliant collegues who were never hesitant to debate the intricacies of what we were working on.<br/><br/>Throughout the summer, I was constantly in awe of the amazing work done at Tumblr every day. I’m proud to say that I got to contribute to the next few updates, and will forever cherish the experiences I had during my time at Tumblr HQ.<br/><br/></p></div>", "")
                 
+                XCTAssert(myItem.imagesFromItemDescription.count == 1, "")
+                XCTAssert(myItem.imagesFromItemDescription[0].absoluteString == "http://33.media.tumblr.com/fc576f290358def5f021b7a99032aa0c/tumblr_nc05ipn7h61qjk2rvo1_500.jpg", "")
+                
                 myItem = testFeed.items[1]
                 
                 XCTAssert(myItem.title == "Megan Belzner: My Summer at TumblrThis summer I got the amazing...", "")
@@ -678,6 +700,9 @@ class RSSParser_Tests: XCTestCase {
                 }
                 
                 XCTAssert(myItem.itemDescription == "<img src=\"http://33.media.tumblr.com/09552c5d09b7221d2409c3b42d046208/tumblr_nc05chwHhp1qjk2rvo1_500.jpg\"/><br/><br/><h2><a href=\"http://ivynewton.tumblr.com/\">Megan Belzner: My Summer at Tumblr</a></h2><p>This summer I got the amazing opportunity to intern as a product engineer on the Creation team. I didn’t really know what to expect when I first stepped in to the office, but whatever hopes and expectations I could have had, the summer far surpassed them.<br/><br/>The Creation team is in charge of one of the most important parts of the Tumblr site - posting tools - and most of my summer was spent working with the others on the team to overhaul the code underlying that part of the site. Coming in at the beginning of the summer, I could count the number of times I had worked in an existing codebase on one hand - namely: once, maybe twice. But with the help of the incredible Creation team, I dove right in and started contributing bug fixes, updates, and even entire features. Starting in the very first week I was already writing and deploying code, fixing a bug with note counts and updating Tumblr’s user engagement emails. By the end of the summer, I found myself getting ownership of pretty significant parts of the project. Even better, I had learned how to easily track down the source of a bug, figure out what this or that bit of code actually did, and navigate the figurative jungle of javascript.<br/><br/>It was incredibly exciting and rewarding to work on such a central part of the Tumblr site, knowing that people are going to be using some of the code I wrote to make millions of posts a day. I learned a tremendous amount about front-end web development, going from knowing a pretty minimal amount of javascript to knowing all sorts of intricacies about browser implementations and fluently speaking backbone.js and underscore.js.<br/><br/>Working at Tumblr really was a dream come true, and though I’m excited to get back to my friends at MIT, I’ve realized that this is absolutely something I could do for the rest of my life (or the foreseeable future, at least). Spending the day bringing ideas to life for Tumblr’s millions of users, surrounded by the most creative, smart, and friendly people I’ve ever met - It almost feels like cheating that I got to call that “work”.<br/><br/></p>", "")
+                
+                XCTAssert(myItem.imagesFromItemDescription.count == 1, "")
+                XCTAssert(myItem.imagesFromItemDescription[0].absoluteString == "http://33.media.tumblr.com/09552c5d09b7221d2409c3b42d046208/tumblr_nc05chwHhp1qjk2rvo1_500.jpg", "")
             }
         
         })
