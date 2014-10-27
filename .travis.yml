@@ -1,3 +1,2 @@
 language: objective-c
-xcode_project: SwiftRSS_Example.xcodeproj
-xcode_scheme: SwiftRSS_Example
+-script: xctool -sdk iphonesimulator -project SwiftRSS_Example.xcodeproj -scheme SwiftRSS_Example build test
