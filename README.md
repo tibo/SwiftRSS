@@ -31,8 +31,8 @@ All you need to do is to create a simple `NSURLRequest` with the URL of your fee
 let request: NSURLRequest = NSURLRequest(URL: NSURL(string: http://developer.apple.com/swift/blog/news.rss))
 
 RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
-  NSLog("Feed for \(feed.title)")
-  NSLog("contain \(feed.items)")
+  NSLog("Feed for : \(feed.title)")
+  NSLog("contains : \(feed.items)")
 })
 ```
 
