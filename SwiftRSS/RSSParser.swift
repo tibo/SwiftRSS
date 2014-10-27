@@ -71,7 +71,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     {
         if let closure = self.callbackClosure?
         {
-            closure(feed: feed, error: nil)
+            closure(feed: self.feed, error: nil)
         }
     }
     
@@ -82,7 +82,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             self.currentItem = RSSItem()
         }
         
-        currentElement = ""
+        self.currentElement = ""
         
     }
    
@@ -99,61 +99,61 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             return
         }
         
-        if let item = currentItem?
+        if let item = self.currentItem?
         {
             if elementName == node_title
             {
-                item.title = currentElement
+                item.title = self.currentElement
             }
             
             if elementName == node_link
             {
-                item.setLink(currentElement)
+                item.setLink(self.currentElement)
             }
             
             if elementName == node_guid
             {
-                item.guid = currentElement
+                item.guid = self.currentElement
             }
             
             if elementName == node_publicationDate
             {
-                item.setPubDate(currentElement)
+                item.setPubDate(self.currentElement)
             }
             
             if elementName == node_description
             {
-                item.itemDescription = currentElement
+                item.itemDescription = self.currentElement
             }
             
             if elementName == node_content
             {
-                item.content = currentElement
+                item.content = self.currentElement
             }
             
             if elementName == node_commentsLink
             {
-                item.setCommentsLink(currentElement)
+                item.setCommentsLink(self.currentElement)
             }
             
             if elementName == node_commentsCount
             {
-                item.commentsCount = currentElement.toInt()
+                item.commentsCount = self.currentElement.toInt()
             }
             
             if elementName == node_commentRSSLink
             {
-                item.setCommentRSSLink(currentElement)
+                item.setCommentRSSLink(self.currentElement)
             }
             
             if elementName == node_author
             {
-                item.author = currentElement
+                item.author = self.currentElement
             }
             
             if elementName == node_category
             {
-                item.categories.append(currentElement)
+                item.categories.append(self.currentElement)
             }
             
         }
@@ -161,43 +161,43 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         {
             if elementName == node_title
             {
-                feed.title = currentElement
+                feed.title = self.currentElement
             }
             
             if elementName == node_link
             {
-                feed.setLink(currentElement)
+                feed.setLink(self.currentElement)
             }
             
             if elementName == node_description
             {
-                feed.feedDescription = currentElement
+                feed.feedDescription = self.currentElement
             }
             
             if elementName == node_language
             {
-                feed.language = currentElement
+                feed.language = self.currentElement
             }
             
             if elementName == node_lastBuildDate
             {
-                feed.setlastBuildDate(currentElement)
+                feed.setlastBuildDate(self.currentElement)
             }
             
             if elementName == node_generator
             {
-                feed.generator = currentElement
+                feed.generator = self.currentElement
             }
             
             if elementName == node_copyright
             {
-                feed.copyright = currentElement
+                feed.copyright = self.currentElement
             }
         }
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
-        currentElement += string
+        self.currentElement += string
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {

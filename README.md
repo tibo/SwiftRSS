@@ -2,8 +2,6 @@
 
 SwiftRSS is a simple RSS parser written in Swift.
 
-It came with the same philosophy as [my](http://github.com/tibo) previous library: [BlockRSSParser](http://github.com/tibo/BlockRSSParser)
-
 ## Todo
 
 - [x] Basic RSS Support
@@ -62,7 +60,10 @@ If you want to adapt this project to a specific usecase, please fork the project
 ## Credits
 
 Maintainers :
-- [Thibaut LE LEVIER](http://github.com/tibo)
+- [Thibaut Le Levier](http://github.com/tibo)
+
+Code review: 
+- [Ludovic Ollagnier](http://github.com/eLud)
 
 Special thanks to :
 - [Michael Waterfall](https://github.com/mwaterfall) author of the [MWFeedParser](https://github.com/mwaterfall/MWFeedParser/) where a lot of logic [on the Date formatters come from](https://github.com/mwaterfall/MWFeedParser/blob/master/Classes/NSDate%2BInternetDateTime.m)
