@@ -11,7 +11,7 @@ SwiftRSS is a simple RSS parser written in Swift.
 - [x] NSCoder compatibility
 - [x] Handle Comment link, feed and count (specific to Wordpress)
 - [x] Add images helper (an array of images URL like for BlockRSSParser)
-- [x] Continuous integration
+- [ ] Continuous integration (waiting for Travis to deploy the iOS 8.1 SDK with Swift 1.1)
 - [ ] Cocoapods spec (waiting for Cocoapods Swift support)
 
 ## Installation
