@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: xcode61
 xcode_project: SwiftRSS_Example.xcodeproj
 xcode_scheme: SwiftRSS_Example
 xcode_sdk: iphonesimulator8.1
