@@ -11,7 +11,7 @@ import XCTest
 
 class RSSFeed_Tests: XCTestCase {
     
-    let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+    let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
 
     override func setUp() {
         super.setUp()
@@ -26,7 +26,7 @@ class RSSFeed_Tests: XCTestCase {
         var item: RSSItem = RSSItem()
         item.setLink("http://www.apple.com")
         
-        if let link = item.link?
+        if let link = item.link
         {
             XCTAssert(true, "link is valid")
         }
@@ -85,7 +85,7 @@ class RSSFeed_Tests: XCTestCase {
         
         NSKeyedArchiver.archiveRootObject(feed, toFile: archive)
         
-        var feed2 = NSKeyedUnarchiver.unarchiveObjectWithFile(archive) as RSSFeed
+        var feed2 = NSKeyedUnarchiver.unarchiveObjectWithFile(archive) as! RSSFeed
 
         XCTAssert(feed.title == feed2.title, "")
         XCTAssert(feed.link == feed2.link, "")
