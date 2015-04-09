@@ -69,7 +69,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     
     func parserDidEndDocument(parser: NSXMLParser)
     {
-        if let closure = self.callbackClosure?
+        if let closure = self.callbackClosure
         {
             closure(feed: self.feed, error: nil)
         }
@@ -90,7 +90,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         
         if elementName == node_item
         {
-            if let item = self.currentItem?
+            if let item = self.currentItem
             {
                 self.feed.items.append(item)
             }
@@ -99,7 +99,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             return
         }
         
-        if let item = self.currentItem?
+        if let item = self.currentItem
         {
             if elementName == node_title
             {
@@ -196,13 +196,15 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser, foundCharacters string: String) {
-        self.currentElement += string
+    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+        if let str = string {
+            self.currentElement += str
+        }
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
         
-        if let closure = self.callbackClosure?
+        if let closure = self.callbackClosure
         {
             closure(feed: nil, error: parseError)
         }

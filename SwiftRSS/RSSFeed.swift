@@ -48,46 +48,46 @@ class RSSFeed: NSObject, NSCoding {
         feedDescription = aDecoder.decodeObjectForKey("description") as? String
         language = aDecoder.decodeObjectForKey("language") as? String
         lastBuildDate = aDecoder.decodeObjectForKey("lastBuildDate") as? NSDate
-        generator = aDecoder.decodeObjectForKey("generator") as? NSString
-        copyright = aDecoder.decodeObjectForKey("copyright") as? NSString
+        generator = aDecoder.decodeObjectForKey("generator") as? String
+        copyright = aDecoder.decodeObjectForKey("copyright") as? String
         
-        items = aDecoder.decodeObjectForKey("items") as [RSSItem]
+        items = aDecoder.decodeObjectForKey("items") as! [RSSItem]
     }
     
     func encodeWithCoder(aCoder: NSCoder)
     {
-        if let title = self.title?
+        if let title = self.title
         {
             aCoder.encodeObject(title, forKey: "title")
         }
         
-        if let link = self.link?
+        if let link = self.link
         {
             aCoder.encodeObject(link, forKey: "link")
         }
         
-        if let feedDescription = self.feedDescription?
+        if let feedDescription = self.feedDescription
         {
             aCoder.encodeObject(feedDescription, forKey: "description")
         }
         
-        if let language = self.language?
+        if let language = self.language
         {
             aCoder.encodeObject(language, forKey: "language")
         }
         
-        if let lastBuildDate = self.lastBuildDate?
+        if let lastBuildDate = self.lastBuildDate
         {
             aCoder.encodeObject(lastBuildDate, forKey: "lastBuildDate")
         }
         
-        if let generator = self.generator?
+        if let generator = self.generator
         {
             aCoder.encodeObject(generator, forKey: "generator")
         }
         
         
-        if let copyright = self.copyright?
+        if let copyright = self.copyright
         {
             aCoder.encodeObject(copyright, forKey: "copyright")
         }
