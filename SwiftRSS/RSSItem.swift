@@ -8,49 +8,49 @@
 
 import UIKit
 
-class RSSItem: NSObject, NSCoding {
-    var title: String?
-    var link: NSURL?
+public class RSSItem: NSObject, NSCoding {
+    public var title: String?
+    public var link: NSURL?
     
-    func setLink(let linkString: String!)
+    public func setLink(let linkString: String!)
     {
         link = NSURL(string: linkString)
     }
     
-    var guid: String?
-    var pubDate: NSDate?
+    public var guid: String?
+    public var pubDate: NSDate?
     
-    func setPubDate(let dateString: String!)
+    public func setPubDate(let dateString: String!)
     {
         pubDate = NSDate.dateFromInternetDateTimeString(dateString)
     }
     
-    var itemDescription: String?
-    var content: String?
+    public var itemDescription: String?
+    public var content: String?
     
     // Wordpress specifics
-    var commentsLink: NSURL?
+    public var commentsLink: NSURL?
     
-    func setCommentsLink(let linkString: String!)
+    public func setCommentsLink(let linkString: String!)
     {
         commentsLink = NSURL(string: linkString)
     }
     
-    var commentsCount: Int?
+    public var commentsCount: Int?
     
-    var commentRSSLink: NSURL?
+    public var commentRSSLink: NSURL?
     
-    func setCommentRSSLink(let linkString: String!)
+    public func setCommentRSSLink(let linkString: String!)
     {
         commentRSSLink = NSURL(string: linkString)
     }
     
-    var author: String?
+    public var author: String?
     
-    var categories: [String]! = [String]()
+    public var categories: [String]! = [String]()
     
-    var imagesFromItemDescription: [NSURL]! {
-        if let itemDescription = self.itemDescription?
+    public var imagesFromItemDescription: [NSURL]! {
+        if let itemDescription = self.itemDescription
         {
             return itemDescription.imageLinksFromHTMLString
         }
@@ -58,8 +58,8 @@ class RSSItem: NSObject, NSCoding {
         return [NSURL]()
     }
     
-    var imagesFromContent: [NSURL]! {
-        if let content = self.content?
+    public var imagesFromContent: [NSURL]! {
+        if let content = self.content
         {
             return content.imageLinksFromHTMLString
         }
@@ -67,13 +67,13 @@ class RSSItem: NSObject, NSCoding {
         return [NSURL]()
     }
     
-    override init()
+    override public init()
     {
         super.init()
     }
     
     // MARK: NSCoding
-    required init(coder aDecoder: NSCoder)
+    required public init(coder aDecoder: NSCoder)
     {
         super.init()
         
@@ -81,8 +81,8 @@ class RSSItem: NSObject, NSCoding {
         link = aDecoder.decodeObjectForKey("link") as? NSURL
         guid = aDecoder.decodeObjectForKey("guid") as? String
         pubDate = aDecoder.decodeObjectForKey("pubDate") as? NSDate
-        itemDescription = aDecoder.decodeObjectForKey("description") as? NSString
-        content = aDecoder.decodeObjectForKey("content") as? NSString
+        itemDescription = aDecoder.decodeObjectForKey("description") as? String
+        content = aDecoder.decodeObjectForKey("content") as? String
         commentsLink = aDecoder.decodeObjectForKey("commentsLink") as? NSURL
         commentsCount = aDecoder.decodeObjectForKey("commentsCount") as? Int
         commentRSSLink = aDecoder.decodeObjectForKey("commentRSSLink") as? NSURL
@@ -90,54 +90,54 @@ class RSSItem: NSObject, NSCoding {
         categories = aDecoder.decodeObjectForKey("categories") as? [String]
     }
     
-    func encodeWithCoder(aCoder: NSCoder)
+    public func encodeWithCoder(aCoder: NSCoder)
     {
-        if let title = self.title?
+        if let title = self.title
         {
             aCoder.encodeObject(title, forKey: "title")
         }
         
-        if let link = self.link?
+        if let link = self.link
         {
             aCoder.encodeObject(link, forKey: "link")
         }
         
-        if let guid = self.guid?
+        if let guid = self.guid
         {
             aCoder.encodeObject(guid, forKey: "guid")
         }
         
-        if let pubDate = self.pubDate?
+        if let pubDate = self.pubDate
         {
             aCoder.encodeObject(pubDate, forKey: "pubDate")
         }
         
-        if let itemDescription = self.itemDescription?
+        if let itemDescription = self.itemDescription
         {
             aCoder.encodeObject(itemDescription, forKey: "description")
         }
         
-        if let content = self.content?
+        if let content = self.content
         {
             aCoder.encodeObject(content, forKey: "content")
         }
         
-        if let commentsLink = self.commentsLink?
+        if let commentsLink = self.commentsLink
         {
             aCoder.encodeObject(commentsLink, forKey: "commentsLink")
         }
         
-        if let commentsCount = self.commentsCount?
+        if let commentsCount = self.commentsCount
         {
             aCoder.encodeObject(commentsCount, forKey: "commentsCount")
         }
         
-        if let commentRSSLink = self.commentRSSLink?
+        if let commentRSSLink = self.commentRSSLink
         {
             aCoder.encodeObject(commentRSSLink, forKey: "commentRSSLink")
         }
         
-        if let author = self.author?
+        if let author = self.author
         {
             aCoder.encodeObject(author, forKey: "author")
         }
