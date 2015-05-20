@@ -15,7 +15,7 @@ extension String {
         
         var error: NSError?
         
-        var full_range: NSRange = NSMakeRange(0, countElements(self))
+        var full_range: NSRange = NSMakeRange(0, count(self))
         
         if let regex = NSRegularExpression(pattern:"(https?)\\S*(png|jpg|jpeg|gif)", options:.CaseInsensitive, error:&error)
         {
