@@ -23,10 +23,10 @@ class RSSItem_Tests: XCTestCase {
     
     func test_setLink_withAValidURLString_shouldCreateAValidURL()
     {
-        var item: RSSItem = RSSItem()
-        item.setLink("http://www.apple.com")
+        let item: RSSItem = RSSItem()
+        item.setLinkAsString("http://www.apple.com")
         
-        if let link = item.link?
+        if let link = item.link
         {
             XCTAssert(true, "link is valid")
         }
@@ -42,13 +42,13 @@ class RSSItem_Tests: XCTestCase {
         var item: RSSItem = RSSItem()
         
         item.title = "Hello"
-        item.setLink("http://www.apple.com")
+        item.setLinkAsString("http://www.apple.com")
         item.guid = "1234"
         item.pubDate = NSDate()
         item.itemDescription = "Big Description"
         item.content = "Here is the content"
-        item.setCommentsLink("http://www.test.com")
-        item.setCommentRSSLink("http://www.whatever.com/")
+        item.setCommentsLinkAsString("http://www.test.com")
+        item.setCommentRSSLinkAsString("http://www.whatever.com/")
         item.commentsCount = 666
         item.author = "John Doe"
         item.categories = ["One","Two","Tree"]
@@ -57,7 +57,7 @@ class RSSItem_Tests: XCTestCase {
         
         NSKeyedArchiver.archiveRootObject(item, toFile: archive)
         
-        var item2 = NSKeyedUnarchiver.unarchiveObjectWithFile(archive) as RSSItem
+        var item2 = NSKeyedUnarchiver.unarchiveObjectWithFile(archive) as! RSSItem
         
         XCTAssert(item.title == item2.title, "")
         XCTAssert(item.link == item2.link, "")

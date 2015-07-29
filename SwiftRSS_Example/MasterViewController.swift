@@ -28,15 +28,16 @@ class MasterViewController: UITableViewController {
 
         if let split = self.splitViewController {
             let controllers = split.viewControllers
-            self.detailViewController = controllers[controllers.count-1].topViewController as? DetailViewController
+            
+            self.detailViewController = controllers[controllers.count-1] as? DetailViewController
         }
         
         let request = NSURLRequest(URL: NSURL(string: "http://developer.apple.com/swift/blog/news.rss")!)
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
-            if let myFeed = feed?
+            if let myFeed = feed
             {
-                if let title = myFeed.title?
+                if let title = myFeed.title
                 {
                     self.title = title
                 }
@@ -56,12 +57,12 @@ class MasterViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
                 
-                if let feed = self.feed?
+                if let feed = self.feed
                 {
                     let item = feed.items[indexPath.row] as RSSItem
-                    let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
+                    let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                     controller.detailItem = item
                     controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                     controller.navigationItem.leftItemsSupplementBackButton = true
@@ -78,7 +79,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let feed = self.feed?
+        if let feed = self.feed
         {
             return feed.items.count
         }
@@ -89,11 +90,11 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
 
-        if let feed = self.feed?
+        if let feed = self.feed
         {
             let item = feed.items[indexPath.row] as RSSItem
             
-            cell.textLabel.text = item.title
+            cell.textLabel!.text = item.title
         }
         
         return cell
