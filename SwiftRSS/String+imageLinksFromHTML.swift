@@ -15,19 +15,21 @@ extension String {
         
         var error: NSError?
         
-        var full_range: NSRange = NSMakeRange(0, countElements(self))
+        var full_range: NSRange = NSMakeRange(0, self.characters.count)
         
-        if let regex = NSRegularExpression(pattern:"(https?)\\S*(png|jpg|jpeg|gif)", options:.CaseInsensitive, error:&error)
-        {
-            regex.enumerateMatchesInString(self, options: NSMatchingOptions(0), range: full_range) {
-                (result : NSTextCheckingResult!, _, _) in
+        do {
+            let regex = try NSRegularExpression(pattern:"(https?)\\S*(png|jpg|jpeg|gif)", options:.CaseInsensitive)
+            regex.enumerateMatchesInString(self, options: NSMatchingOptions(rawValue: 0), range: full_range) {
+                (result : NSTextCheckingResult?, _, _) in
                 
                 // didn't find a way to bridge an NSRange to Range<String.Index>
                 // bridging String to NSString instead
-                var str = (self as NSString).substringWithRange(result.range) as String
+                var str = (self as NSString).substringWithRange(result!.range) as String
                 
                 matches.append(NSURL(string: str)!)
             }
+        } catch var error1 as NSError {
+            error = error1
         }
         
         return matches

@@ -23,10 +23,10 @@ class RSSFeed_Tests: XCTestCase {
 
     func test_setLink_withAValidURLString_shouldCreateAValidURL()
     {
-        var item: RSSItem = RSSItem()
-        item.setLink("http://www.apple.com")
+        let item: RSSItem = RSSItem()
+        item.setLinkAsString("http://www.apple.com")
         
-        if let link = item.link?
+        if let link = item.link
         {
             XCTAssert(true, "link is valid")
         }
@@ -42,7 +42,7 @@ class RSSFeed_Tests: XCTestCase {
         var feed: RSSFeed = RSSFeed()
         
         feed.title = "Feed title"
-        feed.setLink("http://www.swift.io")
+        feed.setLinkAsString("http://www.swift.io")
         feed.feedDescription = "Description of the feed"
         feed.language = "fr"
         feed.lastBuildDate = NSDate()
@@ -52,13 +52,13 @@ class RSSFeed_Tests: XCTestCase {
         var item: RSSItem = RSSItem()
         
         item.title = "Hello"
-        item.setLink("http://www.apple.com")
+        item.setLinkAsString("http://www.apple.com")
         item.guid = "1234"
         item.pubDate = NSDate()
         item.itemDescription = "Big Description"
         item.content = "Here is the content"
-        item.setCommentsLink("http://www.test.com")
-        item.setCommentRSSLink("http://www.whatever.com/")
+        item.setCommentsLinkAsString("http://www.test.com")
+        item.setCommentRSSLinkAsString("http://www.whatever.com/")
         item.commentsCount = 666
         item.author = "John Doe"
         item.categories = ["One","Two","Tree"]
@@ -68,13 +68,13 @@ class RSSFeed_Tests: XCTestCase {
         var item2: RSSItem = RSSItem()
         
         item2.title = "Hello2"
-        item2.setLink("http://www.google.com")
+        item2.setLinkAsString("http://www.google.com")
         item2.guid = "5678"
         item2.pubDate = NSDate()
         item2.itemDescription = "Big Description Again"
         item2.content = "Here is the content for the second item"
-        item2.setCommentsLink("http://www.testing.com")
-        item2.setCommentRSSLink("http://www.whateveragain.com/")
+        item2.setCommentsLinkAsString("http://www.testing.com")
+        item2.setCommentRSSLinkAsString("http://www.whateveragain.com/")
         item2.commentsCount = 42
         item2.author = "Jane Doe"
         item2.categories = ["Four","Five","Six"]
@@ -85,7 +85,7 @@ class RSSFeed_Tests: XCTestCase {
         
         NSKeyedArchiver.archiveRootObject(feed, toFile: archive)
         
-        var feed2 = NSKeyedUnarchiver.unarchiveObjectWithFile(archive) as RSSFeed
+        var feed2 = NSKeyedUnarchiver.unarchiveObjectWithFile(archive) as! RSSFeed
 
         XCTAssert(feed.title == feed2.title, "")
         XCTAssert(feed.link == feed2.link, "")
