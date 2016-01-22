@@ -20,8 +20,8 @@ class RSSParser_Tests: XCTestCase {
     let PDT_timeZone: NSTimeZone! = NSTimeZone(name: "PST")
     let GMT_timeZone: NSTimeZone! = NSTimeZone(name: "GMT")
     let DST_timeZone: NSTimeZone! = NSTimeZone(forSecondsFromGMT: 60 * 60 * -4)
-    let calendar: NSCalendar! = NSCalendar(calendarIdentifier: NSGregorianCalendar)
-    let calendar_flags = NSCalendarUnit(UInt.max)
+    let calendar: NSCalendar! = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
+    let calendar_flags = NSCalendarUnit(rawValue: UInt.max)
     
     override func setUp() {
         super.setUp()
@@ -33,7 +33,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withValidMock_shouldReturnTheRightValues() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!)!)
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: mockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -44,10 +44,10 @@ class RSSParser_Tests: XCTestCase {
             
             XCTAssertNil(error, "error should be nil")
             
-            if let testFeed = feed?
+            if let testFeed = feed
             {
                 XCTAssert(testFeed.title == "Swift Blog - Apple Developer", "")
-                if let link = testFeed.link?
+                if let link = testFeed.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/", "")
                 }
@@ -55,9 +55,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(testFeed.language == "en-US", "")
                 
-                if let date = testFeed.lastBuildDate?
+                if let date = testFeed.lastBuildDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 5, "")
                     XCTAssert(dateComponent.day == 25, "")
@@ -82,7 +82,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Building  assert()  in Swift, Part 2:  __FILE__  and  __LINE__ ", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=15", "")
                 }
@@ -93,9 +93,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=15", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 5, "")
                     XCTAssert(dateComponent.day == 25, "")
@@ -118,7 +118,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Swift Has Reached 1.0", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=14", "")
                 }
@@ -129,9 +129,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=14", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 3, "")
                     XCTAssert(dateComponent.day == 9, "")
@@ -154,7 +154,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Patterns Playground", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=13", "")
                 }
@@ -165,9 +165,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=13", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 4, "")
                     XCTAssert(dateComponent.day == 3, "")
@@ -190,7 +190,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Optionals Case Study:  valuesForKeys ", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=12", "")
                 }
@@ -201,9 +201,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=12", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 3, "")
                     XCTAssert(dateComponent.day == 26, "")
@@ -226,7 +226,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Access Control and  protected ", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=11", "")
                 }
@@ -237,9 +237,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=11", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 3, "")
                     XCTAssert(dateComponent.day == 19, "")
@@ -262,7 +262,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Value and Reference Types", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=10", "")
                 }
@@ -273,9 +273,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=10", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 6, "")
                     XCTAssert(dateComponent.day == 15, "")
@@ -298,7 +298,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Balloons", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=9", "")
                 }
@@ -309,9 +309,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=9", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 6, "")
                     XCTAssert(dateComponent.day == 8, "")
@@ -362,7 +362,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Welcome to Swift Blog", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://developer.apple.com/swift/blog/?id=1", "")
                 }
@@ -373,9 +373,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://developer.apple.com/swift/blog/?id=1", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 6, "")
                     XCTAssert(dateComponent.day == 11, "")
@@ -403,7 +403,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withWordpressMock_shouldReturnTheRightValues() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: wordpressMockFileURL!)!)
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: wordpressMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -415,12 +415,12 @@ class RSSParser_Tests: XCTestCase {
             
             XCTAssertNil(error, "error should be nil")
             
-            if let testFeed = feed?
+            if let testFeed = feed
             {
                 XCTAssertTrue(testFeed.items.count == 10, "should have 10 items")
                 
                 XCTAssert(testFeed.title == "WordPress.com News", "")
-                if let link = testFeed.link?
+                if let link = testFeed.link
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com", "")
                 }
@@ -428,9 +428,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(testFeed.language == "en", "")
                 
-                if let date = testFeed.lastBuildDate?
+                if let date = testFeed.lastBuildDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 6, "")
                     XCTAssert(dateComponent.day == 3, "")
@@ -453,7 +453,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Engaged, Inspired, and Ready to Build a Better Web", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/", "")
                 }
@@ -464,9 +464,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://en.blog.wordpress.com/?p=28737", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 3, "")
                     XCTAssert(dateComponent.day == 30, "")
@@ -488,7 +488,7 @@ class RSSParser_Tests: XCTestCase {
                 XCTAssert(myItem.imagesFromItemDescription.count == 1, "")
                 XCTAssert(myItem.imagesFromItemDescription[0].absoluteString == "http://pixel.wp.com/b.gif", "")
                 
-                if let link = myItem.commentsLink?
+                if let link = myItem.commentsLink
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/#comments", "")
                 }
@@ -497,7 +497,7 @@ class RSSParser_Tests: XCTestCase {
                     XCTFail("link shouldn't be nil")
                 }
                 
-                if let link = myItem.commentRSSLink?
+                if let link = myItem.commentRSSLink
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/30/grand-meetup-reflections/feed/", "")
                 }
@@ -510,16 +510,16 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.author == "Michelle W.", "")
                 
-                XCTAssert(contains(myItem.categories, "Automattic"),"")
-                XCTAssert(contains(myItem.categories, "Hiring"),"")
-                XCTAssert(contains(myItem.categories, "distributed work"),"")
-                XCTAssert(contains(myItem.categories, "future of work"),"")
+                XCTAssert(myItem.categories.contains("Automattic"),"")
+                XCTAssert(myItem.categories.contains("Hiring"),"")
+                XCTAssert(myItem.categories.contains("distributed work"),"")
+                XCTAssert(myItem.categories.contains("future of work"),"")
                 
                 myItem = testFeed.items[6]
                 
                 XCTAssert(myItem.title == "Gmail Password Leak Update", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/", "")
                 }
@@ -530,9 +530,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://en.blog.wordpress.com/?p=28615", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 6, "")
                     XCTAssert(dateComponent.day == 12, "")
@@ -554,7 +554,7 @@ class RSSParser_Tests: XCTestCase {
                 XCTAssert(myItem.imagesFromItemDescription.count == 1, "")
                 XCTAssert(myItem.imagesFromItemDescription[0].absoluteString == "http://pixel.wp.com/b.gif", "")
                 
-                if let link = myItem.commentsLink?
+                if let link = myItem.commentsLink
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/#comments", "")
                 }
@@ -563,7 +563,7 @@ class RSSParser_Tests: XCTestCase {
                     XCTFail("link shouldn't be nil")
                 }
                 
-                if let link = myItem.commentRSSLink?
+                if let link = myItem.commentRSSLink
                 {
                     XCTAssert(link.absoluteString == "http://en.blog.wordpress.com/2014/09/12/gmail-password-leak-update/feed/", "")
                 }
@@ -576,9 +576,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.author == "Daryl L. L. Houston", "")
                 
-                XCTAssert(contains(myItem.categories, "Notifications"),"")
-                XCTAssert(contains(myItem.categories, "Security"),"")
-                XCTAssert(contains(myItem.categories, "security"),"")
+                XCTAssert(myItem.categories.contains("Notifications"),"")
+                XCTAssert(myItem.categories.contains("Security"),"")
+                XCTAssert(myItem.categories.contains("security"),"")
                 
                 myItem = testFeed.items[2]
                 
@@ -604,7 +604,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withTumblrMock_shouldReturnTheRightValues() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: tumblrMockFileURL!)!)
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: tumblrMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -615,12 +615,12 @@ class RSSParser_Tests: XCTestCase {
             
             XCTAssertNil(error, "error should be nil")
             
-            if let testFeed = feed?
+            if let testFeed = feed
             {
                 XCTAssertTrue(testFeed.items.count == 20, "should have 20 items")
                 
                 XCTAssert(testFeed.title == "Tumblr Engineering", "")
-                if let link = testFeed.link?
+                if let link = testFeed.link
                 {
                     XCTAssert(link.absoluteString == "http://engineering.tumblr.com/", "")
                 }
@@ -632,7 +632,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Sam Giddins: My Summer at TumblrThis summer, I had the immense...", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://engineering.tumblr.com/post/98331642904", "")
                 }
@@ -643,9 +643,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://engineering.tumblr.com/post/98331642904", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 4, "")
                     XCTAssert(dateComponent.day == 24, "")
@@ -670,7 +670,7 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.title == "Megan Belzner: My Summer at TumblrThis summer I got the amazing...", "")
                 
-                if let link = myItem.link?
+                if let link = myItem.link
                 {
                     XCTAssert(link.absoluteString == "http://engineering.tumblr.com/post/98050002584", "")
                 }
@@ -681,9 +681,9 @@ class RSSParser_Tests: XCTestCase {
                 
                 XCTAssert(myItem.guid == "http://engineering.tumblr.com/post/98050002584", "")
                 
-                if let date = myItem.pubDate?
+                if let date = myItem.pubDate
                 {
-                    var dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
+                    let dateComponent = self.calendar.components(self.calendar_flags, fromDate: date)
                     
                     XCTAssert(dateComponent.weekday == 1, "")
                     XCTAssert(dateComponent.day == 21, "")
@@ -715,7 +715,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withInvalidMock_shouldReturnParsingError() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: invalidMockFileURL!)!)
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: invalidMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in
@@ -753,7 +753,7 @@ class RSSParser_Tests: XCTestCase {
     
     func test_parser_withEmptyMock_shouldBehaveProperly() {
         
-        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: emptyMockFileURL!)!)
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(fileURLWithPath: emptyMockFileURL!))
         let expectation = self.expectationWithDescription("GET \(request.URL)")
         
         RSSParser.parseFeedForRequest(request, callback: { (feed, error) -> Void in

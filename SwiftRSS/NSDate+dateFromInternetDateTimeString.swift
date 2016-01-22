@@ -56,28 +56,28 @@ extension NSDate {
             {
                 NSDate.internetDateFormatter.dateFormat = "EEE, d MMM yyyy HH:mm:ss zzz"
                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
             
             if date == nil
             {
                 NSDate.internetDateFormatter.dateFormat = "EEE, d MMM yyyy HH:mm zzz"
                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
             
             if date == nil
             {
                 NSDate.internetDateFormatter.dateFormat = "EEE, d MMM yyyy HH:mm:ss"
 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
             
             if date == nil
             {
                 NSDate.internetDateFormatter.dateFormat = "EEE, d MMM yyyy HH:mm"
                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
         }
         else
@@ -86,28 +86,28 @@ extension NSDate {
             {
                 NSDate.internetDateFormatter.dateFormat = "d MMM yyyy HH:mm:ss zzz"
                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
             
             if date == nil
             {
                 NSDate.internetDateFormatter.dateFormat = "d MMM yyyy HH:mm zzz"
                                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
             
             if date == nil
             {
                 NSDate.internetDateFormatter.dateFormat = "d MMM yyyy HH:mm:ss"
                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
             
             if date == nil
             {
                 NSDate.internetDateFormatter.dateFormat = "d MMM yyyy HH:mm"
                 
-                date = NSDate.internetDateFormatter.dateFromString(rfc822_string)
+                date = NSDate.internetDateFormatter.dateFromString(rfc822_string as String)
             }
         }
         
@@ -134,21 +134,21 @@ extension NSDate {
         {
             NSDate.internetDateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
             
-            date = NSDate.internetDateFormatter.dateFromString(rfc3339_string)
+            date = NSDate.internetDateFormatter.dateFromString(rfc3339_string as String)
         }
         
         if date == nil // this case may need more work
         {
             NSDate.internetDateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSZZZ"
             
-            date = NSDate.internetDateFormatter.dateFromString(rfc3339_string)
+            date = NSDate.internetDateFormatter.dateFromString(rfc3339_string as String)
         }
         
         if date == nil
         {
             NSDate.internetDateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
             
-            date = NSDate.internetDateFormatter.dateFromString(rfc3339_string)
+            date = NSDate.internetDateFormatter.dateFromString(rfc3339_string as String)
         }
         
         if date == nil
