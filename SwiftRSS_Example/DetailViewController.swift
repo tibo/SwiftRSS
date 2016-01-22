@@ -25,44 +25,44 @@ class DetailViewController: UIViewController {
         {
             if let webView = self.itemWebView
             {
+                if let path = NSBundle.mainBundle().pathForResource("template", ofType: "html") {
+                    let templateURL = NSURL(fileURLWithPath: path)
                 
-                if let templateURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("template", ofType: "html")!)?
-                {
-                    if var template = NSString(contentsOfURL: templateURL, encoding: NSUTF8StringEncoding, error: nil)?
+                    if var template = (try? NSString(contentsOfURL: templateURL, encoding: NSUTF8StringEncoding))
                     {
-                        if let title = item.title?
+                        if let title = item.title
                         {
                             template = template.stringByReplacingOccurrencesOfString("###TITLE###", withString: title)
                         }
                         
-                        if let content = item.content?
+                        if let content = item.content
                         {
                             template = template.stringByReplacingOccurrencesOfString("###CONTENT###", withString: content)
                         }
-                        else if let description = item.itemDescription?
+                        else if let description = item.itemDescription
                         {
                             template = template.stringByReplacingOccurrencesOfString("###CONTENT###", withString: description)
                         }
                         
-                        if let date = item.pubDate?
+                        if let date = item.pubDate
                         {
-                            var formatter = NSDateFormatter()
+                            let formatter = NSDateFormatter()
                             formatter.dateFormat = "MMM dd, yyyy"
                             
                             template = template.stringByReplacingOccurrencesOfString("###DATE###", withString: formatter.stringFromDate(date))
                         }
                         
-                        webView.loadHTMLString(template, baseURL: nil)
+                        webView.loadHTMLString(template as String, baseURL: nil)
                     }
                     
                 }
                 else
                 {
-                    if let content = item.content?
+                    if let content = item.content
                     {
                         webView.loadHTMLString(content, baseURL: nil)
                     }
-                    else if let description = item.itemDescription?
+                    else if let description = item.itemDescription
                     {
                         webView.loadHTMLString(description, baseURL: nil)
                     }

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class RSSParser: NSObject, NSXMLParserDelegate {
+public class RSSParser: NSObject, NSXMLParserDelegate {
     
-    class func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
+    public class func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
         let rssParser: RSSParser = RSSParser()
         
@@ -42,7 +42,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     let node_author = "dc:creator"
     let node_category = "category"
     
-    func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
+    public func parseFeedForRequest(request: NSURLRequest, callback: (feed: RSSFeed?, error: NSError?) -> Void)
     {
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
 
@@ -54,7 +54,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             {
                 self.callbackClosure = callback
                 
-                var parser : NSXMLParser = NSXMLParser(data: data)
+                let parser : NSXMLParser = NSXMLParser(data: data!)
                 parser.delegate = self
                 parser.shouldResolveExternalEntities = false
                 parser.parse()
@@ -63,19 +63,19 @@ class RSSParser: NSObject, NSXMLParserDelegate {
     }
     
 // MARK: NSXMLParserDelegate
-    func parserDidStartDocument(parser: NSXMLParser)
+    public func parserDidStartDocument(parser: NSXMLParser)
     {
     }
     
-    func parserDidEndDocument(parser: NSXMLParser)
+    public func parserDidEndDocument(parser: NSXMLParser)
     {
-        if let closure = self.callbackClosure?
+        if let closure = self.callbackClosure
         {
             closure(feed: self.feed, error: nil)
         }
     }
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+    public func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         
         if elementName == node_item
         {
@@ -86,11 +86,11 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         
     }
    
-    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+    public func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
         if elementName == node_item
         {
-            if let item = self.currentItem?
+            if let item = self.currentItem
             {
                 self.feed.items.append(item)
             }
@@ -99,7 +99,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             return
         }
         
-        if let item = self.currentItem?
+        if let item = self.currentItem
         {
             if elementName == node_title
             {
@@ -108,7 +108,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_link
             {
-                item.setLink(self.currentElement)
+                item.setLinkAsString(self.currentElement)
             }
             
             if elementName == node_guid
@@ -118,7 +118,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_publicationDate
             {
-                item.setPubDate(self.currentElement)
+                item.setPubDateAsString(self.currentElement)
             }
             
             if elementName == node_description
@@ -133,17 +133,17 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_commentsLink
             {
-                item.setCommentsLink(self.currentElement)
+                item.setCommentsLinkAsString(self.currentElement)
             }
             
             if elementName == node_commentsCount
             {
-                item.commentsCount = self.currentElement.toInt()
+                item.commentsCount = Int(self.currentElement)
             }
             
             if elementName == node_commentRSSLink
             {
-                item.setCommentRSSLink(self.currentElement)
+                item.setCommentRSSLinkAsString(self.currentElement)
             }
             
             if elementName == node_author
@@ -166,7 +166,7 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             
             if elementName == node_link
             {
-                feed.setLink(self.currentElement)
+                feed.setLinkAsSTring(self.currentElement)
             }
             
             if elementName == node_description
@@ -196,13 +196,13 @@ class RSSParser: NSObject, NSXMLParserDelegate {
         }
     }
     
-    func parser(parser: NSXMLParser, foundCharacters string: String) {
+    public func parser(parser: NSXMLParser, foundCharacters string: String) {
         self.currentElement += string
     }
     
-    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
+    public func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
         
-        if let closure = self.callbackClosure?
+        if let closure = self.callbackClosure
         {
             closure(feed: nil, error: parseError)
         }

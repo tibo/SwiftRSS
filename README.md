@@ -12,15 +12,17 @@ SwiftRSS is a simple RSS parser written in Swift.
 - [x] Handle Comment link, feed and count (specific to Wordpress)
 - [x] Add images helper (an array of images URL like for BlockRSSParser)
 - [x] Continuous integration
-- [ ] Cocoapods spec (waiting for Cocoapods Swift support)
+- [x] Cocoapods spec
 
 ## Installation
 
-The project will be available as a Pod as soon as Cocoapods will release the Swift support.
+- Using [CocoaPods](https://cocoapods.org/?q=swiftrss), just add this line to your Podfile:
 
-For now you can install this module manualy : Copy the content of the SwiftRSS folder and add it to your project.
+`pod 'SwiftRSS', '~> 0.0'`
 
-You can also use this project as Git [submodule](http://git-scm.com/docs/git-submodule).
+- Installing this module manualy : Copy the content of the SwiftRSS folder and add it to your project.
+
+- You can also use this project as Git [submodule](http://git-scm.com/docs/git-submodule).
 
 ## Usage
 
